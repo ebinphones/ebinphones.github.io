@@ -24,16 +24,16 @@
 }
 
 .phonetest {
-  width: 100%;
-  height: 100%;
+  width: 25%;
+  height: 25%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .phonetest img {
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
 }
 
 .navbar__container {
@@ -48,7 +48,7 @@
 }
 
 .navbar__container img {
-  width: 25%;
+  width: 15%;
 }
 
 #navbar__logo {
