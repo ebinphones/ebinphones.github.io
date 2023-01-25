@@ -1184,6 +1184,11 @@ img.image1_rounded_corners {
     top: 235px; /* this sets the distance of the image from the top of the box */
     left: 50px; /* this sets the distance of the image from the right of the box */
   }
+
+  .main {
+    background-color: #ffffff;
+    padding-bottom: 0rem;
+  }
   }
 
 
