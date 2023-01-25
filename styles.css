@@ -1145,20 +1145,31 @@ img.image1_rounded_corners {
     transition: transform 0.5s ease;
   }
 
-  .download_mobile img {
+ 
+  
+  .download_mobile .ebin_Logo {
     width: 30%; /* this will make the image fit the box width */
     height: auto; /* this will make the image maintain its aspect ratio */
     position: absolute; /* this sets the position of the image to be absolute */
     top: 190px; /* this sets the distance of the image from the top of the box */
     left: 40px; /* this sets the distance of the image from the right of the box */
   }
-  
-  .download_mobile img {
-    width: 30%; /* this will make the image fit the box width */
+
+  .download_mobile .google_play {
+    width: 50%; /* this will make the image fit the box width */
     height: auto; /* this will make the image maintain its aspect ratio */
     position: absolute; /* this sets the position of the image to be absolute */
-    top: 190px; /* this sets the distance of the image from the top of the box */
-    left: 40px; /* this sets the distance of the image from the right of the box */
+    top: 410px; /* this sets the distance of the image from the top of the box */
+    left: 15px; /* this sets the distance of the image from the right of the box */
+  }
+
+  .download_mobile .apple_store {
+    width: 50%; /* this will make the image fit the box width */
+    height: auto; /* this will make the image maintain its aspect ratio */
+    position: absolute; /* this sets the position of the image to be absolute */
+    top: 365px; /* this sets the distance of the image from the top of the box */
+    left: 14px; /* this sets the distance of the image from the right of the box */
+    scale: 85%;
   }
 
   .download_mobile:before {
@@ -1172,13 +1183,6 @@ img.image1_rounded_corners {
     font-weight: 400;
     top: 235px; /* this sets the distance of the image from the top of the box */
     left: 50px; /* this sets the distance of the image from the right of the box */
-  }
-  .android_download_button {
-    bottom: -60px; /* this sets the distance of the image from the top of the box */
-    left: -30px; /* this sets the distance of the image from the right of the box */
-    width: 60%;
-    height: auto;
-    
   }
   }
 
