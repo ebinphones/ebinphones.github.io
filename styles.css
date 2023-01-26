@@ -1128,13 +1128,14 @@ img.image1_rounded_corners {
   color: rgb(0, 0, 0);
 }
 
-
+@media screen and (max-width: 1000px) {
   .slider {
     display: none;
   }
   .main {
     padding: 8rem 0;
   }
+}
   
   @media screen and (min-width: 481px) {
     .download_mobile {
