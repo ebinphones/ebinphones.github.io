@@ -1126,6 +1126,8 @@ img.image1_rounded_corners {
 
 .website__rights {
   color: rgb(0, 0, 0);
+  align-items: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
