@@ -904,7 +904,7 @@ img.image1_rounded_corners {
   grid-template-rows: 1fr;
 }
 
-.services__card {
+.services__card1 {
   margin: 10px;
   height: 425px;
   width: 300px;
@@ -916,27 +916,27 @@ img.image1_rounded_corners {
   background: #645cff;
 }
 
-.services__card:nth-child(2) {
+.services__card1:nth-child(2) {
   background: #645cff; /* fallback for old browsers */
   
 }
 
-.services__card:nth-child(3) {
+.services__card1:nth-child(3) {
   background: #645cff; /* fallback for old browsers */
   
   
 }
 
-.services__card:nth-child(4) {
+.services__card1:nth-child(4) {
   background: #645cff; /* fallback for old browsers */
   
 }
 
-.services__card h2 {
+.services__card1 h2 {
   text-align: center;
 }
 
-.services__card p {
+.services__card1 p {
   text-align: center;
   margin-top: 24px;
   font-size: 18px;
@@ -944,13 +944,7 @@ img.image1_rounded_corners {
   padding-right: 20px;
 }
 
-.services__btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.services__card button {
+.services__card1 button {
   color: #000000;
   padding: 14px 24px;
   border: none;
@@ -960,15 +954,212 @@ img.image1_rounded_corners {
   font-size: 1rem;
 }
 
-.services__card button:hover {
+.services__card1 button:hover {
   cursor: pointer;
 }
 
-.services__card:hover {
+.services__card1:hover {
   transform: scale(1.075);
   transition: 0.3s ease-in;
   cursor: pointer;
 }
+
+
+
+
+.services__card2 {
+  margin: 10px;
+  height: 425px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background: #645cff;
+}
+
+.services__card2:nth-child(2) {
+  background: #645cff; /* fallback for old browsers */
+  
+}
+
+.services__card2:nth-child(3) {
+  background: #645cff; /* fallback for old browsers */
+  
+  
+}
+
+.services__card2:nth-child(4) {
+  background: #645cff; /* fallback for old browsers */
+  
+}
+
+.services__card2 h2 {
+  text-align: center;
+}
+
+.services__card2 p {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.services__card2 button {
+  color: #000000;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #ffffff;
+  font-size: 1rem;
+}
+
+.services__card2 button:hover {
+  cursor: pointer;
+}
+
+.services__card2:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+
+
+.services__card3 {
+  margin: 10px;
+  height: 425px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background: #645cff;
+}
+
+.services__card3:nth-child(2) {
+  background: #645cff; /* fallback for old browsers */
+  
+}
+
+.services__card3:nth-child(3) {
+  background: #645cff; /* fallback for old browsers */
+  
+  
+}
+
+.services__card3:nth-child(4) {
+  background: #645cff; /* fallback for old browsers */
+  
+}
+
+.services__card3 h2 {
+  text-align: center;
+}
+
+.services__card3 p {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.services__card3 button {
+  color: #000000;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #ffffff;
+  font-size: 1rem;
+}
+
+.services__card3 button:hover {
+  cursor: pointer;
+}
+
+.services__card3:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+
+
+
+
+.services__card4 {
+  margin: 10px;
+  height: 425px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background: #645cff;
+}
+
+.services__card4:nth-child(2) {
+  background: #645cff; /* fallback for old browsers */
+  
+}
+
+.services__card4:nth-child(3) {
+  background: #645cff; /* fallback for old browsers */
+  
+  
+}
+
+.services__card4:nth-child(4) {
+  background: #645cff; /* fallback for old browsers */
+  
+}
+
+.services__card4 h2 {
+  text-align: center;
+}
+
+.services__card4 p {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.services__card4 button {
+  color: #000000;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #ffffff;
+  font-size: 1rem;
+}
+
+.services__card4 button:hover {
+  cursor: pointer;
+}
+
+.services__card4:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+
+.services__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
 
 @media screen and (max-width: 1300px) {
   .services__wrapper {

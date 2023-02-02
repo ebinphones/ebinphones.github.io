@@ -57,3 +57,30 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const slider = document.querySelector('.slider');
+let isSwiping = false;
+let startX = 0;
+let currentX = 0;
+
+slider.addEventListener('touchstart', (event) => {
+  isSwiping = true;
+  startX = event.touches[0].clientX;
+});
+
+slider.addEventListener('touchmove', (event) => {
+  if (!isSwiping) return;
+  currentX = event.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', () => {
+  isSwiping = false;
+  if (currentX < startX) {
+    // Swiped left
+  }
+  if (currentX > startX) {
+    // Swiped right
+  }
+  startX = 0;
+  currentX = 0;
+});
