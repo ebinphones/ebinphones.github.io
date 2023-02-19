@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../html-css-js-website-smooth-scroll-master"
+		},
+		{
+			"path": "../ebin_logo"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "html-css-js-website-smooth-scroll-master"
+	}
+}
