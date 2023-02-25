@@ -70,6 +70,13 @@
   font-weight: normal;
   
 }
+.support_details h6{
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: normal;
+  
+  
+}
 
 .container {
   text-align: left;
@@ -1660,4 +1667,10 @@ img.image1_rounded_corners {
 
 .support_details p{
   padding-bottom: 12px;
+}
+
+.separator {
+  border-top: 1.25px solid #c2c2c2;
+  margin-top: 20px;
+  padding-top: 10px;
 }
