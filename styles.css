@@ -623,8 +623,11 @@ background: #fff;
   margin-bottom: 35px;
 }
 
+
+
 .main__content h2 {
   font-size: 29px;
+  background-color: #000000;
   background: -webkit-linear-gradient(
     to right,
     #126aeb,
@@ -634,13 +637,14 @@ background: #fff;
     to right,
     #126aeb,
     #da22ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 32px;
+  
 }
 
 .main__content h3 {
@@ -1673,4 +1677,38 @@ img.image1_rounded_corners {
   border-top: 1.25px solid #c2c2c2;
   margin-top: 20px;
   padding-top: 10px;
+}
+
+.my-button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 305px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.button-list li {
+  display: inline-block;
+}
+
+.empty-space {
+  height: 150px; 
 }
