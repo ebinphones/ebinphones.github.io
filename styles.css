@@ -28,6 +28,19 @@
   
 }
 
+.text-center-top {   /* Support Page */
+  text-align:center;
+  padding-top: 60px;
+  
+}
+
+.text-center-bottom {    /* Support Page */
+  text-align:center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  
+}
+
 .privacy-text-center {
   text-align:center;
   padding-top: 60px;
@@ -62,6 +75,10 @@
   padding-right: 15%;
   padding-top: 0px;
   padding-bottom: 50px;
+}
+
+.support_details h1{
+  font-size: 24px;
 }
 
 .support_details h5{
@@ -804,7 +821,7 @@ img.image1_rounded_corners {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 3.5rem;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   
   text-align: center;
   
