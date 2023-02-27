@@ -1707,7 +1707,7 @@ img.image1_rounded_corners {
   font-size: 16px;
   margin: 10px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 12px;
   width: 305px;
 }
 
@@ -1728,4 +1728,21 @@ img.image1_rounded_corners {
 
 .empty-space {
   height: 150px; 
+}
+
+.rectangle  {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background-color: red;
+}
+
+.support-text h1 {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 20px;
+  text-align:center;
+  padding-left: 20%;
+  padding-right: 20%;
+  line-height: 32px;
 }
