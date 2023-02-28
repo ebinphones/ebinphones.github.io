@@ -101,6 +101,8 @@
   padding-right: 30%;
   padding-top: 50px;
   padding-bottom: 140px;
+  line-height: 28px;
+  
 }
 .howitworkscontainer {
   text-align: left;
@@ -1745,4 +1747,5 @@ img.image1_rounded_corners {
   padding-left: 20%;
   padding-right: 20%;
   line-height: 32px;
+  padding-top: 50px;
 }
