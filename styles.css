@@ -110,13 +110,17 @@
   padding-right: 30%;
   padding-top: 50px;
   padding-bottom: 140px;
+  line-height:28px;
+  
 }
+
 
 
 
 .howitworkscontainer li {
   padding-bottom: 12px;
   padding-top: 10px;
+  
 }
 
 .container h2 {
@@ -1469,6 +1473,7 @@ img.image1_rounded_corners {
     padding-right: 15%;
     padding-top: 50px;
     padding-bottom: 140px;
+    line-height:28px;
   }
 
   .container {
