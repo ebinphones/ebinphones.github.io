@@ -109,7 +109,7 @@
   padding-left: 30%;
   padding-right: 30%;
   padding-top: 50px;
-  padding-bottom: 140px;
+  padding-bottom: 0px;
   line-height:28px;
   
 }
@@ -1752,5 +1752,19 @@ img.image1_rounded_corners {
   padding-left: 20%;
   padding-right: 20%;
   line-height: 32px;
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
+
+.support-mockup  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.all-mockup {
+  
+  height: 600px;
+}
+
