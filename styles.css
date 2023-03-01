@@ -799,6 +799,11 @@ img.image1_rounded_corners {
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  .all-mockup{
+    display: none;
+  }
+  
 }
 
 
