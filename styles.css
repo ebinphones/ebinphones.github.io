@@ -1483,6 +1483,20 @@ img.image1_rounded_corners {
 
 }
 
+@media screen and (max-width: 400px) {
+  .support-text h1 {
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 20px;
+    text-align:center;
+    line-height: 32px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .footer__link--items {
     margin: 0;
@@ -1495,12 +1509,11 @@ img.image1_rounded_corners {
     font-weight: 400;
     font-size: 20px;
     text-align:center;
-    
     line-height: 32px;
     padding-top: 20px;
     padding-bottom: 30px;
-
-    
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   .howitworkscontainer {
@@ -1793,6 +1806,7 @@ img.image1_rounded_corners {
   padding-bottom: 30px;
   position: static;
   word-wrap: break-word;
+  
 }
 
 
