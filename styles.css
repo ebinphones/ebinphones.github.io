@@ -800,10 +800,21 @@ img.image1_rounded_corners {
     padding-right: 10%;
   }
 
-  .all-mockup{
-    display: none;
+  
+
+  .support-mockup-vertical {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
   
+  .support-mockup-vertical img {
+    display: block;
+    margin-bottom: 10px; /* adjust as needed */
+  }
+
 }
 
 
