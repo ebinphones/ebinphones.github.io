@@ -1809,8 +1809,6 @@ img.image1_rounded_corners {
   
 }
 
-
-
 .support-mockup  {
   display: flex;
   justify-content: center;
@@ -1820,5 +1818,116 @@ img.image1_rounded_corners {
 
 .all-mockup {
   height: 600px;
+}
+
+.support__textbox {
+  background-color: #ffffff;
+  padding: 10rem 0;
+  
+}
+
+.support__textbox__container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding-left: 20%;
+  padding-right: 20%
+  
+}
+
+.support__content {
+  color: #ffffff;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.support__content h1 {
+  font-size: 32px;
+  background-color: #000000;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.support__content h2 {
+  font-size: 14px;
+  background-color: #000000;
+  background: -webkit-linear-gradient(
+    to right,
+    #126aeb,
+    #da22ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #126aeb,
+    #da22ff
+  ); 
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 32px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.support__content h3 {
+  font-size: 14px;
+  background: -webkit-linear-gradient(
+    to right,
+    #126aeb,
+    #da22ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #126aeb,
+    #da22ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-box-container {
+  width: 40%;
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  display: flex;
+  justify-content: center;
+  /* Other styles here */
+}
+
+.text-box-container h1{
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 20px;
+  text-align:center;
+  line-height: 32px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
