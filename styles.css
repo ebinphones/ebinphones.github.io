@@ -1787,6 +1787,10 @@ img.image1_rounded_corners {
   height: 150px; 
 }
 
+.empty-space-support{
+  height: 20px;
+}
+
 .rectangle  {
   width: 100px;
   height: 100px;
@@ -2007,4 +2011,5 @@ img.image1_rounded_corners {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  border-radius: 8px;
 }
