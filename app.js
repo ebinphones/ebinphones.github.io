@@ -84,3 +84,5 @@ slider.addEventListener('touchend', () => {
   startX = 0;
   currentX = 0;
 });
+
+
