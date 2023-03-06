@@ -1999,7 +1999,7 @@ img.image1_rounded_corners {
 }
 .active, .accordion:hover {
   background-color: #ccc;
-  border-radius: 8px 8px 0px 0px;
+  
   
 }
 
@@ -2009,12 +2009,12 @@ img.image1_rounded_corners {
   font-weight: bold;
   float: right;
   margin-left: 5px;
-  
+  border-radius: 8px 8px 0px 0px;
 }
 
 .active:after {
   content: "\2212";
-  
+  border-radius: 8px 8px 0px 0px;
 }
 
 .panel {
