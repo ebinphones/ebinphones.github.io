@@ -1787,8 +1787,13 @@ img.image1_rounded_corners {
   height: 150px; 
 }
 
-.empty-space-support{
-  height: 20px;
+.empty-space-support-top{
+  padding-top: 20px;
+  
+}
+
+.empty-space-support-bottom{
+  padding-bottom: 10px;
 }
 
 .rectangle  {
