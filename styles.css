@@ -2025,3 +2025,7 @@ img.image1_rounded_corners {
   transition: max-height 0.2s ease-out;
   border-radius: 0px 0px 8px 8px;
 }
+
+.empty-space-general-questions {
+  height: 20px;
+}
