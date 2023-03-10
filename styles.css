@@ -2044,6 +2044,8 @@ img.image1_rounded_corners {
   align-items: center;
   justify-content: center;
   padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 5%;
 }
 
 
@@ -2058,6 +2060,9 @@ img.image1_rounded_corners {
   font-size: 32px;
   font-family: 'Montserrat', 'regular';
   font-weight: 500;
+  padding-left: 5%;
+  padding-right: 15%;
+  line-height: 1.4;
 }
 
 
