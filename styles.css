@@ -2050,8 +2050,14 @@ img.image1_rounded_corners {
 .repair-page img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 25px;
   
+}
+
+.repair-page h1{
+  font-size: 32px;
+  font-family: 'Montserrat', 'regular';
+  font-weight: 500;
 }
 
 
