@@ -2030,6 +2030,22 @@ img.image1_rounded_corners {
   height: 20px;
 }
 
+.repair-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+
+.repair-page img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  
+}
+
+
 /*
 .container {
   display: flex;
