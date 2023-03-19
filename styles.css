@@ -2049,19 +2049,26 @@ img.image1_rounded_corners {
 }
 
 
-.repair-page img {
-  max-width: 100%;
+
+.repair-page-img img {
+  max-width: 80%;
   height: auto;
   border-radius: 25px;
+  float: right;
+  margin-right: 10%  ;
+  margin-left: 10% ;
+  
+  
 }
 
 .repair-page h1{
   font-size: 32px;
   font-family: 'Montserrat', 'regular';
   font-weight: 500;
-  padding-left: 5%;
-  padding-right: 15%;
+  padding-left: 30%;
+  padding-right: 10%;
   line-height: 1.4;
+  padding-top: 20px;
 }
 
 
@@ -2083,3 +2090,4 @@ img {
   padding-left: 20px;
 }
 */
+
