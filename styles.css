@@ -1960,7 +1960,16 @@ img.image1_rounded_corners {
   
 }
 
-
+@media (max-width: 1025px) {
+  .howitworkscontainer {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+    padding-bottom: 140px;
+    line-height:28px;
+  }
+}
 
 
 
