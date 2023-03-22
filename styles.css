@@ -2067,6 +2067,7 @@ img {
 
 * {
   box-sizing: border-box;
+  
 }
 
 .column {
@@ -2080,4 +2081,9 @@ img {
   content: "";
   clear: both;
   display: table;
+}
+
+.row {
+  padding-left: 15%;
+  padding-right: 15%;
 }
