@@ -464,13 +464,13 @@
   }
   .hero {
     background: #fff;
-        padding-top: 400px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        max-width: 100%;
-      max-width: 1000px;
-    }
+    padding-top: 400px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    max-width: 100%;
+    max-width: 1000px;
+  }
 }
 
 .main__img--container {
@@ -1221,6 +1221,16 @@ img.image1_rounded_corners {
   }
 }
 
+@media screen and (max-width: 1399px) {
+  .hero {
+    background: #fff;
+    
+    
+      
+      padding: 250px 0;
+      
+    }
+}
 @media screen and (min-width : 1400px){
   img#Phone_Mockup1 {
     display: none;
@@ -1268,6 +1278,7 @@ img.image1_rounded_corners {
     padding: 10 10;
     
   }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -2092,3 +2103,6 @@ img {
 }
 */
 
+@media (max-width: 768px) {
+
+}
