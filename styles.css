@@ -508,7 +508,7 @@ background: #fff;
 
   
   padding: 250px 0;
-  max-width: 1000px;
+  
 }
 
 .hero__container {
@@ -1221,16 +1221,6 @@ img.image1_rounded_corners {
   }
 }
 
-@media screen and (max-width: 1399px) {
-  .hero {
-    background: #fff;
-    
-    
-      
-      padding: 250px 0;
-      
-    }
-}
 @media screen and (min-width : 1400px){
   img#Phone_Mockup1 {
     display: none;
@@ -1248,14 +1238,18 @@ img.image1_rounded_corners {
 
 
 @media screen and (max-width: 1400px) {
+  .slider {
+    display: none;
+  }
+
   img#Phone_Mockup {
     display: none;
   }
+
   .hero{
     padding:50px;
   }
-  
- 
+
   .main__container {
     display: grid;
     grid-template-columns: 1fr;
@@ -1266,6 +1260,7 @@ img.image1_rounded_corners {
     height: 90%;
     text-align: center;
   }
+
   .hero__container {
     display: flex;
     flex-direction: column;
@@ -1278,6 +1273,7 @@ img.image1_rounded_corners {
     padding: 10 10;
     
   }
+  
   
 }
 
