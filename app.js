@@ -86,3 +86,40 @@ slider.addEventListener('touchend', () => {
 });
 
 
+
+
+
+
+// get the slider element
+const slider = document.querySelector('.slider');
+
+// set up touch event listeners
+let startX, endX;
+slider.addEventListener('touchstart', e => {
+  startX = e.touches[0].clientX;
+});
+slider.addEventListener('touchend', e => {
+  endX = e.changedTouches[0].clientX;
+  if (startX - endX > 50) {
+    // swipe left, show next slide
+    showSlide(currentSlide + 1);
+  } else if (endX - startX > 50) {
+    // swipe right, show previous slide
+    showSlide(currentSlide - 1);
+  }
+});
+
+// update the slider to show the specified slide
+function showSlide(n) {
+  const slides = document.querySelectorAll('.slide');
+  const radios = document.querySelectorAll('[name="radio-btn"]');
+  if (n < 0) {
+    n = slides.length - 1;
+  } else if (n >= slides.length) {
+    n = 0;
+  }
+  slides.forEach(slide => slide.classList.remove('first'));
+  slides[n].classList.add('first');
+  radios.forEach(radio => radio.checked = false);
+  radios[n].checked = true;
+}
