@@ -1962,6 +1962,22 @@ img.image1_rounded_corners {
     justify-content: center;
     align-items: center;
   }
+  .container {
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50px;
+    padding-bottom: 140px;
+  }
+
+  .howitworkscontainer{
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    line-height: 28px;
+  }
   
 }
 
