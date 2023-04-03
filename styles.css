@@ -1273,6 +1273,8 @@ img.image1_rounded_corners {
     margin: 0 auto;
     height: 90%;
     text-align: center;
+    padding-left:10%;
+    padding-right:10%;
   }
   .hero__container {
     display: flex;
@@ -1859,6 +1861,9 @@ img.image1_rounded_corners {
 }
 
 .all-mockup {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
   height: 600px;
 }
 
@@ -2100,10 +2105,10 @@ img.image1_rounded_corners {
 .repair-page{
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 40px;
-  padding-left: 10%;
-  padding-right: 5%;
+  
+  margin-top: 20px;
+  
+  
 }
 
 
@@ -2119,14 +2124,51 @@ img.image1_rounded_corners {
   
 }
 
-.repair-page h1{
-  font-size: 32px;
-  font-family: 'Montserrat', 'regular';
-  font-weight: 500;
-  padding-left: 30%;
-  padding-right: 10%;
-  line-height: 1.4;
-  padding-top: 20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.detel{
+  margin-top: 3%;
+  margin-left: 10%;
 }
 
+.detel h1{
+  font-size: 50px;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+span{
+  color: orange;
+  
+}
+
+.detel p{
+  color: #555;
+  line-height: 22px;
+}
+
+.detel a{
+  background: #212121;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
 
