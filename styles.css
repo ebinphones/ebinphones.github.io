@@ -1227,9 +1227,11 @@ img.image1_rounded_corners {
   }
 
   .home_iphone_mockup{
+    /*
     background-image:  src = "Homepage_Mockup1.png";
     
     align-items: center;
+    */
   }
 
 
@@ -1238,6 +1240,7 @@ img.image1_rounded_corners {
 
 
 @media screen and (max-width: 1400px) {
+  
   img#Phone_Mockup {
     display: none;
   }
@@ -1249,12 +1252,13 @@ img.image1_rounded_corners {
   .main__container {
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     width: 100%;
     margin: 0 auto;
     height: 90%;
-    text-align: center;
+    text-align: left;
+    padding-right: 100px;
   }
   .hero__container {
     display: flex;
