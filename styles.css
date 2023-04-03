@@ -1227,11 +1227,9 @@ img.image1_rounded_corners {
   }
 
   .home_iphone_mockup{
-    /*
     background-image:  src = "Homepage_Mockup1.png";
     
     align-items: center;
-    */
   }
 
 
@@ -1240,7 +1238,6 @@ img.image1_rounded_corners {
 
 
 @media screen and (max-width: 1400px) {
-  
   img#Phone_Mockup {
     display: none;
   }
@@ -1252,14 +1249,12 @@ img.image1_rounded_corners {
   .main__container {
     display: grid;
     grid-template-columns: 1fr;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     margin: 0 auto;
     height: 90%;
-    text-align: left;
-    padding-right: 500px;
-    padding-left: 50px;
+    text-align: center;
   }
   .hero__container {
     display: flex;
@@ -1275,7 +1270,13 @@ img.image1_rounded_corners {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1500px){
+  .main__container_download{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .services__wrapper {
     grid-template-columns: 1fr;
   }
