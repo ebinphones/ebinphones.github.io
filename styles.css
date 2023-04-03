@@ -1258,7 +1258,8 @@ img.image1_rounded_corners {
     margin: 0 auto;
     height: 90%;
     text-align: left;
-    padding-right: 100px;
+    padding-right: 500px;
+    padding-left: 50px;
   }
   .hero__container {
     display: flex;
