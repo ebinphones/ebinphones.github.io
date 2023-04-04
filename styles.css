@@ -2143,8 +2143,8 @@ img.image1_rounded_corners {
 
 .detel{
   margin-top: 5%;
-  margin-left: 20%;
-  padding-right: 60%;
+  margin-left: 15%;
+  margin-right:50%;
 }
 
 .detel h1{
@@ -2162,7 +2162,7 @@ span{
 .detel p{
   color: #555;
   line-height: 22px;
-  padding-right: 20%;
+  padding-right: 10%;
 }
 
 .detel a{
