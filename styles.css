@@ -2142,24 +2142,27 @@ img.image1_rounded_corners {
 
 
 .detel{
-  margin-top: 3%;
+  margin-top: 5%;
   margin-left: 10%;
+  padding-right: 60%;
 }
 
 .detel h1{
-  font-size: 50px;
+  font-size: 38px;
   color: #212121;
   margin-bottom: 20px;
+  
 }
 
 span{
-  color: orange;
+  color: #5D4AFF;
   
 }
 
 .detel p{
   color: #555;
   line-height: 22px;
+  padding-right: 30%;
 }
 
 .detel a{
