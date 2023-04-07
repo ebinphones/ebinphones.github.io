@@ -816,6 +816,19 @@ img.image1_rounded_corners {
     margin-bottom: 10px; /* adjust as needed */
   }
 
+  .detel {
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .detel {
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 
@@ -1988,8 +2001,8 @@ img.image1_rounded_corners {
   }
   .container {
     text-align: left;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 50px;
     padding-bottom: 140px;
   }
