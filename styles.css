@@ -6,6 +6,22 @@
   scroll-behavior: smooth;
 }
 
+.select-brand {
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 50px;
+  padding-bottom: 140px
+}
+
+.select-brand h1 {
+  font-size: 1.8rem;
+}
+
+.select-brand h2 {
+  font-size: 1.4rem;
+  padding-top: 40px;
+}
 .navbar {
   background: linear-gradient(
     to right,
