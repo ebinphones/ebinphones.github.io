@@ -1832,6 +1832,21 @@ img.image1_rounded_corners {
   width: 305px;
 }
 
+.my-button-booknow {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 25px 450px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 305px;
+}
+
 .button-container {
   text-align: center;
 }
