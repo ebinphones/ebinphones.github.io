@@ -1836,10 +1836,10 @@ img.image1_rounded_corners {
   background-color: #000000;
   border: none;
   color: white;
-  padding: 25px 450px;
+  padding: 35px 360px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 16px;
   margin: 10px;
   cursor: pointer;
@@ -1848,7 +1848,7 @@ img.image1_rounded_corners {
 }
 
 .button-container {
-  text-align: center;
+  text-align: left;
 }
 
 .button-list {
@@ -2220,3 +2220,39 @@ span{
   border-radius: 5px;
 }
 
+.button-container-book-now {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.button-book-now {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 30px 200px;
+  margin: 10px;
+  font-size: 16px;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  
+  
+}
+
+@media (max-width: 600px) {
+  .button-book-now {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 100px;
+    margin: 10px;
+    font-size: 16px;
+  
+    
+  }
+}
