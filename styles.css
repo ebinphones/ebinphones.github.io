@@ -832,11 +832,6 @@ img.image1_rounded_corners {
     margin-bottom: 10px; /* adjust as needed */
   }
 
-  .detel {
-    margin-top: 15%;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
 }
 
 @media (max-width: 480px) {
@@ -860,8 +855,6 @@ img.image1_rounded_corners {
   padding-top: 5rem;
   padding-bottom: 7rem;
   text-align: center;
-  
- 
 }
 
 .services h1 {
@@ -1266,6 +1259,7 @@ img.image1_rounded_corners {
     padding-bottom: 0px;
     line-height: 28px;
   }
+  
 }
 
 @media screen and (min-width : 1400px){
@@ -1444,13 +1438,61 @@ img.image1_rounded_corners {
     border: 2px solid black;
     background-color: red;
   }
-}
+
+  .download_mobile {   
+    height: 480px;
+    width: 300px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #5D4AFF, #8069FF);
+    transform: scale(1);
+    transition: transform 0.5s ease;}
+
+    .download_mobile .ebin_Logo {
+      width: 30%; /* this will make the image fit the box width */
+      height: auto; /* this will make the image maintain its aspect ratio */
+      position: absolute; /* this sets the position of the image to be absolute */
+      top: 190px; /* this sets the distance of the image from the top of the box */
+      left: 40px; /* this sets the distance of the image from the right of the box */
+    }
   
+    .download_mobile .google_play {
+      width: 50%; /* this will make the image fit the box width */
+      height: auto; /* this will make the image maintain its aspect ratio */
+      position: absolute; /* this sets the position of the image to be absolute */
+      top: 410px; /* this sets the distance of the image from the top of the box */
+      left: 15px; /* this sets the distance of the image from the right of the box */
+    }
+  
+    .download_mobile .apple_store {
+      width: 50%; /* this will make the image fit the box width */
+      height: auto; /* this will make the image maintain its aspect ratio */
+      position: absolute; /* this sets the position of the image to be absolute */
+      top: 365px; /* this sets the distance of the image from the top of the box */
+      left: 14px; /* this sets the distance of the image from the right of the box */
+      scale: 85%;
+    }
+  
+    .download_mobile:before {
+      content: "One place for all electronics"; /* this sets the content of the text */
+      position: absolute; /* this sets the position of the text to be absolute */
+      top: 10px; /* this sets the distance of the text from the top of the box */
+      left: 10px; /* this sets the distance of the text from the left of the box */
+      color: white; /* this sets the color of the text */
+      font-size: 14px; /* this sets the font size of the text */
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      top: 235px; /* this sets the distance of the image from the top of the box */
+      left: 50px; /* this sets the distance of the image from the right of the box */
+    }
+  
+}
+  /*
   @media screen and (min-width: 481px) {
     .download_mobile {
       display: none;
     }
   }
+  */
 
   @media only screen
   and (max-device-width : 480px){
@@ -1619,6 +1661,12 @@ img.image1_rounded_corners {
     padding-top: 40px;
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .detel {
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 
@@ -2256,4 +2304,3 @@ span{
     
   }
 }
-
