@@ -1425,7 +1425,7 @@ img.image1_rounded_corners {
   text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 2000px) {
   .slider {
     display: none;
   }
@@ -1445,7 +1445,8 @@ img.image1_rounded_corners {
     border-radius: 20px;
     background: linear-gradient(to bottom, #5D4AFF, #8069FF);
     transform: scale(1);
-    transition: transform 0.5s ease;}
+    transition: transform 0.5s ease;
+  }
 
     .download_mobile .ebin_Logo {
       width: 30%; /* this will make the image fit the box width */
@@ -1484,8 +1485,7 @@ img.image1_rounded_corners {
       top: 235px; /* this sets the distance of the image from the top of the box */
       left: 50px; /* this sets the distance of the image from the right of the box */
     }
-  
-}
+  }
   /*
   @media screen and (min-width: 481px) {
     .download_mobile {
