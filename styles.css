@@ -1425,7 +1425,7 @@ img.image1_rounded_corners {
   text-align: center;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 1400px) {
   .slider {
     display: none;
   }
@@ -1441,7 +1441,7 @@ img.image1_rounded_corners {
 
   .download_mobile {   
     height: 480px;
-    width: 300px;
+    width: 900px;
     border-radius: 20px;
     background: linear-gradient(to bottom, #5D4AFF, #8069FF);
     transform: scale(1);
