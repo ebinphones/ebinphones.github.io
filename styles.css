@@ -6,22 +6,6 @@
   scroll-behavior: smooth;
 }
 
-.select-brand {
-  text-align: left;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 50px;
-  padding-bottom: 140px
-}
-
-.select-brand h1 {
-  font-size: 1.8rem;
-}
-
-.select-brand h2 {
-  font-size: 1.4rem;
-  padding-top: 40px;
-}
 .navbar {
   background: linear-gradient(
     to right,
@@ -537,15 +521,16 @@ background: #fff;
   margin: 0 auto;
   height: 90%;
   text-align: left;
-  
+  padding: 0 20px;
 }
 
 .home_iphone_mockup{
+  
   flex-direction: column;
   justify-content: center;
   position: absolute;
   top: 10rem;
-  right: 1rem;
+  right: 10rem;
   width:540px;
   height: auto;
 }
@@ -553,8 +538,7 @@ background: #fff;
 
 
 .hero__heading {
-  font-size: 70px;
-  margin-top: 18px;
+  font-size: 100px;
   margin-bottom: 24px;
   color: rgb(0, 0, 0);
 }
@@ -575,12 +559,11 @@ background: #fff;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
 }
 
 .hero__description {
-  font-size: 40px;
-  
+  font-size: 60px;
   background: #da22ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -597,30 +580,15 @@ background: #fff;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  
-}
-
-@media screen and (max-width: 1700px) {
-  .hero__heading {
-    font-size: 70px;
-  }
-
-  .hero__description {
-    font-size: 40px;
-    
-  }
-
-  
 }
 
 @media screen and (max-width: 768px) {
   .hero__heading {
-    font-size: 48px;
+    font-size: 60px;
   }
 
   .hero__description {
     font-size: 40px;
-    text-align: center;
   }
 
   
@@ -848,6 +816,11 @@ img.image1_rounded_corners {
     margin-bottom: 10px; /* adjust as needed */
   }
 
+  .detel {
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -871,6 +844,8 @@ img.image1_rounded_corners {
   padding-top: 5rem;
   padding-bottom: 7rem;
   text-align: center;
+  
+ 
 }
 
 .services h1 {
@@ -1275,7 +1250,6 @@ img.image1_rounded_corners {
     padding-bottom: 0px;
     line-height: 28px;
   }
-  
 }
 
 @media screen and (min-width : 1400px){
@@ -1441,7 +1415,7 @@ img.image1_rounded_corners {
   text-align: center;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
   .slider {
     display: none;
   }
@@ -1454,61 +1428,13 @@ img.image1_rounded_corners {
     border: 2px solid black;
     background-color: red;
   }
-
-  .download_mobile {   
-    height: 480px;
-    width: 900px;
-    border-radius: 20px;
-    background: linear-gradient(to bottom, #5D4AFF, #8069FF);
-    transform: scale(1);
-    transition: transform 0.5s ease;
-  }
-
-    .download_mobile .ebin_Logo {
-      width: 30%; /* this will make the image fit the box width */
-      height: auto; /* this will make the image maintain its aspect ratio */
-      position: absolute; /* this sets the position of the image to be absolute */
-      top: 190px; /* this sets the distance of the image from the top of the box */
-      left: 40px; /* this sets the distance of the image from the right of the box */
-    }
+}
   
-    .download_mobile .google_play {
-      width: 50%; /* this will make the image fit the box width */
-      height: auto; /* this will make the image maintain its aspect ratio */
-      position: absolute; /* this sets the position of the image to be absolute */
-      top: 410px; /* this sets the distance of the image from the top of the box */
-      left: 15px; /* this sets the distance of the image from the right of the box */
-    }
-  
-    .download_mobile .apple_store {
-      width: 50%; /* this will make the image fit the box width */
-      height: auto; /* this will make the image maintain its aspect ratio */
-      position: absolute; /* this sets the position of the image to be absolute */
-      top: 365px; /* this sets the distance of the image from the top of the box */
-      left: 14px; /* this sets the distance of the image from the right of the box */
-      scale: 85%;
-    }
-  
-    .download_mobile:before {
-      content: "One place for all electronics"; /* this sets the content of the text */
-      position: absolute; /* this sets the position of the text to be absolute */
-      top: 10px; /* this sets the distance of the text from the top of the box */
-      left: 10px; /* this sets the distance of the text from the left of the box */
-      color: white; /* this sets the color of the text */
-      font-size: 14px; /* this sets the font size of the text */
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 400;
-      top: 235px; /* this sets the distance of the image from the top of the box */
-      left: 50px; /* this sets the distance of the image from the right of the box */
-    }
-  }
-  /*
   @media screen and (min-width: 481px) {
     .download_mobile {
       display: none;
     }
   }
-  */
 
   @media only screen
   and (max-device-width : 480px){
@@ -1677,12 +1603,6 @@ img.image1_rounded_corners {
     padding-top: 40px;
     padding-left: 10%;
     padding-right: 10%;
-  }
-
-  .detel {
-    margin-top: 15%;
-    margin-left: 15%;
-    margin-right: 15%;
   }
 }
 
@@ -1896,23 +1816,8 @@ img.image1_rounded_corners {
   width: 305px;
 }
 
-.my-button-booknow {
-  background-color: #000000;
-  border: none;
-  color: white;
-  padding: 35px 360px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 12px;
-  width: 305px;
-}
-
 .button-container {
-  text-align: left;
+  text-align: center;
 }
 
 .button-list {
@@ -2284,39 +2189,3 @@ span{
   border-radius: 5px;
 }
 
-.button-container-book-now {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-}
-
-.button-book-now {
-  background-color: #000000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 30px 200px;
-  margin: 10px;
-  font-size: 16px;
-  
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  
-  
-}
-
-@media (max-width: 600px) {
-  .button-book-now {
-    background-color: #000000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 20px 100px;
-    margin: 10px;
-    font-size: 16px;
-  
-    
-  }
-}
