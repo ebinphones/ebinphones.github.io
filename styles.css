@@ -68,6 +68,28 @@
   color: #007bff;
 }
 
+.sell-text-center {
+  text-align:center;
+  padding-top: 60px;
+}
+
+.sell-text-center p {
+  text-align:center;
+  padding-top: 30px;
+  color: #007bff;
+}
+
+.repair-text-center {
+  text-align:center;
+  padding-top: 60px;
+}
+
+.repair-text-center p {
+  text-align:center;
+  padding-top: 30px;
+  color: #007bff;
+}
+
 
 .support {
   text-align: center;
@@ -1655,6 +1677,15 @@ img.image1_rounded_corners {
     padding-right: 15%;
   }
 
+  .sell-text-center {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .repair-text-center {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
   .support {
     text-align: center;
     padding-left: 15%;
