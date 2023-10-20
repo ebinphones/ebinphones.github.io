@@ -1373,6 +1373,9 @@ img.image1_rounded_corners {
     font-size: .675rem;
     text-align: center;
   }
+  .hero{
+    padding:50px;
+  }
 }
 
 /* Footer CSS */
@@ -2351,6 +2354,9 @@ span{
     font-size: 16px;
   
     
+  }
+  .hero{
+    padding:50px;
   }
 }
 
