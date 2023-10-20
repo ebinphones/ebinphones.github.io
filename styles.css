@@ -2024,6 +2024,7 @@ img.image1_rounded_corners {
   height: 100%;
   object-fit: cover;
   height: 600px;
+  margin: 20px;
 }
 
 .support__textbox {
