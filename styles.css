@@ -1376,6 +1376,20 @@ img.image1_rounded_corners {
   .hero{
     padding:50px;
   }
+
+  .column {
+  float: left;
+  width: 50%;
+  padding: 0px 70px 0px 0px;
+  
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px 70px 0px 0px;
+  
+}
 }
 
 /* Footer CSS */
