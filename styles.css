@@ -809,7 +809,7 @@ img.image1_rounded_corners {
   }
 
   .main__content {
-    text-align: center;
+   
     margin-bottom: 4rem;
   }
 
@@ -1018,7 +1018,8 @@ img.image1_rounded_corners {
 
 .services__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 
+  1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
@@ -1336,9 +1337,7 @@ img.image1_rounded_corners {
     width: 100%;
     margin: 0 auto;
     height: 90%;
-    text-align: center;
-    padding-left:10%;
-    padding-right:10%;
+    
   }
   .hero__container {
     display: flex;
@@ -2364,9 +2363,15 @@ span{
   float: left;
   width: 50%;
   padding: 0px 70px 0px 0px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  
 }
 
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px 70px 0px 0px;
+  
+}
 /* Clear floats after the columns */
 .main__content:after {
   content: "";
