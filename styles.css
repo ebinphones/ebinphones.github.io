@@ -268,7 +268,7 @@
   align-items: center;
   font-size: 18px;
   top: 0;
-  z-index: 999;
+  z-index: 0;
 }
 
 .button {
@@ -873,6 +873,7 @@ img.image1_rounded_corners {
     margin-bottom: 10px; /* adjust as needed */
   }
 
+
 }
 
 @media (max-width: 480px) {
@@ -1315,6 +1316,20 @@ img.image1_rounded_corners {
     align-items: center;
   }
 
+  .column {
+    float: left;
+    width: 50%;
+    padding: 0px 70px 0px 0px;
+    
+  }
+
+  .column1 {
+    float: right;
+    width: 50%;
+    padding: 0px 70px 0px 0px;
+    
+  }
+
 
 }
   
@@ -1351,11 +1366,38 @@ img.image1_rounded_corners {
     padding: 10 10;
     
   }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 0px 70px 0px 0px;
+    
+  }
+
+  .column1 {
+    float: right;
+    width: 50%;
+    padding: 0px 70px 0px 0px;
+    
+  }
 }
 
 @media screen and (max-width: 1350px){
   .slider{
     display: none;
+  }
+  .column {
+    float: left;
+    width: 56%;
+    padding: 0px 70px 0px 0px;
+    
+  }
+
+  .column1 {
+    float: right;
+    width: 44%;
+    padding: 0px 70px 0px 0px;
+    
   }
   
 }
@@ -1379,17 +1421,32 @@ img.image1_rounded_corners {
 
   .column {
   float: left;
-  width: 50%;
+  width: 100%;
   padding: 0px 70px 0px 0px;
   
+}
+.column1 {
+  float: right;
+  width: 100%;
+  padding: 0px 70px 0px 0px;
+  
+}
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 0px 70px 0px 0px;
-  
-}
+@media screen and (max-width: 480px) {
+  .column {
+    float: left;
+    width: 100%;
+    padding: 0px 70px 0px 0px;
+    
+  }
+
+  .column1 {
+    float: right;
+    width: 100%;
+    padding: 0px 70px 0px 0px;
+    
+  }
 }
 
 /* Footer CSS */
@@ -2379,7 +2436,7 @@ span{
 * {
   box-sizing: border-box;
 }
-
+/*
 .column {
   float: left;
   width: 50%;
@@ -2387,12 +2444,12 @@ span{
   
 }
 
-.column {
-  float: left;
+.column1 {
+  float: right;
   width: 50%;
   padding: 0px 70px 0px 0px;
   
-}
+}*/
 /* Clear floats after the columns */
 .main__content:after {
   content: "";
