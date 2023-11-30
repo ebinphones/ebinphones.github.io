@@ -1422,13 +1422,13 @@ img.image1_rounded_corners {
   .column {
   float: left;
   width: 100%;
-  padding: 0px 70px 0px 0px;
+  padding: 0px 0px 0px 0px;
   
 }
 .column1 {
   float: right;
   width: 100%;
-  padding: 0px 70px 0px 0px;
+  padding: 0px 0px 0px 0px;
   
 }
 }
@@ -1437,14 +1437,14 @@ img.image1_rounded_corners {
   .column {
     float: left;
     width: 100%;
-    padding: 0px 70px 0px 0px;
+    padding: 0px 0px 0px 0px;
     
   }
 
   .column1 {
     float: right;
     width: 100%;
-    padding: 0px 70px 0px 0px;
+    padding: 0px 0px 0px 0px;
     
   }
 }
