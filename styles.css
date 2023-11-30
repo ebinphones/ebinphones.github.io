@@ -1529,8 +1529,8 @@ img.image1_rounded_corners {
 .social__icons {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 240px;
+  align-items: right;
+  width: 70px;
 }
 
 .website__rights {
