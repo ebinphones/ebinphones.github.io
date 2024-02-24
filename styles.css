@@ -2487,28 +2487,28 @@ body {
   background-color: #ffffff;
 }
 
-.container_exclusive {
+.container_exclusive_partner {
   max-width: 600px;
-  margin: 50px auto;
+  margin: 80px auto 40px;
   padding: 30px;
   background-color: #f2f2f2;
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.container_exclusive h1 {
+.container_exclusive_partner h1 {
   text-align: left;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.container_exclusive p {
+.container_exclusive_partner p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
-.container_exclusive form {
+.container_exclusive_partner form {
   display: flex;
   justify-content: space-between;
 }
@@ -2533,4 +2533,30 @@ button {
 
 button:hover {
   background-color: #7864de;
+}
+
+.container_exclusive {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_exclusive h1 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container_exclusive p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.container_exclusive form {
+  display: flex;
+  justify-content: space-between;
 }
