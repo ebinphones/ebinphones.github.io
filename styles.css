@@ -2468,3 +2468,69 @@ span{
 .SellFeature ul{ 
   padding: 0px 0px 10px 0px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container_exclusive {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_exclusive h1 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container_exclusive p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.container_exclusive form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="email"] {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #9974ff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7864de;
+}
