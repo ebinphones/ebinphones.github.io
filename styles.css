@@ -569,8 +569,8 @@ background: #fff;
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 10rem;
-  right: 1rem;
+  top: 6rem;
+  right: 6rem;
   width:540px;
   height: auto;
 }
@@ -1311,8 +1311,12 @@ img.image1_rounded_corners {
   }
 
   .home_iphone_mockup{
-    background-image:  src = "Homepage_Mockup1.png";
     
+    background-image: url("Homepage_Mockup1.png");
+    background-size: cover; /* Scale the background image to cover the entire container */
+    background-position: center; /* Center the background image within the container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    padding: 0; /* Remove padding */
     align-items: center;
   }
 
@@ -2428,7 +2432,7 @@ span{
     
   }
   .hero{
-    padding:50px;
+    padding:20px;
   }
 }
 
