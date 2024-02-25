@@ -970,7 +970,12 @@ img.image1_rounded_corners {
   
 }
 
-
+.word img {
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  
+}
 
 .bannerr {
   background: #694eff;
@@ -984,8 +989,14 @@ img.image1_rounded_corners {
 
 .bannerr img {
   position: absolute;
-  left: 0;
+  left: 240px;
   bottom: 0;
+}
+
+.bannerr1 img {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
 }
 
 
