@@ -2515,13 +2515,13 @@ body {
 .container_exclusive_partner h1 {
   text-align: left;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .container_exclusive_partner p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .container_exclusive_partner form {
@@ -2530,21 +2530,23 @@ body {
 }
 
 input[type="email"] {
-  padding: 10px 15px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 16px;
-  flex-grow: 1;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 button {
-  padding: 10px 15px;
+  padding: 10px;
   background-color: #9974ff;
   color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
+  width:100%
 }
 
 button:hover {
@@ -2576,3 +2578,28 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
