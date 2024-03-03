@@ -301,7 +301,7 @@
   function submitContactForm() {
     var x = document.getElementById("hideonsubmit");
     x.style.display = "none";
-    document.getElementById("formheader") = "<h1>Thank you for your submission! We will contact you soon!</h1>";
+    document.getElementById("formheader").innerHTML = "Thank you for your submission! We will contact you soon!";
   }
 </script>
 <body>
@@ -310,10 +310,10 @@
     <h1 id="formheader">Get exclusive updates, join our mailing list!</h1>
     <div id="hideonsubmit">
       <p>Stay up to date with new ebin features, beta test access.</p>
-      <form action="https://hello-world-1-yjvz4puiba-uc.a.run.app/contactemail" method="get" target="dummyframe">
-        <input type="email" placeholder="Enter your email here..." required>
+      <form id="contactform" action="https://hello-world-1-yjvz4puiba-uc.a.run.app/contactemail" method="get" target="dummyframe">
+        <input type="email" name="email" placeholder="Enter your email here..." required>
       </form>
-      <button type="submit" onclick="submitContactForm()">Sign up</button>
+      <button type="submit" onclick="submitContactForm()" form="contactform">Sign up</button>
     </div>
   </div>
 </body>
