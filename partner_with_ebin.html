@@ -73,11 +73,11 @@
         <div id="hideonsubmit">
         <p>Partner with ebin° to enhance your business. Enter your email to join the waiting list for future updates and become part of the ebin° network.</p>
         <form id="businesscontactform" action="https://hello-world-1-yjvz4puiba-uc.a.run.app/contactbusinessemail" method="get" target="dummyframe">
-          <input type="text" name="name" placeholder="Business Name" required>
-          <input type="text" name="address" placeholder="Business Address" required>
-          <input type="email" name="email" placeholder="Email Address" required>
-          <input type="tel" name="phone" placeholder="Business Phone" required>
+          <input type="text" form="businesscontactform" name="name" placeholder="Business Name" required>
         </form>
+          <input type="text" form="businesscontactform" name="address" placeholder="Business Address" required>
+          <input type="email" form="businesscontactform" name="email" placeholder="Email Address" required>
+          <input type="tel" form="businesscontactform" name="phone" placeholder="Business Phone" required>
         <button form="businesscontactform" onclick="submitBusinessContactForm()" type="submit">Sign up</button>
         </div>
       </div>
