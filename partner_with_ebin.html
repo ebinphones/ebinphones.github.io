@@ -59,27 +59,27 @@
       <title>Get Exclusive Updates!</title>
       <link rel="stylesheet" href="style.css">
     </head>
+    <script>
+      function submitBusinessContactForm() {
+        var x = document.getElementById("hideonsubmit");
+        x.style.display = "none";
+        document.getElementById("formheader").innerHTML = "Thank you for your submission! We will contact you soon!";
+      }
+    </script>
     <body>
       <div class="container_exclusive_partner">
-        <h1>Drive more customers with ebin°</h1>
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <h1 id="formheader">Drive more customers with ebin°</h1>
+        <div id="hideonsubmit">
         <p>Partner with ebin° to enhance your business. Enter your email to join the waiting list for future updates and become part of the ebin° network.</p>
-        <form action="#">
-          <input type="email" placeholder="Business Name" required>
-         
+        <form id="businesscontactform" action="https://hello-world-1-yjvz4puiba-uc.a.run.app/contactbusinessemail" method="get" target="dummyframe">
+          <input type="text" name="name" placeholder="Business Name" required>
+          <input type="text" name="address" placeholder="Business Address" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel" name="phone" placeholder="Business Phone" required>
         </form>
-        <form action="#">
-          <input type="email" placeholder="Business Address" required>
-          
-        </form>
-        <form action="#">
-          <input type="email" placeholder="Email Address" required>
-          
-        </form>
-        <form action="#">
-          <input type="email" placeholder="Business Phone" required>
-        </form>
-
-        <button type="submit">Sign up</button>
+        <button form="businesscontactform" onclick="submitBusinessContactForm()" type="submit">Sign up</button>
+        </div>
       </div>
     </body>
     
