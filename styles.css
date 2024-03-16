@@ -391,11 +391,13 @@
     width: 80px;
   }
   .navbar__menu.active {
-    background: linear-gradient(
-    to right,
-    #5d4aff,
-    #8069ff
-  );
+    background: rgba(34, 34, 34, 0.8)
+    
+    
+  ;
+  -webkit-backdrop-filter: blur(8px); /* Increased blur radius */
+    backdrop-filter: blur(8px); /* Increased blur radius */
+    transition: background-color .3s cubic-bezier(.42, .00, .58, 1.00);
     top: 100%;
     opacity: 1;
     z-index: 99;
@@ -419,7 +421,7 @@
   }
   
   .button {
-      background-color: #9063ff; 
+      background-color: #000000; 
       color: #ffffff; 
       border: 2px solid #ffffff;
   }
@@ -2520,7 +2522,7 @@ button {
 
 
 button:hover {
-  background-color: #5c5c5c;
+  background-color: #4a4a4a;
 }
 
 .container_exclusive {
