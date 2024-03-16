@@ -2551,7 +2551,19 @@ button:hover {
   justify-content: space-between;
 }
 
-
+.MobileDownload{
+  margin: 10px;
+  height: 625px;
+  width: 320px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: url('ebin - Card 0.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-size: cover; /* Cover the entire element with the background image */
+  background-position: center; /* Center the background image */
+}
 
 
 
