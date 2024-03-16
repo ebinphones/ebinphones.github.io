@@ -23,11 +23,10 @@
   padding-top: 40px;
 }
 .navbar {
-  background: linear-gradient(
-    to right,
-    #5d4aff,
-    #8069ff
-  );
+  background: rgba(34, 34, 34, 0.8);
+  -webkit-backdrop-filter: blur(8px); /* Increased blur radius */
+  backdrop-filter: blur(8px); /* Increased blur radius */
+  transition: background-color .3s cubic-bezier(.42, .00, .58, 1.00);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -260,7 +259,7 @@
 
 .banner {
   background-color: 
-    #684cfc
+    #2d2d2d
   ;
   height: 110px;
   display: flex;
@@ -323,15 +322,15 @@
 }
 
 .button {
-    background-color: #9063ff; 
+    background-color: #202020; 
     color: rgb(255, 255, 255); 
     border: 2px solid #ffffff;
 }
   
 .button:hover {
     background-color: #ffffff;
-    color: #9063ff;
-    border: 2px solid #9063ff;
+    color: #202020;
+    border: 2px solid #202020;
     transition:all 0.3s ease;
   
 }
@@ -605,24 +604,13 @@ background: #fff;
 
 .hero__description {
   font-size: 40px;
-  
-  background: #da22ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #126aeb,
-    #da22ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #126aeb,
-    #da22ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-weight: normal; /* Make the font normal (not bold) */
+  background: #6d6d6d; /* fallback for old browsers */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  
 }
 
 @media screen and (max-width: 1700px) {
@@ -709,23 +697,15 @@ background: #fff;
 .main__content h2 {
   font-size: 29px;
   background-color: #000000;
-  background: -webkit-linear-gradient(
-    to right,
-    #126aeb,
-    #da22ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #126aeb,
-    #da22ff
-  ); 
+  background: #6d6d6d; /* Chrome 10-25, Safari 5.1-6 */
+  background: #6d6d6d; 
+  font-weight: 500;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 32px;
-  
 }
 
 .main__content h3 {
@@ -915,7 +895,7 @@ img.image1_rounded_corners {
 }
 
 .banner {
-  background: #694eff;
+  background: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1045,7 +1025,9 @@ img.image1_rounded_corners {
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background: #645cff;
+  background-image: url('ebin - Card 0.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-size: cover; /* Cover the entire element with the background image */
+  background-position: center; /* Center the background image */
 }
 
 .services__card1:nth-child(2) {
@@ -1066,15 +1048,22 @@ img.image1_rounded_corners {
 
 .services__card1 h2 {
   text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 .services__card1 p {
   text-align: center;
   margin-top: 24px;
-  font-size: 18px;
+  font-size: 22px;
   padding-left: 20px;
   padding-right: 20px;
+  /* Stroke effect */
+  color: transparent; /* Hide the text color */
+  color: #ffffff;
+  /* Shadow effect */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
+
 
 .services__card1 button {
   color: #000000;
@@ -1083,7 +1072,7 @@ img.image1_rounded_corners {
   outline: none;
   border-radius: 4px;
   background: #ffffff;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .services__card1 button:hover {
@@ -1108,36 +1097,32 @@ img.image1_rounded_corners {
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background: #645cff;
+  background-image: url('ebin - Card 1.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-size: cover; /* Cover the entire element with the background image */
+  background-position: center; /* Center the background image */
 }
 
-.services__card2:nth-child(2) {
-  background: #645cff; /* fallback for old browsers */
-  
-}
 
-.services__card2:nth-child(3) {
-  background: #645cff; /* fallback for old browsers */
-  
-  
-}
-
-.services__card2:nth-child(4) {
-  background: #645cff; /* fallback for old browsers */
-  
-}
 
 .services__card2 h2 {
   text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 .services__card2 p {
   text-align: center;
   margin-top: 24px;
-  font-size: 18px;
+  font-size: 22px;
   padding-left: 20px;
   padding-right: 20px;
+  /* Stroke effect */
+  
+  color: transparent; /* Hide the text color */
+  color: #ffffff;
+  /* Shadow effect */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
+
 
 .services__card2 button {
   color: #000000;
@@ -1169,36 +1154,31 @@ img.image1_rounded_corners {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #fff;
-  background: #645cff;
+  color: #ffffff;
+  background-image: url('ebin - Card 3.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-size: cover; /* Cover the entire element with the background image */
+  background-position: center; /* Center the background image */
 }
 
-.services__card3:nth-child(2) {
-  background: #645cff; /* fallback for old browsers */
-  
-}
 
-.services__card3:nth-child(3) {
-  background: #645cff; /* fallback for old browsers */
-  
-  
-}
-
-.services__card3:nth-child(4) {
-  background: #645cff; /* fallback for old browsers */
-  
-}
 
 .services__card3 h2 {
   text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 .services__card3 p {
   text-align: center;
   margin-top: 24px;
-  font-size: 18px;
+  font-size: 22px;
   padding-left: 20px;
   padding-right: 20px;
+  /* Stroke effect */
+  
+  color: transparent; /* Hide the text color */
+  color: #ffffff;
+  /* Shadow effect */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 .services__card3 button {
@@ -1233,36 +1213,25 @@ img.image1_rounded_corners {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #fff;
-  background: #645cff;
+  color: #ffffff;
+  background-image: url('ebin - Card 2.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-size: cover; /* Cover the entire element with the background image */
+  background-position: center; /* Center the background image */
 }
 
-.services__card4:nth-child(2) {
-  background: #645cff; /* fallback for old browsers */
-  
-}
-
-.services__card4:nth-child(3) {
-  background: #645cff; /* fallback for old browsers */
-  
-  
-}
-
-.services__card4:nth-child(4) {
-  background: #645cff; /* fallback for old browsers */
-  
-}
 
 .services__card4 h2 {
   text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 .services__card4 p {
   text-align: center;
   margin-top: 24px;
-  font-size: 18px;
+  font-size: 22px;
   padding-left: 20px;
   padding-right: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 .services__card4 button {
@@ -2540,7 +2509,7 @@ input[type="email"] {
 
 button {
   padding: 10px;
-  background-color: #9974ff;
+  background-color: #000000;
   color: #fff;
   border: none;
   border-radius: 50px;
@@ -2551,7 +2520,7 @@ button {
 
 
 button:hover {
-  background-color: #7864de;
+  background-color: #5c5c5c;
 }
 
 .container_exclusive {
