@@ -2552,7 +2552,7 @@ button:hover {
 }
 
 .MobileDownload{
-  margin: 10px;
+  margin: 500px;
   height: 575px;
   width: 340px;
   border-radius: 20px;
@@ -2571,6 +2571,18 @@ button:hover {
 
 
 
+.MobileDownload {
+  margin: 0px;
+  height: 575px;
+  width: 340px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff00;
+  
+
+}
 
 
 
