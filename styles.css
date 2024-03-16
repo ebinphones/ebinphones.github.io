@@ -2288,10 +2288,7 @@ img.image1_rounded_corners {
   border-radius: 8px 8px 0px 0px;
 }
 
-.active:after {
-  content: "\2212";
-  border-radius: 8px 8px 0px 0px;
-}
+
 
 .panel {
   padding: 0 20px;
