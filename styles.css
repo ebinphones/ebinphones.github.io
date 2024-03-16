@@ -178,7 +178,7 @@
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 50px;
+  
 }
 
 .Support-link {
@@ -195,7 +195,7 @@
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 50px;
+  
 }
 
 .navbar__container img {
@@ -674,7 +674,7 @@ background: #fff;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  padding: 0 50px;
+ 
 }
 
 .main__content {
