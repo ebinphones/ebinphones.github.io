@@ -1051,7 +1051,8 @@ img.image1_rounded_corners {
 
 .services__card1 h2 {
   text-align: center;
-  
+  text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
+
 }
 
 .services__card1 p {
@@ -1064,7 +1065,7 @@ img.image1_rounded_corners {
   color: transparent; /* Hide the text color */
   color: #ffffff;
   /* Shadow effect */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
+  text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 
@@ -1110,7 +1111,7 @@ img.image1_rounded_corners {
 
 .services__card2 h2 {
   text-align: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
+  text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 .services__card2 p {
@@ -1124,7 +1125,7 @@ img.image1_rounded_corners {
   color: transparent; /* Hide the text color */
   color: #ffffff;
   /* Shadow effect */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
+  text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 
@@ -1163,13 +1164,12 @@ img.image1_rounded_corners {
   background-size: cover; /* Cover the entire element with the background image */
   background-position: center; /* Center the background image */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
-
-
 
 .services__card3 h2 {
   text-align: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
+  text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 .services__card3 p {
@@ -1183,7 +1183,7 @@ img.image1_rounded_corners {
   color: transparent; /* Hide the text color */
   color: #ffffff;
   /* Shadow effect */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
+  text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 .services__card3 button {
@@ -1228,7 +1228,7 @@ img.image1_rounded_corners {
 
 .services__card4 h2 {
   text-align: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
+  text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 .services__card4 p {
@@ -1237,7 +1237,7 @@ img.image1_rounded_corners {
   font-size: 22px;
   padding-left: 20px;
   padding-right: 20px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
+  text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
 
 .services__card4 button {
