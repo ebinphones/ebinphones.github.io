@@ -1030,6 +1030,7 @@ img.image1_rounded_corners {
   background-image: url('ebin - Card 0.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
   background-size: cover; /* Cover the entire element with the background image */
   background-position: center; /* Center the background image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .services__card1:nth-child(2) {
@@ -1050,7 +1051,7 @@ img.image1_rounded_corners {
 
 .services__card1 h2 {
   text-align: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
+  
 }
 
 .services__card1 p {
@@ -1102,6 +1103,7 @@ img.image1_rounded_corners {
   background-image: url('ebin - Card 1.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
   background-size: cover; /* Cover the entire element with the background image */
   background-position: center; /* Center the background image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -1160,6 +1162,7 @@ img.image1_rounded_corners {
   background-image: url('ebin - Card 3.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
   background-size: cover; /* Cover the entire element with the background image */
   background-position: center; /* Center the background image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -1219,6 +1222,7 @@ img.image1_rounded_corners {
   background-image: url('ebin - Card 2.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
   background-size: cover; /* Cover the entire element with the background image */
   background-position: center; /* Center the background image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -1809,10 +1813,10 @@ img.image1_rounded_corners {
 .slider{
   width: 1473px;
   height: 625px;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   transform: scale(.9);
-  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   justify-content:center;
 }
 
@@ -1851,7 +1855,7 @@ img.image1_rounded_corners {
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
-  transition: 1s;
+  transition: .5s;
 }
 
 .manual-btn:not(:last-child){
@@ -2476,7 +2480,7 @@ body {
   margin: 80px auto 40px;
   padding: 30px;
   background-color: #f2f2f2;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -2527,7 +2531,7 @@ button:hover {
   margin: 40px auto;
   padding: 30px;
   background-color: #f2f2f2;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -2580,7 +2584,6 @@ button:hover {
   
 
 }
-
 
 
 
