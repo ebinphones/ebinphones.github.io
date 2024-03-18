@@ -2569,9 +2569,6 @@ button:hover {
 
 
 
-
-
-
 .MobileDownload {
   margin: 0px;
   height: 575px;
@@ -2585,17 +2582,60 @@ button:hover {
 
 }
 
+.column h2{
+  font-weight: 600;
+  background: #5f81ff;
+  
+  font-weight: bold;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.column h3{
+  
+  font-size: 29px;
+  
+  background: #6d6d6d;
+  background: #6d6d6d;
+  font-weight: 500;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 32px;
+}
 
 
 
+.column1 h2{
+  font-weight: 600;
+  background: #5f81ff;
+  
+  font-weight: bold;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
 
-
-
-
-
-
-
-
-
+.column1 h3{
+  
+  font-size: 29px;
+  
+  background: #6d6d6d;
+  background: #6d6d6d;
+  font-weight: 500;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 32px;
+}
 
 
