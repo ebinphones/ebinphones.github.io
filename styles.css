@@ -2586,7 +2586,7 @@ button:hover {
   font-weight: 600;
   background: #5f81ff;
   
-  font-weight: bold;
+  
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -2596,7 +2596,7 @@ button:hover {
 
 .column h3{
   
-  font-size: 29px;
+  font-size: 26px;
   
   background: #6d6d6d;
   background: #6d6d6d;
@@ -2610,12 +2610,11 @@ button:hover {
 }
 
 
-
 .column1 h2{
   font-weight: 600;
   background: #5f81ff;
   
-  font-weight: bold;
+  
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -2625,10 +2624,10 @@ button:hover {
 
 .column1 h3{
   
-  font-size: 29px;
+  font-size: 26px;
   
   background: #6d6d6d;
-  background: #6d6d6d;
+  
   font-weight: 500;
   background-size: 100%;
   -webkit-background-clip: text;
@@ -2638,4 +2637,15 @@ button:hover {
   margin-bottom: 32px;
 }
 
+
+.column1 h3:first-child {
+  font-weight: bold;
+  font-size: 24px;
+  background: #000000;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  
+}
 
