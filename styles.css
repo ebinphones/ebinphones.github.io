@@ -607,7 +607,7 @@ background: #fff;
 .hero__description {
   font-size: 40px;
   font-weight: normal; /* Make the font normal (not bold) */
-  background: #6d6d6d; /* fallback for old browsers */
+  background: #5e5e5e; /* fallback for old browsers */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -2584,7 +2584,7 @@ button:hover {
 
 .column h2{
   font-weight: 600;
-  background: #5f81ff;
+  background: #3561ff;
   
   
   background-size: 100%;
@@ -2598,8 +2598,8 @@ button:hover {
   
   font-size: 26px;
   
-  background: #6d6d6d;
-  background: #6d6d6d;
+  background: #5e5e5e;
+  
   font-weight: 500;
   background-size: 100%;
   -webkit-background-clip: text;
@@ -2612,7 +2612,7 @@ button:hover {
 
 .column1 h2{
   font-weight: 600;
-  background: #5f81ff;
+  background: #3561ff;
   
   
   background-size: 100%;
@@ -2626,7 +2626,7 @@ button:hover {
   
   font-size: 26px;
   
-  background: #6d6d6d;
+  background: #5e5e5e;
   
   font-weight: 500;
   background-size: 100%;
