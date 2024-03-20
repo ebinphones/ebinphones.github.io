@@ -1293,6 +1293,10 @@ img.image1_rounded_corners {
 }
 
 @media screen and (min-width : 1400px){
+  img#Phone_Mockup1 {
+    display: none;
+  }
+
   #Mobile_Only {
     display: none;
   }
