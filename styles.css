@@ -23,7 +23,7 @@
   padding-top: 40px;
 }
 .navbar {
-  background: rgba(34, 34, 34, 0.8);
+  background: rgba(93, 74, 255, 0.8);
   -webkit-backdrop-filter: blur(8px); /* Increased blur radius */
   backdrop-filter: blur(8px); /* Increased blur radius */
   transition: background-color .3s cubic-bezier(.42, .00, .58, 1.00);
@@ -272,7 +272,7 @@
 
 .button {
   border: none;
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, );
   padding: 10px 32px;
   text-align: center;
   justify-content: center;
@@ -322,15 +322,15 @@
 }
 
 .button {
-    background-color: #202020; 
+    background-color: #5d4aff; 
     color: rgb(255, 255, 255); 
     border: 2px solid #ffffff;
 }
   
 .button:hover {
     background-color: #ffffff;
-    color: #202020;
-    border: 2px solid #202020;
+    color: #5d4aff;
+    border: 2px solid #5d4aff;
     transition:all 0.3s ease;
   
 }
@@ -391,7 +391,7 @@
     width: 80px;
   }
   .navbar__menu.active {
-    background: rgba(34, 34, 34, 0.8)
+    background: rgba(93, 74, 255, 0.8)
     
     
   ;
@@ -421,7 +421,7 @@
   }
   
   .button {
-      background-color: #000000; 
+      background-color: #5d4aff; 
       color: #ffffff; 
       border: 2px solid #ffffff;
   }
@@ -897,7 +897,7 @@ img.image1_rounded_corners {
 }
 
 .banner {
-  background: #000000;
+  background: #5d4aff;
   display: flex;
   flex-direction: column;
   justify-content: center;
