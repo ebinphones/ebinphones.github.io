@@ -607,7 +607,7 @@ background: #fff;
 .hero__description {
   font-size: 40px;
   font-weight: normal; /* Make the font normal (not bold) */
-  background: #000000; /* fallback for old browsers */
+  background: #353535; /* fallback for old browsers */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
