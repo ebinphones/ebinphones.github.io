@@ -1050,7 +1050,7 @@ img.image1_rounded_corners {
 }
 
 .services__card1 h2 {
-  padding-top: 40px;
+  padding-top: 120px;
   text-align: center;
   text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 
@@ -1111,7 +1111,7 @@ img.image1_rounded_corners {
 
 
 .services__card2 h2 {
-  padding-top: 40px;
+  padding-top: 120px;
   text-align: center;
   text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
@@ -1170,7 +1170,7 @@ img.image1_rounded_corners {
 }
 
 .services__card3 h2 {
-  padding-top: 40px;
+  padding-top: 120px;
   text-align: center;
   text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
@@ -1230,7 +1230,7 @@ img.image1_rounded_corners {
 
 
 .services__card4 h2 {
-  padding-top: 40px;
+  padding-top: 120px;
   text-align: center;
   text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
