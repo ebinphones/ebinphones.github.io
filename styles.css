@@ -1025,7 +1025,7 @@ img.image1_rounded_corners {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   color: #fff;
   background-image: url('ebin - Card 0.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
   background-size: cover; /* Cover the entire element with the background image */
@@ -1050,6 +1050,7 @@ img.image1_rounded_corners {
 }
 
 .services__card1 h2 {
+  padding-top: 40px;
   text-align: center;
   text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 
@@ -1099,7 +1100,7 @@ img.image1_rounded_corners {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   color: #fff;
   background-image: url('ebin - Card 7.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
   background-size: cover; /* Cover the entire element with the background image */
@@ -1110,6 +1111,7 @@ img.image1_rounded_corners {
 
 
 .services__card2 h2 {
+  padding-top: 40px;
   text-align: center;
   text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
@@ -1158,7 +1160,7 @@ img.image1_rounded_corners {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   color: #ffffff;
   background-image: url('ebin - Card 4.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
   background-size: cover; /* Cover the entire element with the background image */
@@ -1168,6 +1170,7 @@ img.image1_rounded_corners {
 }
 
 .services__card3 h2 {
+  padding-top: 40px;
   text-align: center;
   text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
@@ -1217,7 +1220,7 @@ img.image1_rounded_corners {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   color: #ffffff;
   background-image: url('ebin - testing image.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
   background-size: cover; /* Cover the entire element with the background image */
@@ -1227,6 +1230,7 @@ img.image1_rounded_corners {
 
 
 .services__card4 h2 {
+  padding-top: 40px;
   text-align: center;
   text-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow with offset (1px, 1px), blur radius (2px), and color (rgba(0, 0, 0, 0.5)) */
 }
