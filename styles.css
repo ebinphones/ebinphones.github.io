@@ -661,8 +661,6 @@ background: #fff;
   height: 90%;
   z-index: 1;
   width: 100%;
-  padding-left:30px; ;
-  padding-right:30px; ;
   
 }
 
@@ -780,8 +778,6 @@ img.image1_rounded_corners {
     width: 100%;
     margin: 0 auto;
     height: 90%;
-    padding-left:5px; ;
-    padding-right:5px; ;
   }
 
   .main__img--container {
@@ -2677,52 +2673,5 @@ button:hover {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Flex container styling */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
-  justify-content: flex-start; /* Start items from the beginning of the container */
-  padding-left:40px; 
-  padding-right:40px; 
-}
-
-/* Flex item styling */
-.flex-item {
-  width: calc(25% - 20px); /* 4 items per row with spacing */
-  margin: 10px; /* Add margin around each item */
-  box-sizing: border-box; /* Include padding in width calculation */
-}
-
-/* Box styling for each item */
-.item-box {
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Ensure images fill the container */
-.item-box img {
-  max-width: 100%; /* Ensure images don't exceed box width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 900px) {
-  .flex-item {
-      width: calc(50% - 20px); /* 2 items per row with spacing for smaller screens */
-  }
 }
 
