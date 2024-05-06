@@ -907,6 +907,9 @@ img.image1_rounded_corners {
   justify-content: center;
   align-items: center;
   padding: 3rem 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
   
 }
 
