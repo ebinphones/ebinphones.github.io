@@ -337,39 +337,3 @@
 
 
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get Exclusive Updates!</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<script>
-  function submitContactForm() {
-    var x = document.getElementById("hideonsubmit");
-    x.style.display = "none";
-    document.getElementById("formheader").innerHTML = "Thank you for your submission! We will contact you soon!";
-  }
-</script>
-<body>
-  <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-  <div class="container_exclusive">
-    <h1 id="formheader">Get exclusive updates, join our mailing list!</h1>
-    <div id="hideonsubmit">
-      <p>Stay up to date with new ebin features, beta test access.</p>
-      <form id="contactform" action="https://hello-world-1-yjvz4puiba-uc.a.run.app/contactemail" method="get" target="dummyframe">
-        <input type="email" name="email" placeholder="Enter your email here..." required>
-      </form>
-      <button type="submit" onclick="submitContactForm()" form="contactform">Sign up</button>
-    </div>
-  </div>
-</body>
-</html>
-
-
-
-
-
-
