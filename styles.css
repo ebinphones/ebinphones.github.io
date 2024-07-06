@@ -2088,6 +2088,21 @@ img.image1_rounded_corners {
   word-wrap: break-word;
   
 }
+.pricing-text_bottom h1 {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 14px;
+  text-align:center;
+  padding-left: 15%;
+  padding-right: 15%;
+  line-height: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: static;
+  word-wrap: break-word;
+  color: #555
+  
+}
 
 .support-mockup  {
   display: flex;
@@ -2792,12 +2807,7 @@ button:hover {
 
 
 
-
-
-
-
-
-.container_pricing {
+.container_pricing_0 {
   max-width: 1000px;
   margin: 50px auto;
   background-color: white;
@@ -2807,18 +2817,55 @@ button:hover {
   border-top: 5px solid #5d4afe;
 }
 
-.container_pricing {
+.container_pricing_0 {
   padding: 20px;
   background-color: #f4f4f4;
   border-bottom: 2px solid #e1e1e1;
 }
 
-.container_pricing h1 {
+.container_pricing_0 h1 {
   margin: 0;
   font-size: 24px;
 }
 
-.container_pricing p {
+.container_pricing_0 p {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+.container_pricing_1 {
+  max-width: 1000px;
+  margin: 10px auto 10px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-top: 5px solid #5d4afe;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.container_pricing_1 {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #e1e1e1;
+}
+
+.container_pricing_1 h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.container_pricing_1 p {
   margin: 5px 0 0;
   color: #555;
 }
