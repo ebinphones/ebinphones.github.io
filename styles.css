@@ -1405,6 +1405,7 @@ img.image1_rounded_corners {
     
   }
   
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -2768,16 +2769,6 @@ button:hover {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 .powered h1 {
   background-color: #000000;
   background-size: 100%;
@@ -2792,20 +2783,6 @@ button:hover {
   
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .container_pricing_0 {
   max-width: 1000px;
@@ -2952,4 +2929,17 @@ button:hover {
 
 .learn-more-button:hover {
   background-color: #5d4afe;
+}
+
+
+
+@media (max-width: 1000px) {
+  .container_pricing_0 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .container_pricing_1 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
