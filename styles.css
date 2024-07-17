@@ -2891,8 +2891,14 @@ button:hover {
   margin: 0;
   font-size: 20px;
   color: #333;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
-
+.card-content h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
 .pricing {
   text-align: right;
   max-width: 30%;
@@ -2964,13 +2970,27 @@ button:hover {
 .card-content h3 {
   display: none;
 }
+
+.card-content h4{
+  display: none;
+}
+
 @media (max-width: 750px) {
   .pricing {
       display: none;
   }
   .card-content h3 {
     display: block !important;
+  }
+  .card-content h4{
+    display: block !important;
+  }
 }
 
 
+
+.card-content p {
+  margin: 10px 0;
+  color: #555;
+  
 }
