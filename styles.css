@@ -2905,13 +2905,42 @@ button:hover {
 }
 
 .pricing h3 {
-  margin: 0;
+  display: block;
   font-size: 18px;
   color: #333;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+
+.pricing span {
+  display: block;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.pricing p {
+  margin: 5px 0 20px;
+  font-size: 14px;
+  color: #888;
 }
 
 .price-details {
   margin-top: 10px;
+  
+}
+
+.price-details h1 {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .price-details span {
@@ -2985,7 +3014,11 @@ button:hover {
   .card-content h4{
     display: block !important;
   }
+  .price-details {
+    display: block !important;
+  }
 }
+
 
 
 
@@ -2993,4 +3026,8 @@ button:hover {
   margin: 10px 0;
   color: #555;
   
+}
+
+.price-details{
+  display: none;
 }
