@@ -138,9 +138,10 @@
   padding-right: 30%;
   padding-top: 50px;
   padding-bottom: 140px;
-  line-height: 28px;
+  line-height:28px;
   
 }
+
 .howitworkscontainer {
   text-align: left;
   padding-left: 30%;
@@ -1033,7 +1034,7 @@ img.image1_rounded_corners {
   flex-direction: column;
   justify-content: start;
   color: #fff;
-  background-image: url('ebin - Card 0.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-image: url('ebin - Card 0 (Updated).png'); /* Replace 'your-image-url.jpg' with the URL of your image */
   background-size: cover; /* Cover the entire element with the background image */
   background-position: center; /* Center the background image */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -1108,7 +1109,7 @@ img.image1_rounded_corners {
   flex-direction: column;
   justify-content: start;
   color: #fff;
-  background-image: url('ebin - Card 7.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-image: url('ebin - Card 1 (Updated).png'); /* Replace 'your-image-url.jpg' with the URL of your image */
   background-size: cover; /* Cover the entire element with the background image */
   background-position: center; /* Center the background image */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -3018,28 +3019,6 @@ button:hover {
     display: block !important;
   }
 }
-
-
-
-
-.card-content p {
-  margin: 10px 0;
-  color: #555;
-  
-}
-
-.price-details{
-  display: none;
-}
-
-
-
-
-
-
-
-
-
 
 
 
