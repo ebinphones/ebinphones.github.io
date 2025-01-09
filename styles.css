@@ -1563,11 +1563,12 @@ img.image1_rounded_corners {
   .download_mobile {   
     height: 480px;
     width: 900px;
-    border-radius: 20px;
+    border-radius: 50%; /* Fully rounded corners */
     background: linear-gradient(to bottom, #5D4AFF, #8069FF);
     transform: scale(1);
     transition: transform 0.5s ease;
-  }
+}
+
 
     .download_mobile .ebin_Logo {
       width: 30%; /* this will make the image fit the box width */
