@@ -2516,11 +2516,11 @@ span{
 
 
 body {
-  font-family: sans-serif;
+  font-family: "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  font-family: "Inter", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  
 }
 
 .container_exclusive_partner {
@@ -3026,6 +3026,11 @@ button:hover {
 
 
 
+h1, h2, h3 {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+               sans-serif;
+}
 
 
 
