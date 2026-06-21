@@ -421,6 +421,12 @@ button:hover{ background: var(--violet-700); }
   flex: 0 0 auto;
 }
 
+.button-list--equal-support .my-button{
+  width: 220px;
+  max-width: 100%;
+  flex: 0 0 auto;
+}
+
 @media (max-width: 768px){
   .button-list--left{
     justify-content: center;

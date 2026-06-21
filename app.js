@@ -54,8 +54,12 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  // Use instant scroll so it always reaches the very top, even on mobile
+  // where the global smooth-scroll behavior can sometimes get interrupted
+  // partway (e.g. by the address bar collapsing).
+  window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  document.body.scrollTop = 0; // Safari fallback
+  document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Opera fallback
 }
 
 const slider = document.querySelector('.slider');
@@ -63,26 +67,28 @@ let isSwiping = false;
 let startX = 0;
 let currentX = 0;
 
-slider.addEventListener('touchstart', (event) => {
-  isSwiping = true;
-  startX = event.touches[0].clientX;
-});
+if (slider) {
+  slider.addEventListener('touchstart', (event) => {
+    isSwiping = true;
+    startX = event.touches[0].clientX;
+  });
 
-slider.addEventListener('touchmove', (event) => {
-  if (!isSwiping) return;
-  currentX = event.touches[0].clientX;
-});
+  slider.addEventListener('touchmove', (event) => {
+    if (!isSwiping) return;
+    currentX = event.touches[0].clientX;
+  });
 
-slider.addEventListener('touchend', () => {
-  isSwiping = false;
-  if (currentX < startX) {
-    // Swiped left
-  }
-  if (currentX > startX) {
-    // Swiped right
-  }
-  startX = 0;
-  currentX = 0;
-});
+  slider.addEventListener('touchend', () => {
+    isSwiping = false;
+    if (currentX < startX) {
+      // Swiped left
+    }
+    if (currentX > startX) {
+      // Swiped right
+    }
+    startX = 0;
+    currentX = 0;
+  });
+}
 
 
