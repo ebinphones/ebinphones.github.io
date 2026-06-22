@@ -208,6 +208,106 @@ ul{ list-style: none; }
 .howitworkscontainer b{ color: var(--ink); }
 .howitworkscontainer a{ color: var(--violet-600); text-decoration: underline; }
 
+/* ================================================================
+   How it works — illustrated step summary (mobile only)
+   ================================================================ */
+.hiw-illustrated{
+  display: none;
+}
+.hiw-illustrated .eyebrow{
+  font-size: 20px;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.hiw-illustrated .signal{
+  height: 20px;
+}
+.hiw-illustrated .signal span{
+  width: 6px;
+}
+.hiw-illustrated__title{
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0 auto 28px;
+  max-width: 320px;
+}
+.hiw-steps{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.hiw-step{
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: var(--shadow-sm);
+}
+.hiw-step__icon{
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--grad-brand);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  flex-shrink: 0;
+}
+.hiw-step__num{
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+}
+.hiw-step p{
+  margin: 0;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.hiw-download{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 32px;
+}
+.hiw-download__cta{
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+}
+.hiw-download__badge{
+  height: 54px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+  transition: transform .2s ease;
+}
+.hiw-download__badge:active{ transform: scale(0.96); }
+
 .Terms_and_Conditions_of_Sell h1{
   max-width: 760px;
   margin: 0 auto;
@@ -1077,12 +1177,14 @@ button:hover{ background: var(--violet-700); }
   width: 100%;
   min-width: 0;
   overflow-x: auto;
-  scroll-snap-type: x proximity;
+  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
   padding: 6px 0 20px;
   background: transparent;
   scrollbar-width: none;
+  will-change: scroll-position;
+  contain: layout style;
 }
 .mobile-card-carousel::-webkit-scrollbar{ display: none; }
 
@@ -1097,7 +1199,8 @@ button:hover{ background: var(--violet-700); }
   box-shadow: none;
   background: transparent;
   display: block;
-  transition: transform .25s ease;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 .mobile-card-slide img{
   width: 100%;
@@ -1576,6 +1679,12 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
     padding-left: 9%;
     padding-right: 9%;
   }
+
+  .hiw-illustrated{
+    display: block;
+    padding: 10px 7% 40px;
+  }
+  .howitworkscontainer{ display: none; }
 }
 
 @media screen and (max-width: 480px){

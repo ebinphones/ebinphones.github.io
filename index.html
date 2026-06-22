@@ -60,7 +60,7 @@
           <img src="iPhone15Home.png" alt="ebin app home screen">
         </div>
         <div class="hero__actions">
-          <a href="#sign-up" class="learn_more_button">Get the app</a>
+          <a href="#sign-up" class="learn_more_button" id="getAppBtn">Get the app</a>
           <a href="/How_it_works.html" class="button">See how it works</a>
         </div>
 
@@ -309,6 +309,21 @@
     <script src="app.js"></script>
     <script type="text/javascript">
       (function(){
+        var btn = document.getElementById('getAppBtn');
+        if (!btn) return;
+        var ua = navigator.userAgent || '';
+        // Treat any Apple device/platform (iPhone, iPad, or Mac desktop) as "Apple";
+        // everything else (Windows, Android, Linux, ChromeOS, etc.) gets Google Play.
+        var isApple = /iPad|iPhone|iPod|Macintosh/.test(ua) || navigator.platform === 'MacIntel';
+        if (isApple) {
+          btn.setAttribute('href', 'https://apps.apple.com/us/app/ebin/id1563293790');
+        } else {
+          btn.setAttribute('href', 'https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US');
+        }
+      })();
+      </script>
+    <script type="text/javascript">
+      (function(){
         var slider = document.querySelector('.slider');
         if (!slider) return;
 
@@ -486,48 +501,6 @@
             centerOn(allSlides[firstRealIndex]);
           }
         }
-
-        function closestIndexNow(){
-          var carouselRect = carousel.getBoundingClientRect();
-          var containerCenter = carouselRect.left + carouselRect.width / 2;
-          var closestIndex = 0, closestDist = Infinity;
-          allSlides.forEach(function(slide, i){
-            var r = slide.getBoundingClientRect();
-            var c = r.left + r.width / 2;
-            var d = Math.abs(c - containerCenter);
-            if (d < closestDist){ closestDist = d; closestIndex = i; }
-          });
-          return closestIndex;
-        }
-
-        function smoothCenterOn(el){
-          var carouselRect = carousel.getBoundingClientRect();
-          var elRect = el.getBoundingClientRect();
-          var elCenter = (elRect.left - carouselRect.left) + elRect.width / 2;
-          var containerCenter = carouselRect.width / 2;
-          carousel.scrollBy({ left: (elCenter - containerCenter), behavior: 'smooth' });
-        }
-
-        // Make small swipes decisive: a short flick is enough to move one
-        // card, instead of needing a long drag for native momentum to carry it.
-        var touchStartX = 0, touchStartIndex = 0, touchTracking = false;
-        var SWIPE_THRESHOLD = 28;
-
-        carousel.addEventListener('touchstart', function(e){
-          touchTracking = true;
-          touchStartX = e.touches[0].clientX;
-          touchStartIndex = closestIndexNow();
-        }, { passive: true });
-
-        carousel.addEventListener('touchend', function(e){
-          if (!touchTracking) return;
-          touchTracking = false;
-          var deltaX = e.changedTouches[0].clientX - touchStartX;
-          if (Math.abs(deltaX) < SWIPE_THRESHOLD) return;
-          var targetIndex = deltaX < 0 ? touchStartIndex + 1 : touchStartIndex - 1;
-          targetIndex = Math.max(0, Math.min(allSlides.length - 1, targetIndex));
-          smoothCenterOn(allSlides[targetIndex]);
-        }, { passive: true });
       })();
       </script>
   </body>

@@ -53,6 +53,55 @@
       <h1 id = "Sell">How it works</h1>
     </div>
 
+    <!-- Mobile-only illustrated step summaries -->
+    <div class="hiw-illustrated">
+      <h2 class="hiw-illustrated__title">Sell your device</h2>
+      <div class="hiw-steps">
+        <div class="hiw-step">
+          <div class="hiw-step__num">1</div>
+          <div class="hiw-step__icon"><i class="fas fa-clock"></i></div>
+          <p>Get a quick quote for your phone</p>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-step__num">2</div>
+          <div class="hiw-step__icon"><i class="fas fa-box"></i></div>
+          <p>Package and ship your device to us</p>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-step__num">3</div>
+          <div class="hiw-step__icon"><i class="fas fa-hand-holding-usd"></i></div>
+          <p>We inspect your device and send your payment</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hiw-illustrated">
+      <h2 class="hiw-illustrated__title">Repair your device</h2>
+      <div class="hiw-steps">
+        <div class="hiw-step">
+          <div class="hiw-step__num">1</div>
+          <div class="hiw-step__icon"><i class="fas fa-calendar-check"></i></div>
+          <p>Book a repair &mdash; choose bring in or ship in</p>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-step__num">2</div>
+          <div class="hiw-step__icon"><i class="fas fa-truck"></i></div>
+          <p>Send or drop off your device</p>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-step__num">3</div>
+          <div class="hiw-step__icon"><i class="fas fa-tools"></i></div>
+          <p>We repair it and notify you when it's ready</p>
+        </div>
+      </div>
+      <div class="hiw-download">
+        <p class="hiw-download__cta">Get the ebin&#176; app now!</p>
+        <a href="https://www.ebinusa.com/qrcode" id="hiwDownloadBtn">
+          <img src="appstoreBadge.png" id="hiwDownloadBadge" alt="Download ebin" class="hiw-download__badge">
+        </a>
+      </div>
+    </div>
+
     <div class="howitworkscontainer">
       <div class="row">
         <div class="SellFeature">
@@ -208,6 +257,25 @@
             <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
           </div>
           <script src="app.js"></script>
+    <script type="text/javascript">
+      (function(){
+        var btn = document.getElementById('hiwDownloadBtn');
+        var badge = document.getElementById('hiwDownloadBadge');
+        if (!btn) return;
+        var ua = navigator.userAgent || '';
+        var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /Android/.test(ua);
+        if (isIOS) {
+          btn.setAttribute('href', 'https://apps.apple.com/us/app/ebin/id1563293790');
+          if (badge) badge.setAttribute('src', 'appstoreBadge.png');
+        } else if (isAndroid) {
+          btn.setAttribute('href', 'https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US');
+          if (badge) badge.setAttribute('src', 'ebin - GooglePlay.png');
+        } else {
+          btn.setAttribute('href', 'https://www.ebinusa.com/qrcode');
+        }
+      })();
+      </script>
 </body>
 
 
