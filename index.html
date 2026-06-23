@@ -366,7 +366,14 @@
           </div>
         </div>
       </div>
-      <section class="social__media">
+      <div class="footer__download">
+              <p>Get the ebin&#176; app now!</p>
+              <div class="footer__download-badges">
+                <a href="https://apps.apple.com/us/app/ebin/id1563293790" target="_blank"><img src="appstoreBadge.png" alt="Download on the App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US" target="_blank"><img src="ebin - GooglePlay.png" alt="Get it on Google Play"></a>
+              </div>
+            </div>
+            <section class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
             <a href="/" id="footer__logo">ebin&#176;</a>
@@ -514,10 +521,9 @@
         var carousel = document.getElementById('mobileCardCarousel');
         if (!carousel) return;
         var realCards = Array.from(carousel.querySelectorAll('.mobile-card-slide'));
-        if (realCards.length < 2) return;
+        if (!realCards.length) return;
 
-        // Route taps to the right store based on platform, before cloning
-        // so the clones inherit the correct link too.
+        // Route taps to the right store based on platform.
         var ua = navigator.userAgent || '';
         var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
         var isAndroid = /Android/.test(ua);
@@ -531,16 +537,48 @@
           realCards.forEach(function(card){ card.setAttribute('href', storeUrl); });
         }
 
-        // Clone the first and last cards to create a seamless infinite loop:
-        // [clone-of-last] [card1] [card2] ... [cardN] [clone-of-first]
-        var firstClone = realCards[0].cloneNode(true);
-        var lastClone = realCards[realCards.length - 1].cloneNode(true);
-        carousel.insertBefore(lastClone, realCards[0]);
-        carousel.appendChild(firstClone);
+        // Build a page indicator (one segment per slide), hidden until the
+        // person touches/drags the carousel, then it fades back out.
+        var indicator = document.createElement('div');
+        indicator.className = 'mobile-carousel-indicator';
+        indicator.id = 'mobileCarouselIndicator';
+        realCards.forEach(function(){
+          var seg = document.createElement('span');
+          seg.className = 'mobile-carousel-indicator__seg';
+          indicator.appendChild(seg);
+        });
+        carousel.insertAdjacentElement('afterend', indicator);
+        var segs = Array.from(indicator.querySelectorAll('.mobile-carousel-indicator__seg'));
 
-        var allSlides = Array.from(carousel.querySelectorAll('.mobile-card-slide'));
-        var firstRealIndex = 1;
-        var lastRealIndex = allSlides.length - 2;
+        function closestIndexNow(){
+          var carouselRect = carousel.getBoundingClientRect();
+          var containerCenter = carouselRect.left + carouselRect.width / 2;
+          var closestIndex = 0, closestDist = Infinity;
+          realCards.forEach(function(slide, i){
+            var r = slide.getBoundingClientRect();
+            var c = r.left + r.width / 2;
+            var d = Math.abs(c - containerCenter);
+            if (d < closestDist){ closestDist = d; closestIndex = i; }
+          });
+          return closestIndex;
+        }
+
+        function updateIndicator(){
+          var idx = closestIndexNow();
+          segs.forEach(function(seg, i){ seg.classList.toggle('active', i === idx); });
+        }
+
+        var hideTimer;
+        function showIndicator(){
+          clearTimeout(hideTimer);
+          indicator.classList.add('visible');
+        }
+        function scheduleHide(){
+          clearTimeout(hideTimer);
+          hideTimer = setTimeout(function(){ indicator.classList.remove('visible'); }, 1200);
+        }
+
+        updateIndicator();
 
         function centerOn(el){
           var carouselRect = carousel.getBoundingClientRect();
@@ -550,36 +588,21 @@
           var prevBehavior = carousel.style.scrollBehavior;
           carousel.style.scrollBehavior = 'auto';
           carousel.scrollLeft += (elCenter - containerCenter);
-          // restore on next frame so user-driven scrolling keeps native snap smoothness
           requestAnimationFrame(function(){ carousel.style.scrollBehavior = prevBehavior; });
         }
-
-        function init(){ centerOn(allSlides[firstRealIndex]); }
+        function init(){ centerOn(realCards[0]); updateIndicator(); }
         window.addEventListener('load', init);
         setTimeout(init, 50);
 
         var settleTimer;
         carousel.addEventListener('scroll', function(){
+          updateIndicator();
           clearTimeout(settleTimer);
-          settleTimer = setTimeout(onSettled, 120);
+          settleTimer = setTimeout(scheduleHide, 50);
         }, { passive: true });
 
-        function onSettled(){
-          var carouselRect = carousel.getBoundingClientRect();
-          var containerCenter = carouselRect.left + carouselRect.width / 2;
-          var closestIndex = 0, closestDist = Infinity;
-          allSlides.forEach(function(slide, i){
-            var r = slide.getBoundingClientRect();
-            var c = r.left + r.width / 2;
-            var d = Math.abs(c - containerCenter);
-            if (d < closestDist){ closestDist = d; closestIndex = i; }
-          });
-          if (closestIndex === 0) {
-            centerOn(allSlides[lastRealIndex]);
-          } else if (closestIndex === allSlides.length - 1) {
-            centerOn(allSlides[firstRealIndex]);
-          }
-        }
+        carousel.addEventListener('touchstart', showIndicator, { passive: true });
+        carousel.addEventListener('touchend', scheduleHide, { passive: true });
       })();
       </script>
     <script type="text/javascript">

@@ -269,10 +269,10 @@ ul{ list-style: none; }
 }
 .hiw-step__num{
   position: absolute;
-  top: -14px;
-  left: -14px;
-  width: 38px;
-  height: 38px;
+  top: -10px;
+  left: -10px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: var(--ink);
   color: #fff;
@@ -1286,6 +1286,7 @@ button:hover{ background: var(--violet-700); }
   margin: 0;
   width: 100%;
   display: none;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -1328,6 +1329,29 @@ button:hover{ background: var(--violet-700); }
   object-fit: cover;
 }
 .mobile-card-slide:active{ transform: scale(0.97); }
+
+.mobile-carousel-indicator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events: none;
+}
+.mobile-carousel-indicator.visible{ opacity: 1; }
+.mobile-carousel-indicator__seg{
+  width: 16px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--line);
+  transition: background .2s ease, width .2s ease;
+}
+.mobile-carousel-indicator__seg.active{
+  background: var(--violet-600);
+  width: 26px;
+}
 
 .download_mobile{
   display: flex;
@@ -1567,6 +1591,32 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
 
 .social__media{ border-top: 1px solid rgba(255,255,255,0.12); }
 
+.footer__download{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 6% 30px;
+  text-align: center;
+}
+.footer__download p{
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+.footer__download-badges{
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.footer__download-badges img{
+  height: 44px;
+  width: auto;
+  border-radius: 8px;
+  transition: transform .2s ease;
+}
+.footer__download-badges img:hover{ transform: translateY(-2px); }
+
 .social__media--wrap{
   max-width: 1200px;
   margin: 0 auto;
@@ -1648,9 +1698,16 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
 .panel{
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
+  border-top: none;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
   overflow: hidden;
-  transition: max-height .3s ease;
+  box-sizing: border-box;
+  max-height: 0;
+  padding: 0 20px;
+  transition: max-height .3s ease, padding .3s ease;
+}
+.accordion.active + .panel{
+  padding: 16px 20px 20px;
 }
 .accordion{
   width: 100%;
@@ -1662,6 +1719,24 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   font-weight: 600;
   color: var(--ink);
   cursor: pointer;
+  position: relative;
+}
+.accordion::after{
+  content: '\f078';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform .25s ease;
+  color: var(--violet-600);
+  font-size: 13px;
+}
+.accordion.active::after{ transform: translateY(-50%) rotate(180deg); }
+.accordion.active{
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  background: var(--violet-100);
 }
 .accordion:hover{ background: var(--violet-100); }
 .profile-card{
