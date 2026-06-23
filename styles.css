@@ -148,7 +148,13 @@ ul{ list-style: none; }
 .sell-text-center,
 .repair-text-center{
   text-align: center;
-  padding-top: 60px;
+  padding: 60px 8% 10px;
+}
+
+.privacy-text-center h1,
+.sell-text-center h1,
+.repair-text-center h1{
+  font-size: clamp(2rem, 4vw, 2.75rem);
 }
 
 .privacy-text-center p,
@@ -1671,6 +1677,98 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
 }
 .detel p{ margin-bottom: 14px; }
 .detel a{ font-weight: 600; color: var(--violet-600); }
+
+/* ================================================================
+   Screen quality visual comparison (Premium vs Affordable)
+   ================================================================ */
+.screen-compare{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 40px auto 50px;
+  padding: 0 6%;
+}
+.screen-compare__col{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 30px 26px;
+  box-shadow: var(--shadow-sm);
+}
+.screen-compare__header{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.screen-compare__badge{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  flex-shrink: 0;
+}
+.screen-compare__badge--premium{ background: var(--grad-brand); }
+.screen-compare__badge--affordable{ background: linear-gradient(135deg, var(--violet-400), var(--violet-300)); }
+.screen-compare__header h2{
+  font-size: 1.3rem;
+  margin: 0;
+}
+.screen-compare__header h2 span{
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted);
+  display: block;
+  letter-spacing: 0.04em;
+}
+.screen-compare__row{
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.screen-compare__row:last-child{ margin-bottom: 0; }
+.screen-compare__icon{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--violet-100);
+  color: var(--violet-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.screen-compare__text{
+  display: flex;
+  flex-direction: column;
+}
+.screen-compare__text strong{
+  color: var(--ink);
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+.screen-compare__text span{
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px){
+  .screen-compare{
+    grid-template-columns: 1fr;
+    padding: 0 9%;
+  }
+}
 .all-mockup img{ border-radius: var(--radius-md); box-shadow: var(--shadow-md); }
 .support-text{
   max-width: 700px;
