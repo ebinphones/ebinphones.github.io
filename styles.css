@@ -192,7 +192,7 @@ ul{ list-style: none; }
   max-width: 760px;
   margin: 0 auto;
   text-align: left;
-  padding: 50px 24px 0;
+  padding: 50px 6% 0;
   line-height: 1.8;
   color: var(--ink-soft);
 }
@@ -1893,7 +1893,7 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
 
   .hiw-illustrated{
     display: block;
-    padding: 10px 7% 40px;
+    padding: 10px 6% 40px;
   }
   .howitworkscontainer{ display: none; }
 }
