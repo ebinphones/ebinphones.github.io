@@ -1624,6 +1624,11 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   padding: 0;
   flex-shrink: 0;
   box-shadow: var(--shadow-md);
+  align-items: center;
+  justify-content: center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
 }
 #myBtn:hover{ background: var(--violet-700); box-shadow: 0 0 0 4px var(--violet-300); }
 
