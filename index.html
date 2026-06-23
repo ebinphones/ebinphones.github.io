@@ -130,6 +130,84 @@
       </div>
     </div>
 
+    <!-- Repair Cost Estimator -->
+    <div class="repair-estimator" id="repair-pricing">
+      <div class="eyebrow" style="justify-content:center;">
+        <span class="signal"><span></span><span></span><span></span></span>
+        Repair Pricing
+      </div>
+      <h1>Get an instant repair estimate</h1>
+      <p class="repair-estimator__intro">Select your device and the type of damage to see an estimated cost.</p>
+
+      <div class="repair-estimator__panel">
+        <div class="repair-estimator__field">
+          <label for="re-device">Choose your device</label>
+          <select id="re-device">
+            <option value="iPhone 16e">iPhone 16e</option>
+            <option value="iPhone 16 Pro Max">iPhone 16 Pro Max</option>
+            <option value="iPhone 16 Pro">iPhone 16 Pro</option>
+            <option value="iPhone 16 Plus">iPhone 16 Plus</option>
+            <option value="iPhone 16" selected>iPhone 16</option>
+            <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+            <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+            <option value="iPhone 15 Plus">iPhone 15 Plus</option>
+            <option value="iPhone 15">iPhone 15</option>
+            <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+            <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+            <option value="iPhone 14 Plus">iPhone 14 Plus</option>
+            <option value="iPhone 14">iPhone 14</option>
+            <option value="iPhone SE 2022 (3rd Gen)">iPhone SE 2022 (3rd Gen)</option>
+            <option value="iPhone SE 2020 (2nd Gen)">iPhone SE 2020 (2nd Gen)</option>
+            <option value="iPhone 13 Pro Max">iPhone 13 Pro Max</option>
+            <option value="iPhone 13 Pro">iPhone 13 Pro</option>
+            <option value="iPhone 13 Mini">iPhone 13 Mini</option>
+            <option value="iPhone 13">iPhone 13</option>
+            <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
+            <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+            <option value="iPhone 12 Mini">iPhone 12 Mini</option>
+            <option value="iPhone 12">iPhone 12</option>
+            <option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+            <option value="iPhone 11 Pro">iPhone 11 Pro</option>
+            <option value="iPhone 11">iPhone 11</option>
+            <option value="iPhone XR">iPhone XR</option>
+            <option value="iPhone XS Max">iPhone XS Max</option>
+            <option value="iPhone XS">iPhone XS</option>
+            <option value="iPhone X">iPhone X</option>
+            <option value="iPhone 8 Plus">iPhone 8 Plus</option>
+            <option value="iPhone 8">iPhone 8</option>
+            <option value="iPhone 7 Plus">iPhone 7 Plus</option>
+            <option value="iPhone 7">iPhone 7</option>
+          </select>
+        </div>
+
+        <div class="repair-estimator__field">
+          <p class="repair-estimator__field-label">Select damage type</p>
+          <div class="repair-estimator__options" id="re-options">
+            <button type="button" class="re-option" data-type="Battery service">Battery service</button>
+            <button type="button" class="re-option" data-type="Back glass damage">Back glass damage</button>
+            <button type="button" class="re-option" data-type="Rear camera damage">Rear camera damage</button>
+            <button type="button" class="re-option" data-type="Screen damage">Screen damage</button>
+            <button type="button" class="re-option" data-type="Charging port damage">Charging port damage</button>
+          </div>
+        </div>
+
+        <div class="repair-estimator__field" id="re-tier-field" style="display:none;">
+          <p class="repair-estimator__field-label">Select screen quality</p>
+          <div class="repair-estimator__options" id="re-tier">
+            <button type="button" class="re-option re-option--tier" data-tier="premium">Premium (OLED)</button>
+            <button type="button" class="re-option re-option--tier" data-tier="affordable">Affordable (LCD)</button>
+          </div>
+          <a href="Quality_Guidelines.html" class="repair-estimator__learn-more">Not sure which to pick? Learn more about screen quality options</a>
+        </div>
+
+        <div class="repair-estimator__result" id="re-result">
+          <span class="re-result__label" id="re-result-label">Select a damage type above</span>
+          <span class="re-result__price" id="re-price"></span>
+          <a href="repair_appointment.html" class="learn_more_button" id="re-cta" style="display:none;">Get service</a>
+        </div>
+      </div>
+    </div>
+
     <!-- Services Section -->
     <div class="services" id="services">
       <div class="eyebrow" style="justify-content:center;">
@@ -501,6 +579,311 @@
             centerOn(allSlides[firstRealIndex]);
           }
         }
+      })();
+      </script>
+    <script type="text/javascript">
+      (function(){
+        // Real screen + battery pricing. Devices with two screen quality
+        // options list both a "premium" (OLED/Soft) and "affordable" (LCD/LED)
+        // price; devices with only one option use "single". Back glass, rear
+        // camera, screen+back glass, and other-damage pricing isn't finalized
+        // yet, so those show a "coming soon" note for every device for now.
+        var SCREEN_PRICING = {
+          "iPhone 7": { single: 74.99 },
+          "iPhone 7 Plus": { single: 79.99 },
+          "iPhone 8": { single: 74.99 },
+          "iPhone 8 Plus": { single: 79.99 },
+          "iPhone X": { premium: 134.99, affordable: 94.99 },
+          "iPhone XS": { premium: 134.99, affordable: 94.99 },
+          "iPhone XS Max": { premium: 144.99, affordable: 114.99 },
+          "iPhone XR": { single: 94.99 },
+          "iPhone 11": { single: 94.99 },
+          "iPhone 11 Pro": { premium: 134.99, affordable: 94.99 },
+          "iPhone 11 Pro Max": { premium: 144.99, affordable: 104.99 },
+          "iPhone 12": { premium: 134.99, affordable: 94.99 },
+          "iPhone 12 Pro": { premium: 134.99, affordable: 94.99 },
+          "iPhone 12 Pro Max": { premium: 144.99, affordable: 114.99 },
+          "iPhone 12 Mini": { affordable: 94.99 },
+          "iPhone 13": { premium: 134.99, affordable: 94.99 },
+          "iPhone 13 Pro": { premium: 134.99, affordable: 114.99 },
+          "iPhone 13 Pro Max": { premium: 154.99, affordable: 114.99 },
+          "iPhone 13 Mini": { premium: 134.99, affordable: 94.99 },
+          "iPhone SE 2020 (2nd Gen)": { single: 74.99 },
+          "iPhone SE 2022 (3rd Gen)": { single: 74.99 },
+          "iPhone 14": { premium: 134.99, affordable: 99.99 },
+          "iPhone 14 Plus": { premium: 154.99, affordable: 114.99 },
+          "iPhone 14 Pro": { premium: 235, affordable: 114.99 },
+          "iPhone 14 Pro Max": { premium: 275, affordable: 134.99 },
+          "iPhone 15": { premium: 134.99, affordable: 99.99 },
+          "iPhone 15 Plus": { premium: 154.99, affordable: 114.99 },
+          "iPhone 15 Pro": { premium: 234, affordable: 114.99 },
+          "iPhone 15 Pro Max": { premium: 274, affordable: 134.99 },
+          "iPhone 16": { premium: 134.99, affordable: 99.99 },
+          "iPhone 16 Plus": { premium: 154.99, affordable: 114.99 },
+          "iPhone 16 Pro": { premium: 199.99, affordable: 114.99 },
+          "iPhone 16 Pro Max": { premium: 259.99, affordable: 134.99 },
+          "iPhone 16e": { premium: 134.99, affordable: 99.99 }
+        };
+
+        var BATTERY_PRICING = {
+          "iPhone 7": 54.99,
+          "iPhone 7 Plus": 74.99,
+          "iPhone 8": 54.99,
+          "iPhone 8 Plus": 74.99,
+          "iPhone X": 74.99,
+          "iPhone XS": 74.99,
+          "iPhone XS Max": 74.99,
+          "iPhone XR": 74.99,
+          "iPhone 11": 74.99,
+          "iPhone 11 Pro": 74.99,
+          "iPhone 11 Pro Max": 74.99,
+          "iPhone 12": 74.99,
+          "iPhone 12 Pro": 74.99,
+          "iPhone 12 Pro Max": 74.99,
+          "iPhone 12 Mini": 74.99,
+          "iPhone 13": 74.99,
+          "iPhone 13 Pro": 74.99,
+          "iPhone 13 Pro Max": 74.99,
+          "iPhone 13 Mini": 74.99,
+          "iPhone SE 2020 (2nd Gen)": 54.99,
+          "iPhone SE 2022 (3rd Gen)": 54.99,
+          "iPhone 14": 84.99,
+          "iPhone 14 Plus": 84.99,
+          "iPhone 14 Pro": 84.99,
+          "iPhone 14 Pro Max": 84.99,
+          "iPhone 15": 84.99,
+          "iPhone 15 Plus": 84.99,
+          "iPhone 15 Pro": 84.99,
+          "iPhone 15 Pro Max": 84.99,
+          "iPhone 16": 84.99,
+          "iPhone 16 Plus": 84.99,
+          "iPhone 16 Pro": 84.99,
+          "iPhone 16 Pro Max": 84.99
+        };
+
+        var REAR_CAMERA_PRICING = {
+          "iPhone 7": 54.99,
+          "iPhone 7 Plus": 74.99,
+          "iPhone 8": 54.99,
+          "iPhone 8 Plus": 74.99,
+          "iPhone X": 74.99,
+          "iPhone XS": 74.99,
+          "iPhone XS Max": 74.99,
+          "iPhone XR": 74.99,
+          "iPhone 11": 84.99,
+          "iPhone 11 Pro": 84.99,
+          "iPhone 11 Pro Max": 84.99,
+          "iPhone 12": 84.99,
+          "iPhone 12 Pro": 104.99,
+          "iPhone 12 Pro Max": 104.99,
+          "iPhone 12 Mini": 84.99,
+          "iPhone 13": 84.99,
+          "iPhone 13 Pro": 104.99,
+          "iPhone 13 Pro Max": 104.99,
+          "iPhone 13 Mini": 84.99,
+          "iPhone SE 2020 (2nd Gen)": 54.99,
+          "iPhone SE 2022 (3rd Gen)": 54.99,
+          "iPhone 14": 109.99,
+          "iPhone 14 Plus": 109.99,
+          "iPhone 14 Pro": 114.99,
+          "iPhone 14 Pro Max": 114.99,
+          "iPhone 15": 109.99,
+          "iPhone 15 Plus": 109.99,
+          "iPhone 15 Pro": 119.99,
+          "iPhone 15 Pro Max": 119.99,
+          "iPhone 16": 109.99,
+          "iPhone 16 Plus": 109.99,
+          "iPhone 16 Pro": 119.99,
+          "iPhone 16 Pro Max": 119.99
+        };
+
+        var CHARGING_PORT_PRICING = {
+          "iPhone 7": 69.99,
+          "iPhone 7 Plus": 79.99,
+          "iPhone 8": 69.99,
+          "iPhone 8 Plus": 79.99,
+          "iPhone X": 89.99,
+          "iPhone XS": 89.99,
+          "iPhone XS Max": 99.99,
+          "iPhone XR": 99.99,
+          "iPhone 11": 99.99,
+          "iPhone 11 Pro": 99.99,
+          "iPhone 11 Pro Max": 109.99,
+          "iPhone 12": 99.99,
+          "iPhone 12 Pro": 99.99,
+          "iPhone 12 Pro Max": 109.99,
+          "iPhone 12 Mini": 99.99,
+          "iPhone 13": 99.99,
+          "iPhone 13 Pro": 99.99,
+          "iPhone 13 Pro Max": 109.99,
+          "iPhone 13 Mini": 99.99,
+          "iPhone SE 2020 (2nd Gen)": 69.99,
+          "iPhone SE 2022 (3rd Gen)": 69.99,
+          "iPhone 14": 99.99,
+          "iPhone 14 Plus": 109.99,
+          "iPhone 14 Pro": 99.99,
+          "iPhone 14 Pro Max": 109.99,
+          "iPhone 15": 99.99,
+          "iPhone 15 Plus": 109.99,
+          "iPhone 15 Pro": 99.99,
+          "iPhone 15 Pro Max": 109.99,
+          "iPhone 16": 99.99,
+          "iPhone 16 Plus": 109.99,
+          "iPhone 16 Pro": 99.99,
+          "iPhone 16 Pro Max": 109.99
+        };
+
+        var BACK_GLASS_PRICING = {
+          "iPhone 14": 104.99,
+          "iPhone 14 Plus": 114.99,
+          "iPhone 15": 104.99,
+          "iPhone 15 Plus": 114.99,
+          "iPhone 15 Pro": 104.99,
+          "iPhone 15 Pro Max": 114.99,
+          "iPhone 16": 104.99,
+          "iPhone 16 Plus": 114.99,
+          "iPhone 16 Pro": 104.99,
+          "iPhone 16 Pro Max": 114.99
+        };
+
+        var deviceSelect = document.getElementById('re-device');
+        var optionButtons = document.querySelectorAll('#re-options .re-option');
+        var tierField = document.getElementById('re-tier-field');
+        var tierButtons = document.querySelectorAll('#re-tier .re-option--tier');
+        var resultLabel = document.getElementById('re-result-label');
+        var priceEl = document.getElementById('re-price');
+        var cta = document.getElementById('re-cta');
+        if (!deviceSelect || !optionButtons.length) return;
+
+        // Route "Get service" to the right store based on platform (same
+        // convention used elsewhere on the site): Apple devices (incl. Mac)
+        // go to the App Store, everything else goes to Google Play.
+        if (cta) {
+          var ua = navigator.userAgent || '';
+          var isApple = /iPad|iPhone|iPod|Macintosh/.test(ua) || navigator.platform === 'MacIntel';
+          cta.setAttribute('href', isApple
+            ? 'https://apps.apple.com/us/app/ebin/id1563293790'
+            : 'https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US');
+          cta.setAttribute('target', '_blank');
+        }
+
+        var selectedType = null;
+        var selectedTier = null;
+
+        function fmt(n){
+          return '$' + (n % 1 === 0 ? n : n.toFixed(2));
+        }
+        function showPrice(label, price){
+          resultLabel.textContent = label;
+          priceEl.textContent = fmt(price);
+          cta.style.display = 'inline-flex';
+        }
+        function showComingSoon(){
+          resultLabel.textContent = "We don't offer that repair for this device";
+          priceEl.textContent = '';
+          cta.style.display = 'none';
+        }
+        function showPrompt(msg){
+          resultLabel.textContent = msg;
+          priceEl.textContent = '';
+          cta.style.display = 'none';
+        }
+
+        function update(){
+          var device = deviceSelect.value;
+
+          if (!selectedType) {
+            tierField.style.display = 'none';
+            return;
+          }
+
+          if (selectedType === 'Screen damage') {
+            var entry = SCREEN_PRICING[device];
+            if (!entry) {
+              tierField.style.display = 'none';
+              showComingSoon();
+              return;
+            }
+            if (entry.single != null) {
+              tierField.style.display = 'none';
+              showPrice('Screen damage \u2014 ' + device, entry.single);
+              return;
+            }
+            // This device has tiered pricing — show the tier picker.
+            tierField.style.display = 'block';
+            if (!selectedTier) {
+              showPrompt('Choose a screen quality option above');
+              return;
+            }
+            var price = entry[selectedTier];
+            if (price == null) {
+              showComingSoon();
+              return;
+            }
+            var tierName = selectedTier === 'premium' ? 'Premium (OLED)' : 'Affordable (LCD)';
+            showPrice('Screen damage, ' + tierName + ' \u2014 ' + device, price);
+            return;
+          }
+
+          tierField.style.display = 'none';
+
+          if (selectedType === 'Battery service') {
+            var bprice = BATTERY_PRICING[device];
+            if (bprice == null) { showComingSoon(); return; }
+            showPrice('Battery service \u2014 ' + device, bprice);
+            return;
+          }
+
+          if (selectedType === 'Rear camera damage') {
+            var rprice = REAR_CAMERA_PRICING[device];
+            if (rprice == null) { showComingSoon(); return; }
+            showPrice('Rear camera damage \u2014 ' + device, rprice);
+            return;
+          }
+
+          if (selectedType === 'Charging port damage') {
+            var cprice = CHARGING_PORT_PRICING[device];
+            if (cprice == null) { showComingSoon(); return; }
+            showPrice('Charging port damage \u2014 ' + device, cprice);
+            return;
+          }
+
+          if (selectedType === 'Back glass damage') {
+            var gprice = BACK_GLASS_PRICING[device];
+            if (gprice == null) { showComingSoon(); return; }
+            showPrice('Back glass damage \u2014 ' + device, gprice);
+            return;
+          }
+
+          // Safety fallback (shouldn't be reached — every option above returns).
+          showComingSoon();
+        }
+
+        optionButtons.forEach(function(btn){
+          btn.addEventListener('click', function(){
+            optionButtons.forEach(function(b){ b.classList.remove('is-active'); });
+            btn.classList.add('is-active');
+            selectedType = btn.getAttribute('data-type');
+            selectedTier = null;
+            tierButtons.forEach(function(b){ b.classList.remove('is-active'); });
+            update();
+          });
+        });
+
+        tierButtons.forEach(function(btn){
+          btn.addEventListener('click', function(){
+            tierButtons.forEach(function(b){ b.classList.remove('is-active'); });
+            btn.classList.add('is-active');
+            selectedTier = btn.getAttribute('data-tier');
+            update();
+          });
+        });
+
+        deviceSelect.addEventListener('change', function(){
+          selectedTier = null;
+          tierButtons.forEach(function(b){ b.classList.remove('is-active'); });
+          update();
+        });
       })();
       </script>
   </body>
