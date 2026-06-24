@@ -306,7 +306,7 @@ ul{ list-style: none; }
   margin: 0;
 }
 .hiw-download__badge{
-  height: 54px;
+  height: 44px;
   width: auto;
   border-radius: 10px;
   box-shadow: var(--shadow-md);
@@ -375,7 +375,7 @@ ul{ list-style: none; }
 .empty-space-general-questions,
 .empty-space-support-bottom,
 .empty-space-support-top{
-  height: 40px;
+  height: 10px;
 }
 
 .h2color{ color: var(--violet-600); }
@@ -1308,6 +1308,12 @@ button:hover{ background: var(--violet-700); }
 }
 .mobile-card-carousel::-webkit-scrollbar{ display: none; }
 
+.mobile-card-spacer{
+  flex: 0 0 14vw;
+  height: 1px;
+  background: transparent;
+}
+
 .mobile-card-slide{
   flex: 0 0 72vw;
   max-width: 320px;
@@ -1334,23 +1340,23 @@ button:hover{ background: var(--violet-700); }
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
-  margin-top: 4px;
+  gap: 8px;
+  margin-top: 8px;
   opacity: 0;
   transition: opacity .35s ease;
   pointer-events: none;
 }
 .mobile-carousel-indicator.visible{ opacity: 1; }
 .mobile-carousel-indicator__seg{
-  width: 16px;
-  height: 4px;
-  border-radius: 2px;
+  width: 22px;
+  height: 7px;
+  border-radius: 3.5px;
   background: var(--line);
   transition: background .2s ease, width .2s ease;
 }
 .mobile-carousel-indicator__seg.active{
   background: var(--violet-600);
-  width: 26px;
+  width: 36px;
 }
 
 .download_mobile{
@@ -1591,28 +1597,20 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
 
 .social__media{ border-top: 1px solid rgba(255,255,255,0.12); }
 
-.footer__download{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 6% 30px;
-  text-align: center;
+.footer__link--items--download h2{
+  margin-bottom: 8px;
 }
-.footer__download p{
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.1rem;
-  margin-bottom: 16px;
-}
-.footer__download-badges{
+
+.footer__link--items--download .footer__download-badges{
   display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 0;
 }
 .footer__download-badges img{
-  height: 44px;
+  height: 36px;
   width: auto;
-  border-radius: 8px;
+  border-radius: 7px;
   transition: transform .2s ease;
 }
 .footer__download-badges img:hover{ transform: translateY(-2px); }
