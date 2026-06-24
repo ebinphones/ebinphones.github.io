@@ -58,7 +58,7 @@
    ================================================================ */
 *{ box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
 
-html{ background: var(--bg); scroll-padding-top: 132px; }
+html{ background: var(--bg); scroll-padding-top: 90px; }
 
 body{
   font-family: var(--font-body);
@@ -570,82 +570,6 @@ button:hover{ background: var(--violet-700); }
 /* ================================================================
    Navbar
    ================================================================ */
-/* ================================================================
-   Sticky "Get the app" banner (sits above the navbar, every page)
-   ================================================================ */
-.app-banner{
-  position: sticky;
-  top: 0;
-  z-index: 1001;
-  height: 52px;
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 0 14px;
-  box-shadow: var(--shadow-sm);
-}
-.app-banner__close{
-  background: none;
-  border: none;
-  color: var(--muted);
-  font-size: 18px;
-  line-height: 1;
-  cursor: pointer;
-  padding: 4px 6px;
-  flex-shrink: 0;
-}
-.app-banner__icon{
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
-  background: var(--grad-brand);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 15px;
-  flex-shrink: 0;
-}
-.app-banner__text{
-  flex: 1 1 auto;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.25;
-}
-.app-banner__title{
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--ink);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.app-banner__subtitle{
-  font-size: 11px;
-  color: var(--muted);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.app-banner__cta{
-  flex-shrink: 0;
-  background: var(--violet-600);
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 7px 16px;
-  border-radius: var(--radius-pill);
-  text-decoration: none;
-  white-space: nowrap;
-}
-.app-banner__cta:hover{ background: var(--violet-700); }
-.app-banner.is-hidden{ display: none; }
-
 .navbar{
   background: rgba(91, 69, 245, 0.98);
   height: 80px;
@@ -654,7 +578,7 @@ button:hover{ background: var(--violet-700); }
   align-items: center;
   font-size: 18px;
   position: sticky;
-  top: 52px;
+  top: 0;
   z-index: 999;
   border-bottom: 1px solid rgba(255,255,255,0.12);
 }
@@ -1419,8 +1343,7 @@ button:hover{ background: var(--violet-700); }
   align-items: center;
   gap: 8px;
   margin-top: 8px;
-  opacity: 0;
-  transition: opacity .35s ease;
+  opacity: 1;
   pointer-events: none;
 }
 .mobile-carousel-indicator.visible{ opacity: 1; }
@@ -2104,6 +2027,7 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   .footer__links{ flex-direction: column; gap: 30px; }
   .card{ flex-direction: column; }
   .pricing, .price-details{ text-align: left; max-width: 100%; }
+  .slider-wrap{ display: none; }
   .MobileDownload{ display: flex; }
 
   .container,

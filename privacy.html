@@ -28,43 +28,6 @@
 
   <body>
     <!-- Navbar Section -->
-    <div class="app-banner" id="appBanner">
-      <button class="app-banner__close" id="appBannerClose" aria-label="Close">&times;</button>
-      <div class="app-banner__icon">e</div>
-      <div class="app-banner__text">
-        <span class="app-banner__title">ebin&#176; App</span>
-        <span class="app-banner__subtitle">Sell, repair, and buy electronics</span>
-      </div>
-      <a href="#" class="app-banner__cta" id="appBannerCta">View</a>
-    </div>
-    <script>
-      (function(){
-        var banner = document.getElementById('appBanner');
-        if (!banner) return;
-        try {
-          if (sessionStorage.getItem('ebinAppBannerDismissed') === '1') {
-            banner.classList.add('is-hidden');
-            return;
-          }
-        } catch(e){}
-        var ua = navigator.userAgent || '';
-        var isApple = /iPad|iPhone|iPod|Macintosh/.test(ua) || navigator.platform === 'MacIntel';
-        var cta = document.getElementById('appBannerCta');
-        if (cta) {
-          cta.setAttribute('href', isApple
-            ? 'https://apps.apple.com/us/app/ebin/id1563293790'
-            : 'https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US');
-          cta.setAttribute('target', '_blank');
-        }
-        var closeBtn = document.getElementById('appBannerClose');
-        if (closeBtn) {
-          closeBtn.addEventListener('click', function(){
-            banner.classList.add('is-hidden');
-            try { sessionStorage.setItem('ebinAppBannerDismissed', '1'); } catch(e){}
-          });
-        }
-      })();
-    </script>
     <nav class="navbar">
       <div class="navbar__container">
         <a href="index.html " id="navbar__logo"><img src = "ebin_HomePage_Logo.png"></a></a>
