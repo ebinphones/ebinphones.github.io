@@ -78,18 +78,28 @@
       <a href="#">Coming Soon</a>
     </div>
 
-    <div class="container_exclusive_partner">
-      <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-      <h1 id="formheader">Drive more customers with ebin&#176;</h1>
-      <div id="hideonsubmit">
-        <p>Partner with ebin&#176; to enhance your business. Enter your email to join the waiting list for future updates and become part of the ebin&#176; network.</p>
-        <form id="businesscontactform" action="https://hello-world-1-yjvz4puiba-uc.a.run.app/contactbusinessemail" method="get" target="dummyframe" onsubmit="return submitBusinessContactForm(event)">
-          <input type="text" form="businesscontactform" name="name" placeholder="Business Name" required>
-          <input type="text" form="businesscontactform" name="address" placeholder="Business Address" required>
-          <input type="email" form="businesscontactform" name="email" placeholder="Email Address" required>
-          <input type="tel" form="businesscontactform" name="phone" placeholder="Business Phone" required>
-          <button form="businesscontactform" type="submit">Sign up</button>
-        </form>
+    <div class="merchant-signup">
+      <div class="merchant-signup__card">
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <h1 id="formheader">Drive more customers with ebin&#176;</h1>
+        <div id="hideonsubmit">
+          <p>Partner with ebin&#176; to enhance your business. Enter your email to join the waiting list for future updates and become part of the ebin&#176; network.</p>
+          <form id="businesscontactform" action="https://hello-world-1-yjvz4puiba-uc.a.run.app/contactbusinessemail" method="get" target="dummyframe" onsubmit="return submitBusinessContactForm(event)">
+            <div class="merchant-signup__field">
+              <input type="text" form="businesscontactform" name="name" placeholder="Business Name" required>
+            </div>
+            <div class="merchant-signup__field">
+              <input type="text" form="businesscontactform" name="address" placeholder="Business Address" required>
+            </div>
+            <div class="merchant-signup__field">
+              <input type="email" form="businesscontactform" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="merchant-signup__field">
+              <input type="tel" form="businesscontactform" name="phone" placeholder="Business Phone" required>
+            </div>
+            <button form="businesscontactform" type="submit" class="merchant-signup__submit">Sign up</button>
+          </form>
+        </div>
       </div>
     </div>
 
