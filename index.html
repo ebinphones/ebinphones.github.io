@@ -570,16 +570,6 @@
           segs.forEach(function(seg, i){ seg.classList.toggle('active', i === idx); });
         }
 
-        var hideTimer;
-        function showIndicator(){
-          clearTimeout(hideTimer);
-          indicator.classList.add('visible');
-        }
-        function scheduleHide(){
-          clearTimeout(hideTimer);
-          hideTimer = setTimeout(function(){ indicator.classList.remove('visible'); }, 1200);
-        }
-
         updateIndicator();
 
         function centerOn(el){
@@ -596,15 +586,9 @@
         window.addEventListener('load', init);
         setTimeout(init, 50);
 
-        var settleTimer;
         carousel.addEventListener('scroll', function(){
           updateIndicator();
-          clearTimeout(settleTimer);
-          settleTimer = setTimeout(scheduleHide, 50);
         }, { passive: true });
-
-        carousel.addEventListener('touchstart', showIndicator, { passive: true });
-        carousel.addEventListener('touchend', scheduleHide, { passive: true });
       })();
       </script>
     <script type="text/javascript">

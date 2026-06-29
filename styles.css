@@ -906,6 +906,7 @@ button:hover{ background: var(--violet-700); }
   padding: 36px;
   box-shadow: var(--shadow-sm);
   text-align: left;
+  contain: content;
 }
 .repair-estimator__field{ margin-bottom: 28px; }
 .repair-estimator__field label,
@@ -946,7 +947,7 @@ button:hover{ background: var(--violet-700); }
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: border-color .2s ease, background .2s ease, color .2s ease;
+  transition: border-color .15s ease, background-color .15s ease;
 }
 .re-option:hover{ border-color: var(--violet-500); background: var(--violet-100); }
 .re-option.is-active{
@@ -1342,8 +1343,7 @@ button:hover{ background: var(--violet-700); }
   align-items: center;
   gap: 8px;
   margin-top: 8px;
-  opacity: 0;
-  transition: opacity .35s ease;
+  opacity: 1;
   pointer-events: none;
 }
 .mobile-carousel-indicator.visible{ opacity: 1; }
