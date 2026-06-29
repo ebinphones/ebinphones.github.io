@@ -641,6 +641,66 @@ button:hover{ background: var(--violet-700); }
 }
 .navbar__links:hover::after{ width: 28px; }
 
+.navbar__lang{
+  position: relative;
+}
+.navbar__lang-btn{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff;
+  border-radius: var(--radius-pill);
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+.navbar__lang-btn:hover{ background: rgba(255,255,255,0.2); }
+.navbar__lang-dropdown{
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  min-width: 160px;
+  padding: 6px;
+  z-index: 1000;
+}
+.navbar__lang-dropdown.is-open{ display: block; }
+.navbar__lang-dropdown li{ list-style: none; }
+.navbar__lang-dropdown button{
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  color: var(--ink);
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+.navbar__lang-dropdown button:hover{ background: var(--violet-100); }
+.navbar__lang-dropdown button.is-active{
+  background: var(--violet-600);
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 960px){
+  .navbar__lang-dropdown{
+    left: auto;
+    right: 0;
+  }
+}
+
 .navbar__btn{
   display: flex;
   justify-content: center;
@@ -708,7 +768,7 @@ button:hover{ background: var(--violet-700); }
   letter-spacing: -0.01em;
 }
 
-.hero__heading span{
+.hero__heading-highlight{
   color: #32285e;
 }
 
@@ -2003,6 +2063,22 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   .navbar__item{ width: 100%; height: auto; }
   .navbar__links{ width: 100%; padding: 18px 0; justify-content: center; }
   .navbar__links::after{ display: none; }
+
+  .navbar__lang{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .navbar__lang-dropdown{
+    position: static;
+    margin: 10px auto 0;
+    left: auto;
+    right: auto;
+  }
+  .navbar__lang-dropdown.is-open{
+    display: block;
+  }
 
   .navbar__btn{ padding: 14px 24px; width: 100%; }
   .navbar__btn .button{ width: 100%; }

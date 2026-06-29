@@ -14,6 +14,7 @@
     <link
     rel="stylesheet"
     href="./styles.css"/>
+    <script src="translations.js"></script>
 
     <title>ebin&#176; Support</title>
   </head>
@@ -28,17 +29,27 @@
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="index.html#home" class="navbar__links" id="home-page">Home</a>
-            <div id="index.html#about"></div>
+            <a href="index.html#home" class="navbar__links" id="home-page" data-i18n="nav_home">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="index.html#about" class="navbar__links" id="about-page">About</a>
+            <a href="index.html#about" class="navbar__links" id="about-page" data-i18n="nav_about">About</a>
           </li>
           <li class="navbar__item">
-            <a href="index.html#services" class="navbar__links" id="services-page">Support</a>
+            <a href="index.html#services" class="navbar__links" id="services-page" data-i18n="nav_support">Support</a>
+          </li>
+          <li class="navbar__item navbar__lang">
+            <button class="navbar__lang-btn" id="navLangBtn" type="button" aria-label="Select language">
+              <i class="fas fa-globe"></i> <span id="navLangCode">EN</span>
+            </button>
+            <ul class="navbar__lang-dropdown" id="navLangDropdown">
+              <li><button type="button" data-lang="en">English</button></li>
+              <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+              <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+              <li><button type="button" data-lang="tl">Tagalog</button></li>
+            </ul>
           </li>
           <li class="navbar__btn">
-            <a href="index.html#sign-up" class="button" id="signup">Download</a>
+            <a href="index.html#sign-up" class="button" id="signup" data-i18n="nav_download">Download</a>
           </li>
         </ul>
       </div>
@@ -162,32 +173,32 @@ class="empty-space-general-questions">
             <div class="footer__links">
               <div class="footer__link--wrapper">
                 <div class="footer__link--items">
-                  <h2>About Us</h2>
-                  <a href="/index.html#home">Home</a> <a href="/How_it_works.html">How it works</a>
-                  <a href="/privacy.html">Privacy Policy</a> <a href="/TermOfService.html">Terms of Service</a> <a href="/Quality_Guidelines.html">Quality Guidelines</a>
+                  <h2 data-i18n="footer_about">About Us</h2>
+                  <a href="/index.html#home" data-i18n="footer_home">Home</a> <a href="/How_it_works.html" data-i18n="footer_howitworks">How it works</a>
+                  <a href="/privacy.html" data-i18n="footer_privacy">Privacy Policy</a> <a href="/TermOfService.html" data-i18n="footer_terms">Terms of Service</a> <a href="/Quality_Guidelines.html" data-i18n="footer_quality">Quality Guidelines</a>
                 </div>
                 <div class="footer__link--items">
-                  <h2>Service</h2>
-                  <a href="/repair_appointment.html">Repair & Service (Beta)</a>
+                  <h2 data-i18n="footer_service">Service</h2>
+                  <a href="/repair_appointment.html" data-i18n="footer_repair_service">Repair & Service (Beta)</a>
                 </div>
                 <div class="footer__link--items">
-                  <h2>Merchant</h2>
-                  <a href="/partner_with_ebin.html">Partner with ebin&#176; (Coming Soon)</a> 
-                  <a href="/Pricing.html">Pricing (Coming Soon)</a>
+                  <h2 data-i18n="footer_merchant">Merchant</h2>
+                  <a href="/partner_with_ebin.html" data-i18n="footer_partner">Partner with ebin&#176; (Coming Soon)</a> 
+                  <a href="/Pricing.html" data-i18n="footer_pricing">Pricing (Coming Soon)</a>
                 </div>
                 <div class="footer__link--items">
-                  <h2>Contact Us</h2>
-                  <a href="/Contact.html">Contact</a> <a href="/support.html">Support</a>
+                  <h2 data-i18n="footer_contact">Contact Us</h2>
+                  <a href="/Contact.html" data-i18n="footer_contact_link">Contact</a> <a href="/support.html" data-i18n="footer_support">Support</a>
                   
                 </div>
               </div>
               <div class="footer__link--wrapper">
                 <div class="footer__link--items">
-                  <h2>Social Media</h2>
-                  <a href="https://www.facebook.com/people/Ebin-One-Place-For-All-Electronics/100068000297913/">Facebook</a><a href="https://www.instagram.com/ebin_usa/">Instagram</a> <a href="https://linktr.ee/ebinusa">Linktree</a> 
+                  <h2 data-i18n="footer_social">Social Media</h2>
+                  <a href="https://www.facebook.com/people/Ebin-One-Place-For-All-Electronics/100068000297913/" data-i18n="footer_facebook">Facebook</a><a href="https://www.instagram.com/ebin_usa/" data-i18n="footer_instagram">Instagram</a> <a href="https://linktr.ee/ebinusa" data-i18n="footer_linktree">Linktree</a> 
                 </div>
                 <div class="footer__link--items footer__link--items--download">
-                  <h2>Download the App</h2>
+                  <h2 data-i18n="footer_download_app">Download the App</h2>
                   <div class="footer__download-badges">
                     <a href="https://apps.apple.com/us/app/ebin/id1563293790" target="_blank"><img src="appstoreBadge.png" alt="Download on the App Store"></a>
                     <a href="https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US" target="_blank"><img src="ebin - GooglePlay.png" alt="Get it on Google Play"></a>
@@ -200,7 +211,7 @@ class="empty-space-general-questions">
                 <div class="footer__logo">
                   <a href="/" id="footer__logo">ebin&#176;</a>
                 </div>
-                <p class="website__rights">© ebin&#176; 2026. All rights reserved</p>
+                <p class="website__rights">© ebin&#176; 2026. <span data-i18n="footer_rights">All rights reserved</span></p>
                 <div class="social__icons">
                   <a href="https://www.facebook.com/people/Ebin-One-Place-For-All-Electronics/100068000297913/" class="social__icon--link" target="_blank"
                   ><i class="fab fa-facebook"></i
