@@ -95,7 +95,7 @@ ul{ list-style: none; }
    ================================================================ */
 .eyebrow{
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   font-family: var(--font-mono);
   font-size: 13px;
@@ -2021,7 +2021,7 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
 }
 
 @media screen and (max-width: 960px){
-  .navbar__container{ height: 80px; padding: 0 24px; }
+  .navbar__container{ height: 80px; padding: 0 24px; justify-content: flex-start; }
 
   .navbar__menu{
     display: grid;
@@ -2072,7 +2072,8 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
     display: flex;
     align-items: center;
     position: relative;
-    margin-right: 8px;
+    margin-left: auto;
+    margin-right: 14px;
   }
   .navbar__lang-btn--mobile{
     padding: 6px 10px;
