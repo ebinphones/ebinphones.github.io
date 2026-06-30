@@ -641,8 +641,12 @@ button:hover{ background: var(--violet-700); }
 }
 .navbar__links:hover::after{ width: 28px; }
 
+.navbar__mobile-lang{ display: none; }
+
 .navbar__lang{
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .navbar__lang-btn{
   display: flex;
@@ -2060,25 +2064,42 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   #mobile-menu.is-active .bar:nth-child(1){ transform: translateY(8px) rotate(45deg); }
   #mobile-menu.is-active .bar:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
 
+  /* Hide the desktop lang item that's inside the collapsible menu on mobile */
+  .navbar__item.navbar__lang{ display: none; }
+
+  /* Mobile-only lang button shown in the top bar */
+  .navbar__mobile-lang{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 8px;
+  }
+  .navbar__lang-btn--mobile{
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  .navbar__lang-dropdown--mobile{
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    left: auto;
+    z-index: 1100;
+    min-width: 150px;
+  }
+  .navbar__lang-dropdown--mobile.is-open{ display: block; }
+
   .navbar__item{ width: 100%; height: auto; }
   .navbar__links{ width: 100%; padding: 18px 0; justify-content: center; }
   .navbar__links::after{ display: none; }
 
-  .navbar__lang{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-  }
-  .navbar__lang-dropdown{
+  /* Keep the desktop dropdown hidden on mobile since we replaced it */
+  .navbar__lang-dropdown:not(.navbar__lang-dropdown--mobile){
     position: static;
     margin: 10px auto 0;
     left: auto;
     right: auto;
   }
-  .navbar__lang-dropdown.is-open{
-    display: block;
-  }
+  .navbar__lang-dropdown.is-open{ display: block; }
 
   .navbar__btn{ padding: 14px 24px; width: 100%; }
   .navbar__btn .button{ width: 100%; }

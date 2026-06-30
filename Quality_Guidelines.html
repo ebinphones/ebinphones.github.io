@@ -26,6 +26,17 @@
     <nav class="navbar">
       <div class="navbar__container">
         <a href="index.html " id="navbar__logo"><img src = "ebin_HomePage_Logo.png"></a></a>
+        <div class="navbar__mobile-lang" id="navLangMobile">
+          <button class="navbar__lang-btn navbar__lang-btn--mobile" id="navLangBtnMobile" type="button" aria-label="Select language">
+            <i class="fas fa-globe"></i> <span id="navLangCodeMobile">EN</span>
+          </button>
+          <ul class="navbar__lang-dropdown navbar__lang-dropdown--mobile" id="navLangDropdownMobile">
+            <li><button type="button" data-lang="en">English</button></li>
+            <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+            <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+            <li><button type="button" data-lang="tl">Tagalog</button></li>
+          </ul>
+        </div>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> 
           <span class="bar"></span>
@@ -79,8 +90,8 @@
 
 
     <div class="privacy-text-center">
-        <h1>Screen Quality Guidelines</h1>
-        <p>Guidelines for screen quality options for repair.</p>
+        <h1 data-i18n="quality_title">Screen Quality Guidelines</h1>
+        <p data-i18n="quality_subtitle">Guidelines for screen quality options for repair.</p>
     </div>
 
     <!-- Visual screen quality comparison -->
@@ -88,56 +99,56 @@
       <div class="screen-compare__col">
         <div class="screen-compare__header">
           <div class="screen-compare__badge screen-compare__badge--premium"><i class="fas fa-gem"></i></div>
-          <h2>Premium <span>(OLED)</span></h2>
+          <h2>Premium <span data-i18n="quality_premium_oled">(OLED)</span></h2>
         </div>
 
         <div class="screen-compare__row">
           <div class="screen-compare__icon"><i class="fas fa-award"></i></div>
-          <div class="screen-compare__text"><strong>Closer to OEM</strong><span>Matches your original screen the closest</span></div>
+          <div class="screen-compare__text"><strong data-i18n="quality_premium_1_title">Closer to OEM</strong><span data-i18n="quality_premium_1">Matches your original screen the closest</span></div>
         </div>
         <div class="screen-compare__row">
           <div class="screen-compare__icon"><i class="fas fa-palette"></i></div>
-          <div class="screen-compare__text"><strong>Truer color &amp; deeper blacks</strong><span>Richer contrast, more accurate color</span></div>
+          <div class="screen-compare__text"><strong data-i18n="quality_premium_2_title">Truer color &amp; deeper blacks</strong><span data-i18n="quality_premium_2">Richer contrast, more accurate color</span></div>
         </div>
         <div class="screen-compare__row">
           <div class="screen-compare__icon"><i class="fas fa-bolt"></i></div>
-          <div class="screen-compare__text"><strong>More power efficient</strong><span>Pixels only light up when needed</span></div>
+          <div class="screen-compare__text"><strong data-i18n="quality_premium_3_title">More power efficient</strong><span data-i18n="quality_premium_3">Pixels only light up when needed</span></div>
         </div>
         <div class="screen-compare__row">
           <div class="screen-compare__icon"><i class="fas fa-expand"></i></div>
-          <div class="screen-compare__text"><strong>Wider viewing angles</strong><span>Looks great from any angle</span></div>
+          <div class="screen-compare__text"><strong data-i18n="quality_premium_4_title">Wider viewing angles</strong><span data-i18n="quality_premium_4">Looks great from any angle</span></div>
         </div>
         <div class="screen-compare__row">
           <div class="screen-compare__icon"><i class="fas fa-tag"></i></div>
-          <div class="screen-compare__text"><strong>Premium price</strong><span>Best quality available</span></div>
+          <div class="screen-compare__text"><strong data-i18n="quality_premium_5_title">Premium price</strong><span data-i18n="quality_premium_5">Best quality available</span></div>
         </div>
       </div>
 
       <div class="screen-compare__col">
         <div class="screen-compare__header">
           <div class="screen-compare__badge screen-compare__badge--affordable"><i class="fas fa-thumbs-up"></i></div>
-          <h2>Affordable <span>(LCD)</span></h2>
+          <h2>Affordable <span data-i18n="quality_affordable_lcd">(LCD)</span></h2>
         </div>
 
         <div class="screen-compare__row">
           <div class="screen-compare__icon"><i class="fas fa-dollar-sign"></i></div>
-          <div class="screen-compare__text"><strong>Budget-friendly</strong><span>Great quality at a lower price</span></div>
+          <div class="screen-compare__text"><strong data-i18n="quality_affordable_1_title">Budget-friendly</strong><span data-i18n="quality_affordable_1">Great quality at a lower price</span></div>
         </div>
         <div class="screen-compare__row">
           <div class="screen-compare__icon"><i class="fas fa-palette"></i></div>
-          <div class="screen-compare__text"><strong>Vibrant colors</strong><span>Bright, accurate everyday colors</span></div>
+          <div class="screen-compare__text"><strong data-i18n="quality_affordable_2_title">Vibrant colors</strong><span data-i18n="quality_affordable_2">Bright, accurate everyday colors</span></div>
         </div>
         <div class="screen-compare__row">
           <div class="screen-compare__icon"><i class="fas fa-hourglass-half"></i></div>
-          <div class="screen-compare__text"><strong>Longer lifespan</strong><span>No risk of OLED burn-in over time</span></div>
+          <div class="screen-compare__text"><strong data-i18n="quality_affordable_3_title">Longer lifespan</strong><span data-i18n="quality_affordable_3">No risk of OLED burn-in over time</span></div>
         </div>
         <div class="screen-compare__row">
           <div class="screen-compare__icon"><i class="fas fa-shield-alt"></i></div>
-          <div class="screen-compare__text"><strong>Reliable durability</strong><span>Built to handle everyday use</span></div>
+          <div class="screen-compare__text"><strong data-i18n="quality_affordable_4_title">Reliable durability</strong><span data-i18n="quality_affordable_4">Built to handle everyday use</span></div>
         </div>
         <div class="screen-compare__row">
           <div class="screen-compare__icon"><i class="fas fa-tag"></i></div>
-          <div class="screen-compare__text"><strong>Affordable price</strong><span>Most value for your money</span></div>
+          <div class="screen-compare__text"><strong data-i18n="quality_affordable_5_title">Affordable price</strong><span data-i18n="quality_affordable_5">Most value for your money</span></div>
         </div>
       </div>
     </div>
@@ -147,7 +158,7 @@
     -->
 
     <div class="support_details" style="text-align:center;">
-      <h3>Contact Us</h3>
+      <h3 data-i18n="quality_contact_heading">Contact Us</h3>
       <p><b>Email.</b> If you have any questions or suggestions about our LCD Screen Quality, do not hesitate to contact us at <a href="mailto:info@ebinusa.com">info@ebinusa.com</a>.</p>
     </div>
 

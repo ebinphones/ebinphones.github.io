@@ -22,6 +22,17 @@
     <nav class="navbar">
       <div class="navbar__container">
         <a href="index.html " id="navbar__logo"><img src = "ebin_HomePage_Logo.png"></a></a>
+        <div class="navbar__mobile-lang" id="navLangMobile">
+          <button class="navbar__lang-btn navbar__lang-btn--mobile" id="navLangBtnMobile" type="button" aria-label="Select language">
+            <i class="fas fa-globe"></i> <span id="navLangCodeMobile">EN</span>
+          </button>
+          <ul class="navbar__lang-dropdown navbar__lang-dropdown--mobile" id="navLangDropdownMobile">
+            <li><button type="button" data-lang="en">English</button></li>
+            <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+            <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+            <li><button type="button" data-lang="tl">Tagalog</button></li>
+          </ul>
+        </div>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> 
           <span class="bar"></span>
@@ -56,7 +67,7 @@
       
     </nav>
     <div class="text-center-top">
-      <h1>General Questions</h1>
+      <h1 data-i18n="faq_sell_title">General Questions</h1>
     </div>
 
     <div 
@@ -65,10 +76,10 @@
   
     <div class = "support_details">
       <p>
-        <h2>Sell</h2>
+        <h2 data-i18n="faq_sell_section">Sell</h2>
         <div class="empty-space-support-top">
         </div>
-        <button class="accordion">What steps should I take before selling my device?</button>
+        <button class="accordion" data-i18n="faq_sell_q1">What steps should I take before selling my device?</button>
         
         <div class="panel">
           <div class="empty-space-support-top"></div>
@@ -84,7 +95,7 @@
         </div>
         <div class="empty-space-support-top">
         </div>
-  <button class="accordion">How can I get my package ready for shipping and send it off?</button>
+  <button class="accordion" data-i18n="faq_sell_q2">How can I get my package ready for shipping and send it off?</button>
   <div class="panel">
     <div class="empty-space-support-top"></div>
     <p>
@@ -94,7 +105,7 @@
   
   <div class="empty-space-support-top"></div>
   
-  <button class="accordion">How do I best describe the conditions of my device?</button>
+  <button class="accordion" data-i18n="faq_sell_q3">How do I best describe the conditions of my device?</button>
   <div class="panel">
     <div class="empty-space-support-top"></div>
     <p><b>Very Good - Almost Like New:</b> Devices in this category should have minimal to no signs of wear. They should be fully functional and appear almost brand new.</p>
@@ -107,7 +118,7 @@
 
   <div class="empty-space-support-top"></div>
   
-  <button class="accordion">When and how can I expect to receive payment for selling my device?</button>
+  <button class="accordion" data-i18n="faq_sell_q4">When and how can I expect to receive payment for selling my device?</button>
   <div class="panel">
     <div class="empty-space-support-top"></div>
     <p>Upon receiving your device, the refurbisher will have a maximum of 2 business days to inspect it and ensure that it aligns with the initial assessment. If the assessment matches the received device, the refurbisher will initiate the payment process immediately. You can expect to see the funds in your Zelle® and Venmo accounts within 3 to 6 business days.</p>
@@ -116,7 +127,7 @@
 
   <div class="empty-space-support-top"></div>
   
-  <button class="accordion">What should I do if I'm uncertain about the model of my device?</button>
+  <button class="accordion" data-i18n="faq_sell_q5">What should I do if I'm uncertain about the model of my device?</button>
   <div class="panel">
     <div class="empty-space-support-top"></div>
     <p><b>1.</b> Check the Settings (for Smartphones and Tablets):</p>

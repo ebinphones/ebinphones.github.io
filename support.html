@@ -22,6 +22,17 @@
     <nav class="navbar">
       <div class="navbar__container">
         <a href="index.html " id="navbar__logo"><img src = "ebin_HomePage_Logo.png"></a></a>
+        <div class="navbar__mobile-lang" id="navLangMobile">
+          <button class="navbar__lang-btn navbar__lang-btn--mobile" id="navLangBtnMobile" type="button" aria-label="Select language">
+            <i class="fas fa-globe"></i> <span id="navLangCodeMobile">EN</span>
+          </button>
+          <ul class="navbar__lang-dropdown navbar__lang-dropdown--mobile" id="navLangDropdownMobile">
+            <li><button type="button" data-lang="en">English</button></li>
+            <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+            <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+            <li><button type="button" data-lang="tl">Tagalog</button></li>
+          </ul>
+        </div>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> 
           <span class="bar"></span>
@@ -56,20 +67,20 @@
       
     </nav>
     <div class="text-center">
-      <h1>Support</h1>
+      <h1 data-i18n="support_title">Support</h1>
     </div>
 
     <div class="button-container">
       <ul class="button-list button-list--equal-support">
-        <a href="general_questions_for_sell.html" class="my-button">Sell</a>  
-        <a href="general_questions_for_buy.html" class="my-button">Buy (Coming Soon)</a>
-        <a href="general_questions_for_repair.html" class="my-button">Repair</a>
+        <a href="general_questions_for_sell.html" class="my-button" data-i18n="support_sell_btn">Sell</a>  
+        <a href="general_questions_for_buy.html" class="my-button" data-i18n="support_buy_btn">Buy (Coming Soon)</a>
+        <a href="general_questions_for_repair.html" class="my-button" data-i18n="support_repair_btn">Repair</a>
       </ul>
     </div>
 
     <!--<div class="rectangle"></div> -->
     <div class="support-text">
-      <h1>The ebin app was created to makes it easier than ever for users to sell, buy, and repair their used electronics. We want users to have the best experience using our services. Get the help you need. </h1>
+      <h1 data-i18n="support_desc">The ebin app was created to make it easier than ever for users to sell, buy, and repair their used electronics. We want users to have the best experience using our services. Get the help you need.</h1>
     </div>
 
     <div class="support-mockup">

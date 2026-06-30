@@ -26,6 +26,17 @@
     <nav class="navbar">
       <div class="navbar__container">
         <a href="index.html " id="navbar__logo"><img src = "ebin_HomePage_Logo.png"></a></a>
+        <div class="navbar__mobile-lang" id="navLangMobile">
+          <button class="navbar__lang-btn navbar__lang-btn--mobile" id="navLangBtnMobile" type="button" aria-label="Select language">
+            <i class="fas fa-globe"></i> <span id="navLangCodeMobile">EN</span>
+          </button>
+          <ul class="navbar__lang-dropdown navbar__lang-dropdown--mobile" id="navLangDropdownMobile">
+            <li><button type="button" data-lang="en">English</button></li>
+            <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+            <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+            <li><button type="button" data-lang="tl">Tagalog</button></li>
+          </ul>
+        </div>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> 
           <span class="bar"></span>
@@ -61,52 +72,52 @@
     </nav>
 
     <div class="text-center">
-      <h1 id = "Sell">How it works</h1>
+      <h1 id = "Sell" data-i18n="hiw_title">How it works</h1>
     </div>
 
     <!-- Mobile-only illustrated step summaries -->
     <div class="hiw-illustrated">
-      <h2 class="hiw-illustrated__title">Sell your device</h2>
+      <h2 class="hiw-illustrated__title" data-i18n="sell_title">Sell your device</h2>
       <div class="hiw-steps">
         <div class="hiw-step">
           <div class="hiw-step__num">1</div>
           <div class="hiw-step__icon"><i class="fas fa-clock"></i></div>
-          <p>Get a quick quote for your phone</p>
+          <p data-i18n="hiw_sell_step1">Get a quick quote for your phone</p>
         </div>
         <div class="hiw-step">
           <div class="hiw-step__num">2</div>
           <div class="hiw-step__icon"><i class="fas fa-box"></i></div>
-          <p>Package and ship your device to us</p>
+          <p data-i18n="hiw_sell_step2">Package and ship your device to us</p>
         </div>
         <div class="hiw-step">
           <div class="hiw-step__num">3</div>
           <div class="hiw-step__icon"><i class="fas fa-hand-holding-usd"></i></div>
-          <p>We inspect your device and send your payment</p>
+          <p data-i18n="hiw_sell_step3">We inspect your device and send your payment</p>
         </div>
       </div>
     </div>
 
     <div class="hiw-illustrated">
-      <h2 class="hiw-illustrated__title">Repair your device</h2>
+      <h2 class="hiw-illustrated__title" data-i18n="hiw_repair_device">Repair your device</h2>
       <div class="hiw-steps">
         <div class="hiw-step">
           <div class="hiw-step__num">1</div>
           <div class="hiw-step__icon"><i class="fas fa-calendar-check"></i></div>
-          <p>Book a repair &mdash; choose bring in or ship in</p>
+          <p data-i18n="hiw_repair_step1">Book a repair &mdash; choose bring in or ship in</p>
         </div>
         <div class="hiw-step">
           <div class="hiw-step__num">2</div>
           <div class="hiw-step__icon"><i class="fas fa-truck"></i></div>
-          <p>Send or drop off your device</p>
+          <p data-i18n="hiw_repair_step2">Send or drop off your device</p>
         </div>
         <div class="hiw-step">
           <div class="hiw-step__num">3</div>
           <div class="hiw-step__icon"><i class="fas fa-tools"></i></div>
-          <p>We repair it and notify you when it's ready</p>
+          <p data-i18n="hiw_repair_step3">We repair it and notify you when it's ready</p>
         </div>
       </div>
       <div class="hiw-download">
-        <p class="hiw-download__cta">Get the ebin&#176; app now!</p>
+        <p class="hiw-download__cta" data-i18n="hiw_download_cta">Get the ebin&#176; app now!</p>
         <a href="https://www.ebinusa.com/qrcode" id="hiwDownloadBtn">
           <img src="appstoreBadge.png" id="hiwDownloadBadge" alt="Download ebin" class="hiw-download__badge">
         </a>

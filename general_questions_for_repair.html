@@ -22,6 +22,17 @@
     <nav class="navbar">
       <div class="navbar__container">
         <a href="index.html " id="navbar__logo"><img src = "ebin_HomePage_Logo.png"></a></a>
+        <div class="navbar__mobile-lang" id="navLangMobile">
+          <button class="navbar__lang-btn navbar__lang-btn--mobile" id="navLangBtnMobile" type="button" aria-label="Select language">
+            <i class="fas fa-globe"></i> <span id="navLangCodeMobile">EN</span>
+          </button>
+          <ul class="navbar__lang-dropdown navbar__lang-dropdown--mobile" id="navLangDropdownMobile">
+            <li><button type="button" data-lang="en">English</button></li>
+            <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+            <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+            <li><button type="button" data-lang="tl">Tagalog</button></li>
+          </ul>
+        </div>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> 
           <span class="bar"></span>
@@ -56,7 +67,7 @@
       
     </nav>
     <div class="text-center-top">
-      <h1>General Questions</h1>
+      <h1 data-i18n="faq_sell_title">General Questions</h1>
     </div>
 
     <div 
@@ -65,7 +76,7 @@
     
     <div class = "support_details">
       <p>
-        <h2>Repair</h2>
+        <h2 data-i18n="faq_repair_section">Repair</h2>
         <div class="empty-space-support-top">
         </div>
         <button class="accordion">What steps should I take before initiating the repair process?</button>

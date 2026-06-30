@@ -86,6 +86,140 @@ window.EBIN_TRANSLATIONS = {
     re_affordable: "Affordable (LCD)",
     re_learnmore: "Not sure which to pick? Learn more about screen quality options",
     re_prompt_select: "Select a damage type above",
+    re_choose_quality: "Choose a screen quality option above",
+    re_not_offered: "We don't offer that repair for this device",
+    cable_banner_heading: "Get a pack of two USB-C charging cables starting at just $4.00*",
+    cable_banner_sub: "High-quality, durable accessories you can trust, brought to you by ebin at unbeatable prices.",
+
+    hiw_title: "How it works",
+    hiw_sell_step1: "Get a quick quote for your phone",
+    hiw_sell_step2: "Package and ship your device to us",
+    hiw_sell_step3: "We inspect your device and send your payment",
+    hiw_repair_device: "Repair your device",
+    hiw_repair_step1: "Book a repair \u2014 choose bring in or ship in",
+    hiw_repair_step2: "Send or drop off your device",
+    hiw_repair_step3: "We repair it and notify you when it\u2019s ready",
+    hiw_download_cta: "Get the ebin\u00b0 app now!",
+    hiw_sell_detail_heading: "Sell Feature Details",
+    hiw_sell_intro: "Before You Begin:",
+    hiw_sell_backup: "Back Up Data: Backup any important data or files from your device to ensure you don\u2019t lose any information during the sell process.",
+    hiw_sell_reset: "Factory Reset Your Phone: To protect your privacy and ensure that the next owner starts with a clean slate, perform a factory reset on your phone.",
+    hiw_sell_accounts: "Remove Your Accounts: Before selling your phone, it\u2019s important to remove any accounts associated with it.",
+    hiw_sell_frp: "Disable Factory Reset Protection (FRP): If your Android device has Factory Reset Protection (FRP) enabled, make sure to disable it before performing the factory reset.",
+    hiw_sell_icloud: "Sign Out of iCloud: If you have an iPhone, it\u2019s essential to sign out of your iCloud account before performing the factory reset.",
+    hiw_repair_detail_heading: "Repair Feature Details",
+
+    support_title: "Support",
+    support_sell_btn: "Sell",
+    support_buy_btn: "Buy (Coming Soon)",
+    support_repair_btn: "Repair",
+    support_desc: "The ebin app was created to make it easier than ever for users to sell, buy, and repair their used electronics. We want users to have the best experience using our services. Get the help you need.",
+
+    privacy_title: "ebin\u00b0 Privacy Policy",
+    privacy_subtitle: "This policy describes the information we process to support ebin.",
+    privacy_collect_heading: "What information do we collect?",
+    privacy_info_provide_title: "Information you provide.",
+    privacy_info_provide: "When you add a phone to be sold through ebin, the phone\u2019s data that you provide (Model, Condition, Storage Capacity, Serial Number, etc.) is being used to estimate a price for the phone as well as help us determine whether the phone is legitimate.",
+    privacy_info_google_title: "Information from your Google account.",
+    privacy_info_google: "If we use your Google account for authentication purposes, your Google email address and UID is provided to us. We use your email address to email your information regarding your orders, and your UID to match orders and cancellation requests.",
+    privacy_info_apple_title: "Information from your Apple ID.",
+    privacy_info_apple: "If we use your Apple ID for authentication purposes, your Apple ID email address and UID is provided to us. We use your email address to email your information regarding your orders, and your UID to match orders and cancellation requests.",
+    privacy_use_heading: "How do we use this information?",
+    privacy_use_text: "Your Google account or Apple ID is used to attribute the information that you input with your account. Information relating to phones that are inputted are only used to process that specific order. Unless your order is not accepted, your address information will be used to create a shipping label. Your Zelle\u00ae information will only be used to send funds to your bank account. Your Venmo information will only be used to send funds to your Venmo account.",
+    privacy_manage_heading: "How can I manage or delete information about me?",
+    privacy_manage_text: "Your login information is connected to your Google account or Apple ID. If you wish to manage any of the data relating to the information you provided us, feel free to contact us at info@ebinusa.com.",
+    privacy_contact_heading: "Contact Us",
+    privacy_contact_text: "If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at",
+
+    tos_title: "ebin\u00b0 Terms of Service",
+    tos_subtitle: "These terms govern your use of the ebin app and services.",
+    tos_acceptance: "By using the ebin app, you agree to these Terms of Service. If you do not agree, please do not use the app.",
+
+    quality_title: "Screen Quality Guidelines",
+    quality_subtitle: "Guidelines for screen quality options for repair.",
+    quality_premium_title: "Premium",
+    quality_premium_oled: "(OLED)",
+    quality_affordable_title: "Affordable",
+    quality_affordable_lcd: "(LCD)",
+    quality_premium_1_title: "Closer to OEM",
+    quality_premium_1: "Matches your original screen the closest",
+    quality_premium_2_title: "Truer color & deeper blacks",
+    quality_premium_2: "Richer contrast, more accurate color",
+    quality_premium_3_title: "More power efficient",
+    quality_premium_3: "Pixels only light up when needed",
+    quality_premium_4_title: "Wider viewing angles",
+    quality_premium_4: "Looks great from any angle",
+    quality_premium_5_title: "Premium price",
+    quality_premium_5: "Best quality available",
+    quality_affordable_1_title: "Budget-friendly",
+    quality_affordable_1: "Great quality at a lower price",
+    quality_affordable_2_title: "Vibrant colors",
+    quality_affordable_2: "Bright, accurate everyday colors",
+    quality_affordable_3_title: "Longer lifespan",
+    quality_affordable_3: "No risk of OLED burn-in over time",
+    quality_affordable_4_title: "Reliable durability",
+    quality_affordable_4: "Built to handle everyday use",
+    quality_affordable_5_title: "Affordable price",
+    quality_affordable_5: "Most value for your money",
+    quality_contact_heading: "Contact Us",
+    quality_contact_text: "If you have any questions or suggestions about our LCD Screen Quality, do not hesitate to contact us at",
+
+    faq_sell_title: "General Questions",
+    faq_sell_section: "Sell",
+    faq_sell_q1: "What steps should I take before selling my device?",
+    faq_sell_q2: "How can I get my package ready for shipping and send it off?",
+    faq_sell_q3: "How do I best describe the conditions of my device?",
+    faq_sell_q4: "When and how can I expect to receive payment for selling my device?",
+    faq_sell_q5: "What should I do if I\u2019m uncertain about the model of my device?",
+    faq_sell_q6: "What is the process for submitting a bid?",
+    faq_repair_section: "Repair",
+    faq_repair_q1: "What steps should I take before scheduling a repair?",
+    faq_repair_q2: "How do I book a repair appointment?",
+    faq_repair_q3: "What types of repairs does ebin offer?",
+    faq_repair_q4: "How long does a repair take?",
+    faq_repair_q5: "What is the warranty on repairs?",
+
+    contact_title: "Contact",
+    contact_subtitle: "Get in touch with us.",
+    contact_name: "Name",
+    contact_email: "Email",
+    contact_message: "Message",
+    contact_send: "Send Message",
+
+    pricing_title: "Pricing",
+    pricing_subtitle: "Transparent pricing for all our services.",
+
+    partner_title: "ebin\u00b0 Merchant",
+    partner_subtitle: "Become a ebin\u00b0 Authorized Service Provider",
+    partner_desc: "As a ebin\u00b0 Authorized Service Provider, you have an opportunity to be part of our network. This feature is still under development.",
+    partner_coming_soon: "Coming Soon",
+    partner_form_title: "Drive more customers with ebin\u00b0",
+    partner_form_desc: "Partner with ebin\u00b0 to enhance your business. Enter your email to join the waiting list for future updates and become part of the ebin\u00b0 network.",
+    partner_biz_name: "Business Name",
+    partner_biz_address: "Business Address",
+    partner_email: "Email Address",
+    partner_phone: "Business Phone",
+    partner_submit: "Sign up",
+
+    repair_appt_title: "Repair & Service",
+    repair_appt_subtitle: "Book a repair appointment.",
+    repair_appt_bringin: "Bring In",
+    repair_appt_shipin: "Ship In",
+
+    screen_premium_title: "Premium Screen Quality (OLED)",
+    screen_premium_subtitle: "What to expect with a Premium screen replacement.",
+    screen_affordable_title: "Affordable Screen Quality (LCD)",
+    screen_affordable_subtitle: "What to expect with an Affordable screen replacement.",
+
+    cable_title: "ebin\u00b0 Cable Purchase Agreement",
+    cable_subtitle: "This policy describes the information for the ebin Cable Purchase Agreement",
+
+    terms_sell_title: "ebin\u00b0 Terms And Conditions of Sell",
+    terms_sell_subtitle: "This policy describes the information for the terms and conditions for sell.",
+    terms_repair_title: "ebin\u00b0 Terms and Conditions of Repair",
+    terms_repair_subtitle: "This policy describes the information for the terms and conditions for repair.",
+    terms_merchant_title: "ebin\u00b0 Terms and Conditions of Merchant",
+    terms_merchant_subtitle: "This policy describes the information for the terms and conditions for merchants.",
     re_get_service: "Get service",
 
     footer_about: "About Us",
@@ -191,6 +325,140 @@ window.EBIN_TRANSLATIONS = {
     re_affordable: "Econ\u00f3mica (LCD)",
     re_learnmore: "\u00bfNo sabes cu\u00e1l elegir? Conoce m\u00e1s sobre las opciones de calidad de pantalla",
     re_prompt_select: "Selecciona un tipo de da\u00f1o arriba",
+    re_choose_quality: "Elige una opci\u00f3n de calidad de pantalla arriba",
+    re_not_offered: "No ofrecemos esa reparaci\u00f3n para este dispositivo",
+    cable_banner_heading: "Consigue un paquete de dos cables de carga USB-C desde solo $4.00*",
+    cable_banner_sub: "Accesorios duraderos y de alta calidad en los que puedes confiar, ofrecidos por ebin a precios inmejorables.",
+
+    hiw_title: "C\u00f3mo funciona",
+    hiw_sell_step1: "Obt\u00e9n una cotizaci\u00f3n r\u00e1pida para tu tel\u00e9fono",
+    hiw_sell_step2: "Empaca y env\u00eda tu dispositivo",
+    hiw_sell_step3: "Inspeccionamos tu dispositivo y enviamos tu pago",
+    hiw_repair_device: "Repara tu dispositivo",
+    hiw_repair_step1: "Reserva una reparaci\u00f3n \u2014 elige llevar o enviar",
+    hiw_repair_step2: "Env\u00eda o entrega tu dispositivo",
+    hiw_repair_step3: "Lo reparamos y te notificamos cuando est\u00e9 listo",
+    hiw_download_cta: "\u00a1Obt\u00e9n la app de ebin\u00b0 ahora!",
+    hiw_sell_detail_heading: "Detalles de la funci\u00f3n de venta",
+    hiw_sell_intro: "Antes de comenzar:",
+    hiw_sell_backup: "Respalda tus datos: Respalda cualquier dato o archivo importante para no perder informaci\u00f3n durante el proceso de venta.",
+    hiw_sell_reset: "Restablece tu tel\u00e9fono de f\u00e1brica: Para proteger tu privacidad y asegurar que el siguiente propietario comience desde cero.",
+    hiw_sell_accounts: "Elimina tus cuentas: Antes de vender tu tel\u00e9fono, es importante eliminar cualquier cuenta asociada.",
+    hiw_sell_frp: "Desactiva la Protecci\u00f3n de Restablecimiento de F\u00e1brica (FRP) en dispositivos Android.",
+    hiw_sell_icloud: "Cierra sesi\u00f3n en iCloud: Si tienes un iPhone, es esencial cerrar sesi\u00f3n antes del restablecimiento.",
+    hiw_repair_detail_heading: "Detalles de la funci\u00f3n de reparaci\u00f3n",
+
+    support_title: "Soporte",
+    support_sell_btn: "Vender",
+    support_buy_btn: "Comprar (Pr\u00f3ximamente)",
+    support_repair_btn: "Reparar",
+    support_desc: "La app de ebin fue creada para hacer m\u00e1s f\u00e1cil que nunca vender, comprar y reparar electr\u00f3nicos usados. Queremos que los usuarios tengan la mejor experiencia. Obt\u00e9n la ayuda que necesitas.",
+
+    privacy_title: "Pol\u00edtica de Privacidad de ebin\u00b0",
+    privacy_subtitle: "Esta pol\u00edtica describe la informaci\u00f3n que procesamos para apoyar a ebin.",
+    privacy_collect_heading: "\u00bfQu\u00e9 informaci\u00f3n recopilamos?",
+    privacy_info_provide_title: "Informaci\u00f3n que proporcionas.",
+    privacy_info_provide: "Cuando a\u00f1ades un tel\u00e9fono para vender a trav\u00e9s de ebin, los datos que proporcionas se usan para estimar un precio y determinar si el tel\u00e9fono es leg\u00edtimo.",
+    privacy_info_google_title: "Informaci\u00f3n de tu cuenta de Google.",
+    privacy_info_google: "Si usamos tu cuenta de Google para autenticaci\u00f3n, tu direcci\u00f3n de correo y UID de Google nos son proporcionados.",
+    privacy_info_apple_title: "Informaci\u00f3n de tu Apple ID.",
+    privacy_info_apple: "Si usamos tu Apple ID para autenticaci\u00f3n, tu direcci\u00f3n de correo y UID de Apple ID nos son proporcionados.",
+    privacy_use_heading: "\u00bfC\u00f3mo usamos esta informaci\u00f3n?",
+    privacy_use_text: "Tu cuenta de Google o Apple ID se usa para atribuir la informaci\u00f3n que ingresas. La informaci\u00f3n de los tel\u00e9fonos solo se usa para procesar ese pedido espec\u00edfico.",
+    privacy_manage_heading: "\u00bfC\u00f3mo puedo gestionar o eliminar informaci\u00f3n sobre m\u00ed?",
+    privacy_manage_text: "Tu informaci\u00f3n de inicio de sesi\u00f3n est\u00e1 conectada a tu cuenta de Google o Apple ID. Cont\u00e1ctanos en info@ebinusa.com para gestionar tus datos.",
+    privacy_contact_heading: "Cont\u00e1ctanos",
+    privacy_contact_text: "Si tienes preguntas o sugerencias sobre nuestra Pol\u00edtica de Privacidad, no dudes en contactarnos en",
+
+    tos_title: "ebin\u00b0 T\u00e9rminos de Servicio",
+    tos_subtitle: "Estos t\u00e9rminos rigen el uso de la app y los servicios de ebin.",
+    tos_acceptance: "Al usar la app de ebin, aceptas estos T\u00e9rminos de Servicio.",
+
+    quality_title: "Gu\u00eda de Calidad de Pantalla",
+    quality_subtitle: "Gu\u00eda de opciones de calidad de pantalla para reparaci\u00f3n.",
+    quality_premium_title: "Premium",
+    quality_premium_oled: "(OLED)",
+    quality_affordable_title: "Econ\u00f3mica",
+    quality_affordable_lcd: "(LCD)",
+    quality_premium_1_title: "M\u00e1s cercana al OEM",
+    quality_premium_1: "Se parece m\u00e1s a tu pantalla original",
+    quality_premium_2_title: "Colores m\u00e1s precisos y negros m\u00e1s profundos",
+    quality_premium_2: "Mayor contraste, color m\u00e1s preciso",
+    quality_premium_3_title: "M\u00e1s eficiente energ\u00e9ticamente",
+    quality_premium_3: "Los p\u00edxeles solo se iluminan cuando se necesitan",
+    quality_premium_4_title: "\u00c1ngulos de visi\u00f3n m\u00e1s amplios",
+    quality_premium_4: "Se ve bien desde cualquier \u00e1ngulo",
+    quality_premium_5_title: "Precio premium",
+    quality_premium_5: "La mejor calidad disponible",
+    quality_affordable_1_title: "Econ\u00f3mica",
+    quality_affordable_1: "Gran calidad a un precio m\u00e1s bajo",
+    quality_affordable_2_title: "Colores vibrantes",
+    quality_affordable_2: "Colores cotidianos brillantes y precisos",
+    quality_affordable_3_title: "Mayor vida \u00fatil",
+    quality_affordable_3: "Sin riesgo de quemadura OLED con el tiempo",
+    quality_affordable_4_title: "Durabilidad confiable",
+    quality_affordable_4: "Dise\u00f1ada para el uso diario",
+    quality_affordable_5_title: "Precio asequible",
+    quality_affordable_5: "La mejor relaci\u00f3n calidad-precio",
+    quality_contact_heading: "Cont\u00e1ctanos",
+    quality_contact_text: "Si tienes preguntas o sugerencias sobre la calidad de pantalla LCD, cont\u00e1ctanos en",
+
+    faq_sell_title: "Preguntas Generales",
+    faq_sell_section: "Vender",
+    faq_sell_q1: "\u00bfQu\u00e9 pasos debo tomar antes de vender mi dispositivo?",
+    faq_sell_q2: "\u00bfC\u00f3mo preparo mi paquete para el env\u00edo?",
+    faq_sell_q3: "\u00bfC\u00f3mo describo mejor la condici\u00f3n de mi dispositivo?",
+    faq_sell_q4: "\u00bfCu\u00e1ndo y c\u00f3mo recibir\u00e9 el pago por vender mi dispositivo?",
+    faq_sell_q5: "\u00bfQu\u00e9 debo hacer si no estoy seguro del modelo de mi dispositivo?",
+    faq_sell_q6: "\u00bfCu\u00e1l es el proceso para enviar una oferta?",
+    faq_repair_section: "Reparaci\u00f3n",
+    faq_repair_q1: "\u00bfQu\u00e9 pasos debo tomar antes de programar una reparaci\u00f3n?",
+    faq_repair_q2: "\u00bfC\u00f3mo reservo una cita de reparaci\u00f3n?",
+    faq_repair_q3: "\u00bfQu\u00e9 tipos de reparaciones ofrece ebin?",
+    faq_repair_q4: "\u00bfCu\u00e1nto tiempo tarda una reparaci\u00f3n?",
+    faq_repair_q5: "\u00bfCu\u00e1l es la garant\u00eda de las reparaciones?",
+
+    contact_title: "Contacto",
+    contact_subtitle: "Ponte en contacto con nosotros.",
+    contact_name: "Nombre",
+    contact_email: "Correo electr\u00f3nico",
+    contact_message: "Mensaje",
+    contact_send: "Enviar mensaje",
+
+    pricing_title: "Precios",
+    pricing_subtitle: "Precios transparentes para todos nuestros servicios.",
+
+    partner_title: "ebin\u00b0 Comerciante",
+    partner_subtitle: "Conv\u00e9rtete en Proveedor de Servicios Autorizado de ebin\u00b0",
+    partner_desc: "Como Proveedor de Servicios Autorizado de ebin\u00b0, tienes la oportunidad de ser parte de nuestra red. Esta funci\u00f3n a\u00fan est\u00e1 en desarrollo.",
+    partner_coming_soon: "Pr\u00f3ximamente",
+    partner_form_title: "Atrae m\u00e1s clientes con ebin\u00b0",
+    partner_form_desc: "As\u00f3ciate con ebin\u00b0 para mejorar tu negocio. Ingresa tu correo para unirte a la lista de espera.",
+    partner_biz_name: "Nombre del negocio",
+    partner_biz_address: "Direcci\u00f3n del negocio",
+    partner_email: "Direcci\u00f3n de correo",
+    partner_phone: "Tel\u00e9fono del negocio",
+    partner_submit: "Registrarse",
+
+    repair_appt_title: "Reparaci\u00f3n y Servicio",
+    repair_appt_subtitle: "Reserva una cita de reparaci\u00f3n.",
+    repair_appt_bringin: "Llevar",
+    repair_appt_shipin: "Enviar",
+
+    screen_premium_title: "Calidad de Pantalla Premium (OLED)",
+    screen_premium_subtitle: "Qu\u00e9 esperar con un reemplazo de pantalla Premium.",
+    screen_affordable_title: "Calidad de Pantalla Econ\u00f3mica (LCD)",
+    screen_affordable_subtitle: "Qu\u00e9 esperar con un reemplazo de pantalla Econ\u00f3mica.",
+
+    cable_title: "Acuerdo de Compra de Cable de ebin\u00b0",
+    cable_subtitle: "Esta pol\u00edtica describe la informaci\u00f3n del Acuerdo de Compra de Cable.",
+
+    terms_sell_title: "ebin\u00b0 T\u00e9rminos y Condiciones de Venta",
+    terms_sell_subtitle: "Esta pol\u00edtica describe los t\u00e9rminos y condiciones de venta.",
+    terms_repair_title: "ebin\u00b0 T\u00e9rminos y Condiciones de Reparaci\u00f3n",
+    terms_repair_subtitle: "Esta pol\u00edtica describe los t\u00e9rminos y condiciones de reparaci\u00f3n.",
+    terms_merchant_title: "ebin\u00b0 T\u00e9rminos y Condiciones de Comerciante",
+    terms_merchant_subtitle: "Esta pol\u00edtica describe los t\u00e9rminos y condiciones para comerciantes.",
     re_get_service: "Solicitar servicio",
 
     footer_about: "Sobre Nosotros",
@@ -296,6 +564,140 @@ window.EBIN_TRANSLATIONS = {
     re_affordable: "Ti\u1ebFt ki\u1ec7m (LCD)",
     re_learnmore: "Kh\u00f4ng ch\u1eafc n\u00ean ch\u1ecdn lo\u1ea1i n\u00e0o? T\u00ecm hi\u1ec3u th\u00eam v\u1ec1 c\u00e1c t\u00f9y ch\u1ecdn ch\u1ea5t l\u01b0\u1ee3ng m\u00e0n h\u00ecnh",
     re_prompt_select: "Ch\u1ecdn lo\u1ea1i h\u01b0 h\u1ecfng ph\u00eda tr\u00ean",
+    re_choose_quality: "Ch\u1ecdn t\u00f9y ch\u1ecdn ch\u1ea5t l\u01b0\u1ee3ng m\u00e0n h\u00ecnh ph\u00eda tr\u00ean",
+    re_not_offered: "Ch\u00fang t\u00f4i kh\u00f4ng cung c\u1ea5p d\u1ecbch v\u1ee5 s\u1eeda ch\u1edFa n\u00e0y cho thi\u1ebft b\u1ecb n\u00e0y",
+    cable_banner_heading: "Mua m\u1ed9t b\u1ed9 hai c\u00e1p s\u1ea1c USB-C ch\u1ec9 t\u1eeb $4.00*",
+    cable_banner_sub: "Ph\u1ee5 ki\u1ec7n ch\u1ea5t l\u01b0\u1ee3ng cao, b\u1ec1n b\u1ec9 m\u00e0 b\u1ea1n c\u00f3 th\u1ec3 tin t\u01b0\u1edFng, mang \u0111\u1ebFn b\u1edFi ebin v\u1edBi gi\u00e1 kh\u00f4ng th\u1ec3 t\u1ed1t h\u01a1n.",
+
+    hiw_title: "C\u00e1ch ho\u1ea1t \u0111\u1ed9ng",
+    hiw_sell_step1: "Nh\u1eadn b\u00e1o gi\u00e1 nhanh cho \u0111i\u1ec7n tho\u1ea1i c\u1ee7a b\u1ea1n",
+    hiw_sell_step2: "\u0110\u00f3ng g\u00f3i v\u00e0 g\u1eedi thi\u1ebft b\u1ecb cho ch\u00fang t\u00f4i",
+    hiw_sell_step3: "Ch\u00fang t\u00f4i ki\u1ec3m tra thi\u1ebft b\u1ecb v\u00e0 g\u1eedi thanh to\u00e1n cho b\u1ea1n",
+    hiw_repair_device: "S\u1eeda ch\u1edFa thi\u1ebft b\u1ecb c\u1ee7a b\u1ea1n",
+    hiw_repair_step1: "\u0110\u1eb7t l\u1ecbch s\u1eeda ch\u1edFa \u2014 ch\u1ecdn mang \u0111\u1ebFn ho\u1eb7c g\u1eedi \u0111i",
+    hiw_repair_step2: "G\u1eedi ho\u1eb7c mang thi\u1ebft b\u1ecb c\u1ee7a b\u1ea1n",
+    hiw_repair_step3: "Ch\u00fang t\u00f4i s\u1eeda v\u00e0 th\u00f4ng b\u00e1o khi s\u1eafn s\u00e0ng",
+    hiw_download_cta: "T\u1ea3i \u1eeFng d\u1ee5ng ebin\u00b0 ngay!",
+    hiw_sell_detail_heading: "Chi ti\u1ebFt t\u00ednh n\u0103ng b\u00e1n",
+    hiw_sell_intro: "Tr\u01b0\u1edBc khi b\u1eaft \u0111\u1ea7u:",
+    hiw_sell_backup: "Sao l\u01b0u d\u1eef li\u1ec7u: Sao l\u01b0u m\u1ecdi d\u1eef li\u1ec7u quan tr\u1ecdng \u0111\u1ec3 kh\u00f4ng m\u1ea5t th\u00f4ng tin trong qu\u00e1 tr\u00ecnh b\u00e1n.",
+    hiw_sell_reset: "C\u00e0i \u0111\u1eb7t l\u1ea1i \u0111i\u1ec7n tho\u1ea1i: B\u1ea3o v\u1ec7 quy\u1ec1n ri\u00eang t\u01b0 v\u00e0 \u0111\u1ea3m b\u1ea3o ch\u1ee7 m\u1edBi b\u1eaft \u0111\u1ea7u t\u1eeb \u0111\u1ea7u.",
+    hiw_sell_accounts: "X\u00f3a t\u00e0i kho\u1ea3n: Tr\u01b0\u1edBc khi b\u00e1n, h\u00e3y x\u00f3a m\u1ecdi t\u00e0i kho\u1ea3n li\u00ean k\u1ebFt v\u1edBi \u0111i\u1ec7n tho\u1ea1i.",
+    hiw_sell_frp: "T\u1eaft b\u1ea3o v\u1ec7 c\u00e0i \u0111\u1eb7t l\u1ea1i nh\u00e0 m\u00e1y (FRP) tr\u00ean thi\u1ebft b\u1ecb Android.",
+    hiw_sell_icloud: "\u0110\u0103ng xu\u1ea5t kh\u1ecfi iCloud: N\u1ebFu b\u1ea1n c\u00f3 iPhone, h\u00e3y \u0111\u0103ng xu\u1ea5t tr\u01b0\u1edBc khi c\u00e0i \u0111\u1eb7t l\u1ea1i.",
+    hiw_repair_detail_heading: "Chi ti\u1ebFt t\u00ednh n\u0103ng s\u1eeda ch\u1edFa",
+
+    support_title: "H\u1ed7 tr\u1ee3",
+    support_sell_btn: "B\u00e1n",
+    support_buy_btn: "Mua (S\u1eafp ra m\u1eaft)",
+    support_repair_btn: "S\u1eeda ch\u1edFa",
+    support_desc: "Ebin \u0111\u01b0\u1ee3c t\u1ea1o ra \u0111\u1ec3 gi\u00fap ng\u01b0\u1edDi d\u00f9ng b\u00e1n, mua v\u00e0 s\u1eeda ch\u1edFa \u0111i\u1ec7n t\u1eed c\u0169 d\u1ec5 d\u00e0ng h\u01a1n bao gi\u1edD h\u1ebFt. Ch\u00fang t\u00f4i mu\u1ed1n b\u1ea1n c\u00f3 tr\u1ea3i nghi\u1ec7m t\u1ed1t nh\u1ea5t.",
+
+    privacy_title: "Ch\u00ednh s\u00e1ch b\u1ea3o m\u1eadt c\u1ee7a ebin\u00b0",
+    privacy_subtitle: "Ch\u00ednh s\u00e1ch n\u00e0y m\u00f4 t\u1ea3 th\u00f4ng tin ch\u00fang t\u00f4i x\u1eed l\u00fd \u0111\u1ec3 h\u1ed7 tr\u1ee3 ebin.",
+    privacy_collect_heading: "Ch\u00fang t\u00f4i thu th\u1eadp th\u00f4ng tin g\u00ec?",
+    privacy_info_provide_title: "Th\u00f4ng tin b\u1ea1n cung c\u1ea5p.",
+    privacy_info_provide: "Khi b\u1ea1n th\u00eam \u0111i\u1ec7n tho\u1ea1i \u0111\u1ec3 b\u00e1n qua ebin, d\u1eef li\u1ec7u b\u1ea1n cung c\u1ea5p \u0111\u01b0\u1ee3c d\u00f9ng \u0111\u1ec3 \u01b0\u1edBc t\u00ednh gi\u00e1 v\u00e0 x\u00e1c nh\u1eadn t\u00ednh h\u1ee3p l\u1ec7.",
+    privacy_info_google_title: "Th\u00f4ng tin t\u1eeb t\u00e0i kho\u1ea3n Google.",
+    privacy_info_google: "N\u1ebFu d\u00f9ng t\u00e0i kho\u1ea3n Google \u0111\u1ec3 x\u00e1c th\u1ef1c, \u0111\u1ecba ch\u1ec9 email v\u00e0 UID Google c\u1ee7a b\u1ea1n \u0111\u01b0\u1ee3c cung c\u1ea5p cho ch\u00fang t\u00f4i.",
+    privacy_info_apple_title: "Th\u00f4ng tin t\u1eeb Apple ID.",
+    privacy_info_apple: "N\u1ebFu d\u00f9ng Apple ID \u0111\u1ec3 x\u00e1c th\u1ef1c, \u0111\u1ecba ch\u1ec9 email v\u00e0 UID Apple ID c\u1ee7a b\u1ea1n \u0111\u01b0\u1ee3c cung c\u1ea5p cho ch\u00fang t\u00f4i.",
+    privacy_use_heading: "Ch\u00fang t\u00f4i s\u1eed d\u1ee5ng th\u00f4ng tin n\u00e0y nh\u01b0 th\u1ebF n\u00e0o?",
+    privacy_use_text: "T\u00e0i kho\u1ea3n Google ho\u1eb7c Apple ID c\u1ee7a b\u1ea1n \u0111\u01b0\u1ee3c d\u00f9ng \u0111\u1ec3 li\u00ean k\u1ebFt th\u00f4ng tin b\u1ea1n nh\u1eadp. Th\u00f4ng tin ch\u1ec9 \u0111\u01b0\u1ee3c d\u00f9ng \u0111\u1ec3 x\u1eed l\u00fd \u0111\u01a1n h\u00e0ng c\u1ee5 th\u1ec3 \u0111\u00f3.",
+    privacy_manage_heading: "T\u00f4i c\u00f3 th\u1ec3 qu\u1ea3n l\u00fd ho\u1eb7c x\u00f3a th\u00f4ng tin v\u1ec1 m\u00ecnh kh\u00f4ng?",
+    privacy_manage_text: "Th\u00f4ng tin \u0111\u0103ng nh\u1eadp c\u1ee7a b\u1ea1n \u0111\u01b0\u1ee3c li\u00ean k\u1ebFt v\u1edBi t\u00e0i kho\u1ea3n Google ho\u1eb7c Apple ID. Li\u00ean h\u1ec7 info@ebinusa.com \u0111\u1ec3 qu\u1ea3n l\u00fd d\u1eef li\u1ec7u.",
+    privacy_contact_heading: "Li\u00ean h\u1ec7",
+    privacy_contact_text: "N\u1ebFu b\u1ea1n c\u00f3 c\u00e2u h\u1ecfi ho\u1eb7c g\u1ee3i \u00fd v\u1ec1 Ch\u00ednh s\u00e1ch b\u1ea3o m\u1eadt, vui l\u00f2ng li\u00ean h\u1ec7 v\u1edBi ch\u00fang t\u00f4i t\u1ea1i",
+
+    tos_title: "ebin\u00b0 \u0110i\u1ec1u kho\u1ea3n D\u1ecbch v\u1ee5",
+    tos_subtitle: "C\u00e1c \u0111i\u1ec1u kho\u1ea3n n\u00e0y \u0111i\u1ec1u ch\u1ec9nh vi\u1ec7c s\u1eed d\u1ee5ng \u1eeFng d\u1ee5ng v\u00e0 d\u1ecbch v\u1ee5 ebin.",
+    tos_acceptance: "B\u1eb1ng c\u00e1ch s\u1eed d\u1ee5ng \u1eeFng d\u1ee5ng ebin, b\u1ea1n \u0111\u1ed3ng \u00fd v\u1edBi c\u00e1c \u0110i\u1ec1u kho\u1ea3n D\u1ecbch v\u1ee5 n\u00e0y.",
+
+    quality_title: "H\u01b0\u1edBng d\u1eabn ch\u1ea5t l\u01b0\u1ee3ng m\u00e0n h\u00ecnh",
+    quality_subtitle: "H\u01b0\u1edBng d\u1eabn v\u1ec1 c\u00e1c t\u00f9y ch\u1ecdn ch\u1ea5t l\u01b0\u1ee3ng m\u00e0n h\u00ecnh \u0111\u1ec3 s\u1eeda ch\u1edFa.",
+    quality_premium_title: "Cao c\u1ea5p",
+    quality_premium_oled: "(OLED)",
+    quality_affordable_title: "Ti\u1ebFt ki\u1ec7m",
+    quality_affordable_lcd: "(LCD)",
+    quality_premium_1_title: "G\u1ea7n v\u1edBi OEM nh\u1ea5t",
+    quality_premium_1: "Ph\u00f9 h\u1ee3p nh\u1ea5t v\u1edBi m\u00e0n h\u00ecnh g\u1ed1c c\u1ee7a b\u1ea1n",
+    quality_premium_2_title: "M\u00e0u s\u1eafc ch\u00ednh x\u00e1c h\u01a1n v\u00e0 \u0111en s\u00e2u h\u01a1n",
+    quality_premium_2: "\u0110\u1ed9 t\u01b0\u01a1ng ph\u1ea3n cao, m\u00e0u s\u1eafc ch\u00ednh x\u00e1c h\u01a1n",
+    quality_premium_3_title: "Ti\u1ebFt ki\u1ec7m \u0111i\u1ec7n n\u0103ng h\u01a1n",
+    quality_premium_3: "C\u00e1c pixel ch\u1ec9 s\u00e1ng khi c\u1ea7n thi\u1ebFt",
+    quality_premium_4_title: "G\u00f3c nh\u00ecn r\u1ed9ng h\u01a1n",
+    quality_premium_4: "Tr\u00f4ng \u0111\u1eb9p t\u1eeb m\u1ecdi g\u00f3c \u0111\u1ed9",
+    quality_premium_5_title: "Gi\u00e1 cao c\u1ea5p",
+    quality_premium_5: "Ch\u1ea5t l\u01b0\u1ee3ng t\u1ed1t nh\u1ea5t hi\u1ec7n c\u00f3",
+    quality_affordable_1_title: "Ti\u1ebFt ki\u1ec7m",
+    quality_affordable_1: "Ch\u1ea5t l\u01b0\u1ee3ng t\u1ed1t v\u1edBi gi\u00e1 th\u1ea5p h\u01a1n",
+    quality_affordable_2_title: "M\u00e0u s\u1eafc sinh \u0111\u1ed9ng",
+    quality_affordable_2: "M\u00e0u s\u1eafc h\u00e0ng ng\u00e0y s\u00e1ng v\u00e0 ch\u00ednh x\u00e1c",
+    quality_affordable_3_title: "Tu\u1ed5i th\u1ecd d\u00e0i h\u01a1n",
+    quality_affordable_3: "Kh\u00f4ng c\u00f3 nguy c\u01a1 b\u1ecb ch\u00e1y h\u00ecnh OLED theo th\u1edDi gian",
+    quality_affordable_4_title: "\u0110\u1ed9 b\u1ec1n tin c\u1eady",
+    quality_affordable_4: "\u0110\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 s\u1eed d\u1ee5ng h\u00e0ng ng\u00e0y",
+    quality_affordable_5_title: "Gi\u00e1 c\u1ea3 ph\u1ea3i ch\u0103ng",
+    quality_affordable_5: "Gi\u00e1 tr\u1ecb t\u1ed1t nh\u1ea5t cho ti\u1ec1n c\u1ee7a b\u1ea1n",
+    quality_contact_heading: "Li\u00ean h\u1ec7",
+    quality_contact_text: "N\u1ebFu b\u1ea1n c\u00f3 c\u00e2u h\u1ecfi v\u1ec1 ch\u1ea5t l\u01b0\u1ee3ng m\u00e0n h\u00ecnh LCD, vui l\u00f2ng li\u00ean h\u1ec7 ch\u00fang t\u00f4i t\u1ea1i",
+
+    faq_sell_title: "C\u00e2u h\u1ecfi th\u01b0\u1eddng g\u1eb7p",
+    faq_sell_section: "B\u00e1n",
+    faq_sell_q1: "T\u00f4i n\u00ean l\u00e0m g\u00ec tr\u01b0\u1edBc khi b\u00e1n thi\u1ebft b\u1ecb?",
+    faq_sell_q2: "L\u00e0m th\u1ebF n\u00e0o \u0111\u1ec3 chu\u1ea9n b\u1ecb g\u00f3i h\u00e0ng v\u00e0 g\u1eedi \u0111i?",
+    faq_sell_q3: "L\u00e0m th\u1ebF n\u00e0o \u0111\u1ec3 m\u00f4 t\u1ea3 t\u00ecnh tr\u1ea1ng thi\u1ebft b\u1ecb t\u1ed1t nh\u1ea5t?",
+    faq_sell_q4: "Khi n\u00e0o v\u00e0 b\u1eb1ng c\u00e1ch n\u00e0o t\u00f4i s\u1ebD nh\u1eadn \u0111\u01b0\u1ee3c thanh to\u00e1n?",
+    faq_sell_q5: "T\u00f4i n\u00ean l\u00e0m g\u00ec n\u1ebFu kh\u00f4ng ch\u1eafc m\u00f4 h\u00ecnh thi\u1ebft b\u1ecb c\u1ee7a m\u00ecnh?",
+    faq_sell_q6: "Quy tr\u00ecnh \u0111\u1eb7t gi\u00e1 th\u1ea7u l\u00e0 g\u00ec?",
+    faq_repair_section: "S\u1eeda ch\u1edFa",
+    faq_repair_q1: "T\u00f4i n\u00ean l\u00e0m g\u00ec tr\u01b0\u1edBc khi \u0111\u1eb7t l\u1ecbch s\u1eeda ch\u1edFa?",
+    faq_repair_q2: "L\u00e0m th\u1ebF n\u00e0o \u0111\u1ec3 \u0111\u1eb7t h\u1eb9n s\u1eeda ch\u1edFa?",
+    faq_repair_q3: "Ebin cung c\u1ea5p nh\u1eefng lo\u1ea1i s\u1eeda ch\u1edFa n\u00e0o?",
+    faq_repair_q4: "Vi\u1ec7c s\u1eeda ch\u1edFa m\u1ea5t bao l\u00e2u?",
+    faq_repair_q5: "B\u1ea3o h\u00e0nh s\u1eeda ch\u1edFa l\u00e0 g\u00ec?",
+
+    contact_title: "Li\u00ean h\u1ec7",
+    contact_subtitle: "H\u00e3y li\u00ean h\u1ec7 v\u1edBi ch\u00fang t\u00f4i.",
+    contact_name: "T\u00ean",
+    contact_email: "Email",
+    contact_message: "Tin nh\u1eafn",
+    contact_send: "G\u1eedi tin nh\u1eafn",
+
+    pricing_title: "B\u1ea3ng gi\u00e1",
+    pricing_subtitle: "Gi\u00e1 minh b\u1ea1ch cho t\u1ea5t c\u1ea3 c\u00e1c d\u1ecbch v\u1ee5.",
+
+    partner_title: "ebin\u00b0 \u0110\u1ed1i t\u00e1c",
+    partner_subtitle: "Tr\u1edf th\u00e0nh Nh\u00e0 cung c\u1ea5p D\u1ecbch v\u1ee5 \u0110\u01b0\u1ee3c \u1ee6y quy\u1ec1n c\u1ee7a ebin\u00b0",
+    partner_desc: "L\u00e0 Nh\u00e0 cung c\u1ea5p D\u1ecbch v\u1ee5 \u0110\u01b0\u1ee3c \u1ee6y quy\u1ec1n, b\u1ea1n c\u00f3 c\u01a1 h\u1ed9i tham gia m\u1ea1ng l\u01b0\u1edBi c\u1ee7a ch\u00fang t\u00f4i. T\u00ednh n\u0103ng n\u00e0y v\u1eabn \u0111ang ph\u00e1t tri\u1ec3n.",
+    partner_coming_soon: "S\u1eafp ra m\u1eaft",
+    partner_form_title: "Thu h\u00fat nhi\u1ec1u kh\u00e1ch h\u00e0ng h\u01a1n v\u1edBi ebin\u00b0",
+    partner_form_desc: "H\u1ee3p t\u00e1c v\u1edBi ebin\u00b0 \u0111\u1ec3 ph\u00e1t tri\u1ec3n doanh nghi\u1ec7p. Nh\u1eadp email \u0111\u1ec3 tham gia danh s\u00e1ch ch\u1edd.",
+    partner_biz_name: "T\u00ean doanh nghi\u1ec7p",
+    partner_biz_address: "\u0110\u1ecba ch\u1ec9 doanh nghi\u1ec7p",
+    partner_email: "\u0110\u1ecba ch\u1ec9 email",
+    partner_phone: "S\u1ed1 \u0111i\u1ec7n tho\u1ea1i doanh nghi\u1ec7p",
+    partner_submit: "\u0110\u0103ng k\u00fd",
+
+    repair_appt_title: "S\u1eeda ch\u1edFa & D\u1ecbch v\u1ee5",
+    repair_appt_subtitle: "\u0110\u1eb7t l\u1ecbch h\u1eb9n s\u1eeda ch\u1edFa.",
+    repair_appt_bringin: "Mang \u0111\u1ebFn",
+    repair_appt_shipin: "G\u1eedi \u0111i",
+
+    screen_premium_title: "Ch\u1ea5t l\u01b0\u1ee3ng m\u00e0n h\u00ecnh cao c\u1ea5p (OLED)",
+    screen_premium_subtitle: "Nh\u1eefng g\u00ec c\u1ea7n mong \u0111\u1ee3i khi thay m\u00e0n h\u00ecnh cao c\u1ea5p.",
+    screen_affordable_title: "Ch\u1ea5t l\u01b0\u1ee3ng m\u00e0n h\u00ecnh ti\u1ebFt ki\u1ec7m (LCD)",
+    screen_affordable_subtitle: "Nh\u1eefng g\u00ec c\u1ea7n mong \u0111\u1ee3i khi thay m\u00e0n h\u00ecnh ti\u1ebFt ki\u1ec7m.",
+
+    cable_title: "Th\u1ecfa thu\u1eadn Mua h\u00e0ng C\u00e1p ebin\u00b0",
+    cable_subtitle: "Ch\u00ednh s\u00e1ch n\u00e0y m\u00f4 t\u1ea3 th\u00f4ng tin v\u1ec1 Th\u1ecfa thu\u1eadn Mua h\u00e0ng C\u00e1p.",
+
+    terms_sell_title: "ebin\u00b0 \u0110i\u1ec1u kho\u1ea3n v\u00e0 \u0110i\u1ec1u ki\u1ec7n B\u00e1n h\u00e0ng",
+    terms_sell_subtitle: "Ch\u00ednh s\u00e1ch n\u00e0y m\u00f4 t\u1ea3 c\u00e1c \u0111i\u1ec1u kho\u1ea3n v\u00e0 \u0111i\u1ec1u ki\u1ec7n b\u00e1n h\u00e0ng.",
+    terms_repair_title: "ebin\u00b0 \u0110i\u1ec1u kho\u1ea3n v\u00e0 \u0110i\u1ec1u ki\u1ec7n S\u1eeda ch\u1edFa",
+    terms_repair_subtitle: "Ch\u00ednh s\u00e1ch n\u00e0y m\u00f4 t\u1ea3 c\u00e1c \u0111i\u1ec1u kho\u1ea3n v\u00e0 \u0111i\u1ec1u ki\u1ec7n s\u1eeda ch\u1edFa.",
+    terms_merchant_title: "ebin\u00b0 \u0110i\u1ec1u kho\u1ea3n v\u00e0 \u0110i\u1ec1u ki\u1ec7n \u0110\u1ed1i t\u00e1c",
+    terms_merchant_subtitle: "Ch\u00ednh s\u00e1ch n\u00e0y m\u00f4 t\u1ea3 c\u00e1c \u0111i\u1ec1u kho\u1ea3n v\u00e0 \u0111i\u1ec1u ki\u1ec7n cho \u0111\u1ed1i t\u00e1c.",
     re_get_service: "Y\u00eau c\u1ea7u d\u1ecbch v\u1ee5",
 
     footer_about: "V\u1ec1 ch\u00fang t\u00f4i",
@@ -401,6 +803,140 @@ window.EBIN_TRANSLATIONS = {
     re_affordable: "Mas mura (LCD)",
     re_learnmore: "Hindi sigurado kung alin pipiliin? Alamin pa ang mga opsyon sa kalidad ng screen",
     re_prompt_select: "Piliin ang uri ng pinsala sa itaas",
+    re_choose_quality: "Piliin ang opsyon ng kalidad ng screen sa itaas",
+    re_not_offered: "Hindi namin inaalok ang pag-aayos na ito para sa device na ito",
+    cable_banner_heading: "Kumuha ng dalawang USB-C charging cable mula sa $4.00 lang*",
+    cable_banner_sub: "Mataas na kalidad, matibay na accessories na mapagkakatiwalaan mo, mula sa ebin sa hindi matatalo na presyo.",
+
+    hiw_title: "Paano gumagana",
+    hiw_sell_step1: "Kumuha ng mabilis na quote para sa iyong telepono",
+    hiw_sell_step2: "I-pack at ipadala ang iyong device sa amin",
+    hiw_sell_step3: "Sinisiyasat namin ang iyong device at ipinapadala ang iyong bayad",
+    hiw_repair_device: "Ayusin ang iyong device",
+    hiw_repair_step1: "Mag-book ng repair \u2014 piliin ang dalhin o ipadala",
+    hiw_repair_step2: "Ipadala o i-drop off ang iyong device",
+    hiw_repair_step3: "Inaayos namin ito at inaabisuhan ka kapag handa na",
+    hiw_download_cta: "Kunin ang ebin\u00b0 app ngayon!",
+    hiw_sell_detail_heading: "Mga Detalye ng Feature ng Pagbebenta",
+    hiw_sell_intro: "Bago Magsimula:",
+    hiw_sell_backup: "I-backup ang Data: I-backup ang lahat ng mahalagang datos para hindi mawala ang impormasyon sa proseso ng pagbebenta.",
+    hiw_sell_reset: "I-factory Reset ang Telepono: Para maprotektahan ang iyong privacy at matiyak na ang susunod na may-ari ay magsisimula nang malinis.",
+    hiw_sell_accounts: "Alisin ang mga Account: Bago ibenta, mahalagang alisin ang lahat ng account na nakakonekta sa iyong telepono.",
+    hiw_sell_frp: "I-disable ang Factory Reset Protection (FRP) sa mga Android device.",
+    hiw_sell_icloud: "Mag-sign out sa iCloud: Kung mayroon kang iPhone, kailangan mag-sign out bago mag-factory reset.",
+    hiw_repair_detail_heading: "Mga Detalye ng Feature ng Pag-aayos",
+
+    support_title: "Suporta",
+    support_sell_btn: "Ibenta",
+    support_buy_btn: "Bumili (Malapit na)",
+    support_repair_btn: "Ayusin",
+    support_desc: "Ang ebin app ay nilikha para gawing mas madali para sa mga gumagamit na magbenta, bumili, at magpaaayos ng mga ginamit na electronics. Nais naming magbigay ng pinakamahusay na karanasan. Hanapin ang tulong na kailangan mo.",
+
+    privacy_title: "ebin\u00b0 Patakaran sa Privacy",
+    privacy_subtitle: "Inilalarawan ng patakarang ito ang impormasyong pinoproseso namin para suportahan ang ebin.",
+    privacy_collect_heading: "Anong impormasyon ang kinokolekta namin?",
+    privacy_info_provide_title: "Impormasyong ibinibigay mo.",
+    privacy_info_provide: "Kapag nagdagdag ka ng telepono para ibenta sa pamamagitan ng ebin, ginagamit ang datos na iyong ibinigay para tasahin ang presyo at matukoy kung lehitimo ang telepono.",
+    privacy_info_google_title: "Impormasyon mula sa iyong Google account.",
+    privacy_info_google: "Kung ginagamit namin ang iyong Google account para sa authentication, ang iyong Google email address at UID ay ibinibigay sa amin.",
+    privacy_info_apple_title: "Impormasyon mula sa iyong Apple ID.",
+    privacy_info_apple: "Kung ginagamit namin ang iyong Apple ID para sa authentication, ang iyong Apple ID email address at UID ay ibinibigay sa amin.",
+    privacy_use_heading: "Paano namin ginagamit ang impormasyong ito?",
+    privacy_use_text: "Ginagamit ang iyong Google account o Apple ID para iugnay ang impormasyong iyong inilapat sa iyong account. Ang impormasyon ay ginagamit lamang para sa partikular na order na iyon.",
+    privacy_manage_heading: "Paano ko maaaring pamahalaan o tanggalin ang impormasyon tungkol sa akin?",
+    privacy_manage_text: "Ang iyong impormasyon sa pag-login ay konektado sa iyong Google account o Apple ID. Makipag-ugnayan sa amin sa info@ebinusa.com para pamahalaan ang iyong datos.",
+    privacy_contact_heading: "Makipag-ugnayan",
+    privacy_contact_text: "Kung mayroon kang mga tanong o mungkahi tungkol sa aming Patakaran sa Privacy, huwag mag-alinlangang makipag-ugnayan sa amin sa",
+
+    tos_title: "ebin\u00b0 Mga Tuntunin ng Serbisyo",
+    tos_subtitle: "Ang mga tuntuning ito ay namamahala sa iyong paggamit ng ebin app at mga serbisyo.",
+    tos_acceptance: "Sa paggamit ng ebin app, sumasang-ayon ka sa mga Tuntunin ng Serbisyong ito.",
+
+    quality_title: "Gabay sa Kalidad ng Screen",
+    quality_subtitle: "Mga gabay para sa mga opsyon ng kalidad ng screen para sa pag-aayos.",
+    quality_premium_title: "Premium",
+    quality_premium_oled: "(OLED)",
+    quality_affordable_title: "Mas Mura",
+    quality_affordable_lcd: "(LCD)",
+    quality_premium_1_title: "Mas malapit sa OEM",
+    quality_premium_1: "Pinakakatulad ng iyong orihinal na screen",
+    quality_premium_2_title: "Mas tumpak na kulay at mas malalim na itim",
+    quality_premium_2: "Mas mataas na kontrast, mas tumpak na kulay",
+    quality_premium_3_title: "Mas mahusay na gamit ng kuryente",
+    quality_premium_3: "Mga pixel ay nagliliwanag lamang kapag kailangan",
+    quality_premium_4_title: "Mas malawak na anggulo ng pagtingin",
+    quality_premium_4: "Maganda mula sa anumang anggulo",
+    quality_premium_5_title: "Premium na presyo",
+    quality_premium_5: "Pinakamataas na kalidad na available",
+    quality_affordable_1_title: "Matipid",
+    quality_affordable_1: "Magandang kalidad sa mas mababang presyo",
+    quality_affordable_2_title: "Makulay na mga kulay",
+    quality_affordable_2: "Maliwanag, tumpak na pang-araw-araw na mga kulay",
+    quality_affordable_3_title: "Mas matagal na buhay",
+    quality_affordable_3: "Walang panganib ng OLED burn-in sa paglipas ng panahon",
+    quality_affordable_4_title: "Maaasahang tibay",
+    quality_affordable_4: "Ginawa para sa pang-araw-araw na paggamit",
+    quality_affordable_5_title: "Abot-kayang presyo",
+    quality_affordable_5: "Pinakamataas na halaga para sa iyong pera",
+    quality_contact_heading: "Makipag-ugnayan",
+    quality_contact_text: "Kung mayroon kang mga tanong tungkol sa kalidad ng LCD Screen, makipag-ugnayan sa amin sa",
+
+    faq_sell_title: "Mga Pangkalahatang Tanong",
+    faq_sell_section: "Magbenta",
+    faq_sell_q1: "Anong mga hakbang ang dapat kong gawin bago ibenta ang aking device?",
+    faq_sell_q2: "Paano ko ihahanda ang aking package para sa shipping?",
+    faq_sell_q3: "Paano ko pinakamabuting ilalarawan ang kondisyon ng aking device?",
+    faq_sell_q4: "Kailan at paano ko matatanggap ang bayad sa pagbebenta ng aking device?",
+    faq_sell_q5: "Ano ang dapat kong gawin kung hindi ako sigurado sa modelo ng aking device?",
+    faq_sell_q6: "Ano ang proseso ng pagsusumite ng bid?",
+    faq_repair_section: "Pag-aayos",
+    faq_repair_q1: "Anong mga hakbang ang dapat kong gawin bago mag-iskedyul ng pag-aayos?",
+    faq_repair_q2: "Paano mag-book ng appointment para sa pag-aayos?",
+    faq_repair_q3: "Anong mga uri ng pag-aayos ang inaalok ng ebin?",
+    faq_repair_q4: "Gaano katagal ang isang pag-aayos?",
+    faq_repair_q5: "Ano ang warranty sa mga pag-aayos?",
+
+    contact_title: "Makipag-ugnayan",
+    contact_subtitle: "Makipag-ugnayan sa amin.",
+    contact_name: "Pangalan",
+    contact_email: "Email",
+    contact_message: "Mensahe",
+    contact_send: "Magpadala ng Mensahe",
+
+    pricing_title: "Mga Presyo",
+    pricing_subtitle: "Transparent na presyo para sa lahat ng aming serbisyo.",
+
+    partner_title: "ebin\u00b0 Merchant",
+    partner_subtitle: "Maging isang Authorized Service Provider ng ebin\u00b0",
+    partner_desc: "Bilang isang Authorized Service Provider ng ebin\u00b0, mayroon kang pagkakataon na maging bahagi ng aming network. Ang feature na ito ay nasa pag-unlad pa.",
+    partner_coming_soon: "Malapit na",
+    partner_form_title: "Makaakit ng mas maraming customer gamit ang ebin\u00b0",
+    partner_form_desc: "Maging partner ng ebin\u00b0 para mapahusay ang iyong negosyo. Ilagay ang iyong email para sumali sa waiting list.",
+    partner_biz_name: "Pangalan ng Negosyo",
+    partner_biz_address: "Address ng Negosyo",
+    partner_email: "Email Address",
+    partner_phone: "Telepono ng Negosyo",
+    partner_submit: "Mag-sign up",
+
+    repair_appt_title: "Pag-aayos at Serbisyo",
+    repair_appt_subtitle: "Mag-book ng appointment sa pag-aayos.",
+    repair_appt_bringin: "Dalhin",
+    repair_appt_shipin: "Ipadala",
+
+    screen_premium_title: "Premium na Kalidad ng Screen (OLED)",
+    screen_premium_subtitle: "Ano ang maaasahan sa Premium na pagpapalit ng screen.",
+    screen_affordable_title: "Abot-kayang Kalidad ng Screen (LCD)",
+    screen_affordable_subtitle: "Ano ang maaasahan sa Abot-kayang pagpapalit ng screen.",
+
+    cable_title: "ebin\u00b0 Kasunduan sa Pagbili ng Cable",
+    cable_subtitle: "Inilalarawan ng patakarang ito ang impormasyon para sa Kasunduan sa Pagbili ng Cable.",
+
+    terms_sell_title: "ebin\u00b0 Mga Tuntunin at Kondisyon ng Pagbebenta",
+    terms_sell_subtitle: "Inilalarawan ng patakarang ito ang mga tuntunin at kondisyon para sa pagbebenta.",
+    terms_repair_title: "ebin\u00b0 Mga Tuntunin at Kondisyon ng Pag-aayos",
+    terms_repair_subtitle: "Inilalarawan ng patakarang ito ang mga tuntunin at kondisyon para sa pag-aayos.",
+    terms_merchant_title: "ebin\u00b0 Mga Tuntunin at Kondisyon ng Merchant",
+    terms_merchant_subtitle: "Inilalarawan ng patakarang ito ang mga tuntunin at kondisyon para sa mga merchant.",
     re_get_service: "Kumuha ng serbisyo",
 
     footer_about: "Tungkol Sa Amin",
@@ -449,34 +985,53 @@ window.EBIN_LANG_NAMES = {
         el.textContent = dict[key];
       }
     });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (dict[key] != null) {
+        el.setAttribute('placeholder', dict[key]);
+      }
+    });
     document.documentElement.setAttribute('lang', lang === 'tl' ? 'tl' : lang);
     var codeEl = document.getElementById('navLangCode');
     if (codeEl) codeEl.textContent = lang.toUpperCase();
-    document.querySelectorAll('.navbar__lang-dropdown button').forEach(function(btn){
+    var codeMobile = document.getElementById('navLangCodeMobile');
+    if (codeMobile) codeMobile.textContent = lang.toUpperCase();
+    document.querySelectorAll('.navbar__lang-dropdown button, .navbar__lang-dropdown--mobile button').forEach(function(btn){
       btn.classList.toggle('is-active', btn.getAttribute('data-lang') === lang);
     });
+    document.dispatchEvent(new CustomEvent('ebinLangChanged', { detail: { lang: lang } }));
   }
 
   function initLangSwitcher(){
     var btn = document.getElementById('navLangBtn');
     var dropdown = document.getElementById('navLangDropdown');
-    if (!btn || !dropdown) return;
+    var btnMobile = document.getElementById('navLangBtnMobile');
+    var dropdownMobile = document.getElementById('navLangDropdownMobile');
 
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      dropdown.classList.toggle('is-open');
-    });
-    document.addEventListener('click', function(){
-      dropdown.classList.remove('is-open');
-    });
-    dropdown.querySelectorAll('button[data-lang]').forEach(function(option){
-      option.addEventListener('click', function(e){
+    function wireBtn(b, d){
+      if (!b || !d) return;
+      b.addEventListener('click', function(e){
         e.stopPropagation();
-        var lang = option.getAttribute('data-lang');
-        saveLang(lang);
-        applyTranslations(lang);
-        dropdown.classList.remove('is-open');
+        // close the other dropdown if open
+        document.querySelectorAll('.navbar__lang-dropdown').forEach(function(dd){ dd.classList.remove('is-open'); });
+        d.classList.toggle('is-open');
       });
+      d.querySelectorAll('button[data-lang]').forEach(function(option){
+        option.addEventListener('click', function(e){
+          e.stopPropagation();
+          var lang = option.getAttribute('data-lang');
+          saveLang(lang);
+          applyTranslations(lang);
+          document.querySelectorAll('.navbar__lang-dropdown').forEach(function(dd){ dd.classList.remove('is-open'); });
+        });
+      });
+    }
+
+    wireBtn(btn, dropdown);
+    wireBtn(btnMobile, dropdownMobile);
+
+    document.addEventListener('click', function(){
+      document.querySelectorAll('.navbar__lang-dropdown').forEach(function(dd){ dd.classList.remove('is-open'); });
     });
   }
 

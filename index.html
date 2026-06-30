@@ -23,6 +23,17 @@
     <nav class="navbar">
       <div class="navbar__container">
         <a href="#top" id="navbar__logo"><img src = "ebin_HomePage_Logo.png" ></a>
+        <div class="navbar__mobile-lang" id="navLangMobile">
+          <button class="navbar__lang-btn navbar__lang-btn--mobile" id="navLangBtnMobile" type="button" aria-label="Select language">
+            <i class="fas fa-globe"></i> <span id="navLangCodeMobile">EN</span>
+          </button>
+          <ul class="navbar__lang-dropdown navbar__lang-dropdown--mobile" id="navLangDropdownMobile">
+            <li><button type="button" data-lang="en">English</button></li>
+            <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+            <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+            <li><button type="button" data-lang="tl">Tagalog</button></li>
+          </ul>
+        </div>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> 
           <span class="bar"></span>
@@ -273,8 +284,8 @@
   </div>
 
     <nav class="banner" id="bannerinfo">
-      <h1>Get a pack of two USB-C charging cables starting at just $4.00*</h1>
-      <h2>High-quality, durable accessories you can trust, brought to you by ebin at unbeatable prices.</h2>
+      <h1 data-i18n="cable_banner_heading">Get a pack of two USB-C charging cables starting at just $4.00*</h1>
+      <h2 data-i18n="cable_banner_sub">High-quality, durable accessories you can trust, brought to you by ebin at unbeatable prices.</h2>
     </nav>
 
     <!-- Download Section -->
@@ -792,6 +803,16 @@
         var selectedType = null;
         var selectedTier = null;
 
+        function currentLang(){
+          try { return localStorage.getItem('ebinLang') || 'en'; } catch(e){ return 'en'; }
+        }
+        function t(key){
+          var lang = currentLang();
+          var dict = (window.EBIN_TRANSLATIONS && window.EBIN_TRANSLATIONS[lang]) || {};
+          var fallback = (window.EBIN_TRANSLATIONS && window.EBIN_TRANSLATIONS.en) || {};
+          return dict[key] != null ? dict[key] : (fallback[key] != null ? fallback[key] : key);
+        }
+
         function fmt(n){
           return '$' + (n % 1 === 0 ? n : n.toFixed(2));
         }
@@ -801,7 +822,7 @@
           cta.style.display = 'inline-flex';
         }
         function showComingSoon(){
-          resultLabel.textContent = "We don't offer that repair for this device";
+          resultLabel.textContent = t('re_not_offered');
           priceEl.textContent = '';
           cta.style.display = 'none';
         }
@@ -828,13 +849,13 @@
             }
             if (entry.single != null) {
               tierField.style.display = 'none';
-              showPrice('Screen damage \u2014 ' + device, entry.single);
+              showPrice(t('re_screen') + ' \u2014 ' + device, entry.single);
               return;
             }
             // This device has tiered pricing — show the tier picker.
             tierField.style.display = 'block';
             if (!selectedTier) {
-              showPrompt('Choose a screen quality option above');
+              showPrompt(t('re_choose_quality'));
               return;
             }
             var price = entry[selectedTier];
@@ -842,8 +863,8 @@
               showComingSoon();
               return;
             }
-            var tierName = selectedTier === 'premium' ? 'Premium (OLED)' : 'Affordable (LCD)';
-            showPrice('Screen damage, ' + tierName + ' \u2014 ' + device, price);
+            var tierName = selectedTier === 'premium' ? t('re_premium') : t('re_affordable');
+            showPrice(t('re_screen') + ', ' + tierName + ' \u2014 ' + device, price);
             return;
           }
 
@@ -852,28 +873,28 @@
           if (selectedType === 'Battery service') {
             var bprice = BATTERY_PRICING[device];
             if (bprice == null) { showComingSoon(); return; }
-            showPrice('Battery service \u2014 ' + device, bprice);
+            showPrice(t('re_battery') + ' \u2014 ' + device, bprice);
             return;
           }
 
           if (selectedType === 'Rear camera damage') {
             var rprice = REAR_CAMERA_PRICING[device];
             if (rprice == null) { showComingSoon(); return; }
-            showPrice('Rear camera damage \u2014 ' + device, rprice);
+            showPrice(t('re_camera') + ' \u2014 ' + device, rprice);
             return;
           }
 
           if (selectedType === 'Charging port damage') {
             var cprice = CHARGING_PORT_PRICING[device];
             if (cprice == null) { showComingSoon(); return; }
-            showPrice('Charging port damage \u2014 ' + device, cprice);
+            showPrice(t('re_chargingport') + ' \u2014 ' + device, cprice);
             return;
           }
 
           if (selectedType === 'Back glass damage') {
             var gprice = BACK_GLASS_PRICING[device];
             if (gprice == null) { showComingSoon(); return; }
-            showPrice('Back glass damage \u2014 ' + device, gprice);
+            showPrice(t('re_backglass') + ' \u2014 ' + device, gprice);
             return;
           }
 
@@ -904,6 +925,10 @@
         deviceSelect.addEventListener('change', function(){
           selectedTier = null;
           tierButtons.forEach(function(b){ b.classList.remove('is-active'); });
+          update();
+        });
+
+        document.addEventListener('ebinLangChanged', function(){
           update();
         });
       })();
