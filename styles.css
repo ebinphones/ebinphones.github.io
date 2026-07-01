@@ -94,8 +94,12 @@ ul{ list-style: none; }
    element across section headers.
    ================================================================ */
 .eyebrow{
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   gap: 10px;
   font-family: var(--font-mono);
   font-size: 13px;
@@ -2107,6 +2111,10 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
 
   .hero{ padding: 90px 6% 70px; text-align: center; }
   .hero__container{ align-items: center; text-align: center; }
+  .hero__container .eyebrow{
+    text-align: left;
+    align-self: center;
+  }
   .hero__description{ margin-left: auto; margin-right: auto; }
   .hero__mobile-mockup{
     display: block;
