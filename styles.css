@@ -2113,7 +2113,10 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   .hero__container{ align-items: center; text-align: center; }
   .hero__container .eyebrow{
     text-align: left;
-    align-self: center;
+    width: fit-content;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero__description{ margin-left: auto; margin-right: auto; }
   .hero__mobile-mockup{
