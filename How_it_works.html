@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/610ac3ea40.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  shrink-to-fit=no" />
+    <title>ebin&#176; | Sell and Repair Used Electronics</title>
+    
+    <link rel = "shortcut icon" type = "image/png" href="ebin - Logo (Redesign) 4000*4000.png"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="./styles.css"/>
+    <script src="translations.js"></script>
+
+
+    
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html " id="navbar__logo"><img src = "ebin_HomePage_Logo.png"></a></a>
+        <div class="navbar__mobile-lang" id="navLangMobile">
+          <button class="navbar__lang-btn navbar__lang-btn--mobile" id="navLangBtnMobile" type="button" aria-label="Select language">
+            <i class="fas fa-globe"></i> <span id="navLangCodeMobile">EN</span>
+          </button>
+          <ul class="navbar__lang-dropdown navbar__lang-dropdown--mobile" id="navLangDropdownMobile">
+            <li><button type="button" data-lang="en">English</button></li>
+            <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+            <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+            <li><button type="button" data-lang="tl">Tagalog</button></li>
+          </ul>
+        </div>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> 
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html#home" class="navbar__links" id="home-page" data-i18n="nav_home">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.html#about" class="navbar__links" id="about-page" data-i18n="nav_about">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.html#services" class="navbar__links" id="services-page" data-i18n="nav_support">Support</a>
+          </li>
+          <li class="navbar__item navbar__lang">
+            <button class="navbar__lang-btn" id="navLangBtn" type="button" aria-label="Select language">
+              <i class="fas fa-globe"></i> <span id="navLangCode">EN</span>
+            </button>
+            <ul class="navbar__lang-dropdown" id="navLangDropdown">
+              <li><button type="button" data-lang="en">English</button></li>
+              <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+              <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+              <li><button type="button" data-lang="tl">Tagalog</button></li>
+            </ul>
+          </li>
+          <li class="navbar__btn">
+            <a href="index.html#sign-up" class="button" id="signup" data-i18n="nav_download">Download</a>
+          </li>
+        </ul>
+      </div>
+      
+    </nav>
+
+    <div class="text-center">
+      <h1 id = "Sell" data-i18n="hiw_title">How it works</h1>
+    </div>
+
+    <!-- Mobile-only illustrated step summaries -->
+    <div class="hiw-illustrated">
+      <h2 class="hiw-illustrated__title" data-i18n="sell_title">Sell your device</h2>
+      <div class="hiw-steps">
+        <div class="hiw-step">
+          <div class="hiw-step__num">1</div>
+          <div class="hiw-step__icon"><i class="fas fa-clock"></i></div>
+          <p data-i18n="hiw_sell_step1">Get a quick quote for your phone</p>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-step__num">2</div>
+          <div class="hiw-step__icon"><i class="fas fa-box"></i></div>
+          <p data-i18n="hiw_sell_step2">Package and ship your device to us</p>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-step__num">3</div>
+          <div class="hiw-step__icon"><i class="fas fa-hand-holding-usd"></i></div>
+          <p data-i18n="hiw_sell_step3">We inspect your device and send your payment</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hiw-illustrated">
+      <h2 class="hiw-illustrated__title" data-i18n="hiw_repair_device">Repair your device</h2>
+      <div class="hiw-steps">
+        <div class="hiw-step">
+          <div class="hiw-step__num">1</div>
+          <div class="hiw-step__icon"><i class="fas fa-calendar-check"></i></div>
+          <p data-i18n="hiw_repair_step1">Book a repair &mdash; choose bring in or ship in</p>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-step__num">2</div>
+          <div class="hiw-step__icon"><i class="fas fa-truck"></i></div>
+          <p data-i18n="hiw_repair_step2">Send or drop off your device</p>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-step__num">3</div>
+          <div class="hiw-step__icon"><i class="fas fa-tools"></i></div>
+          <p data-i18n="hiw_repair_step3">We repair it and notify you when it's ready</p>
+        </div>
+      </div>
+      <div class="hiw-download">
+        <p class="hiw-download__cta" data-i18n="hiw_download_cta">Get the ebin&#176; app now!</p>
+        <a href="https://www.ebinusa.com/qrcode" id="hiwDownloadBtn">
+          <img src="appstoreBadge.png" id="hiwDownloadBadge" alt="Download ebin" class="hiw-download__badge">
+        </a>
+      </div>
+    </div>
+
+    <div class="howitworkscontainer">
+      <div class="row">
+        <div class="SellFeature">
+          <h1>Sell Feature Details</h1>
+      
+          <ul>
+            <ul><b><u>Before You Begin:</u></b><br></ul>
+            <ul><b>Back Up Data:</b> Backup any important data or files from your device to ensure you don't lose any information during the sell process. <br></ul>
+            <ul><b>Factory Reset Your Phone:</b> To protect your privacy and ensure that the next owner starts with a clean slate, perform a factory reset on your phone. A factory reset will erase all data on your device and restore it to its original settings. To do this, go to your device's settings, find the "Reset" or "Backup & Reset" option, and follow the on-screen instructions. Make sure to remove any memory cards or SIM cards from the device before resetting it.<br></ul>
+            <ul><b>Remove Your Accounts:</b> Before selling your phone, it's important to remove any accounts associated with it. This includes your Google or Apple account, as well as any other accounts linked to apps and services on your device. This step helps prevent the new owner from accessing your accounts and personal information.<br></ul>
+
+            <ul><b>Disable Factory Reset Protection (FRP):</b> If your Android device has Factory Reset Protection (FRP) enabled, make sure to disable it before performing the factory reset. FRP is a security feature that requires the previous Google account credentials to set up the device after a reset. You can disable FRP in the device's settings under "Security" or "Accounts."<br></ul>
+      
+
+            <ul>By following these steps, you can protect your data and privacy while ensuring that your used phone is ready for a new owner. It's essential to take these precautions to avoid any potential issues and provide a positive experience for the buyer.<br></ul> 
+            <ul><b><u>After You Begin:</u></b><br></ul>
+                <ul><b>Step 1. Streamlined Login:</b></ul>
+                <ul><b>1.1. </b>No more juggling usernames and passwords. Access our app securely with your Google or Apple account, ensuring a swift and secure start to your selling journey.</ul>
+                <ul><b>Step 2. Instant Access:</b></ul>
+                <ul><b>2.1 </b>The <span style="color:#5B45F5;">"Sell" Button</span> on the home screen is your gateway to quick and easy phone selling. With just a tap, you're on your way to a successful transaction.<br></ul>
+                <ul><b>Step 3. Effortless Phone Identification:</b></ul>
+                <ul><b>3.1 </b>The <span style="color:#5B45F5;">"Sell" Button</span> on the home screen is your gateway to quick and easy phone selling. With just a tap, you're on your way to a successful transaction.<br></ul>
+                <ul><b>3.2</b> Select your phone's <span style="color:#5B45F5;">Brand and Model</span> from our extensive database. No need to type it all out – we've simplified the process for you.<br></ul>
+                <ul><b>Step 4. Detailed Assessment:</b></ul>
+                <ul><b>4.1</b> We care about your phone's condition. Answer a set of questions about your phone's state, allowing us to provide you with the most accurate quote possible.<br></ul>
+                <ul><b >Step 5. Secure Verification:</b></ul>
+                <ul><b>5.1</b> To protect both you and the buyer, we require your phone's <a href="https://support.apple.com/en-us/HT204073" style="color: #5B45F5; text-decoration: underline;">IMEI Number</a> and <a href="https://support.apple.com/en-us/HT204073" style="color: #5B45F5; text-decoration: underline;">Serial Number</a>. Be assured that your data is safe, and this step helps prevent any fraudulent activity.<br></ul>
+                <ul><b> Step 6. Instant Price Quote:</b></ul>
+                <ul><b>6.1</b> Brace yourself for the exciting part! You'll instantly receive a guaranteed price for your phone if it meets the criteria you provided. No more guesswork or haggling.<br></ul>
+                <ul><b>Step 7. Payment Made Simple:</b></ul>
+                <ul><b>7.1</b> Choose your preferred payout method via popular services like Zelle® and Venmo. We prioritize your convenience, making sure you get your money the way you want it.<br></ul>
+                <ul><b>Step 8. Transparent Transaction:</b></ul>
+                <ul><b>8.1</b> We believe in transparency. All the essential transaction details, from shipping to payment methods, are presented clearly, leaving no room for confusion.<br></ul>
+                <ul><b>Step 9. Review & Confirmation:</b><ul>
+                <ul><b>9.1</b> Take a moment to review all the details before sealing the deal. Ensure everything is correct and that you're satisfied with the offered price.<br></ul>
+                <ul><b>Step 10. Eco-Friendly Choice:</b><ul>
+                <ul><b>10.1</b> Selling your old phone with us contributes to a more sustainable future. We promote responsible recycling and the reuse of electronics.<br></ul>
+                <ul><b>Step 11. Responsive Support:</b><ul>
+                <ul><b>11.1</b> Have any questions or concerns? Our dedicated support team is available to assist you at any point in the process.<br></ul>
+                <ul><b>Step 12. Worry-Free Process:</b><ul>
+                <ul id = "ShipRepair"> </ul> <b>12.1</b> Relax, knowing that you've made a smart choice. We'll guide you through the entire process, from packaging your phone to sending it off, ensuring a smooth and stress-free experience.<br></ul>
+                <h1><b>Repair Feature Details</b><br></h1>
+                <ul><b><u>Before You Begin:</u></b><br></ul>
+                <ul><b>Check Warranty:</b> Determine if your electronic device is still under warranty. If it is, contact the manufacturer or authorized service center to avoid any out-of-pocket expenses.<br></ul>
+                <ul><b>Back Up Data:</b> Backup any important data or files from your device to ensure you don't lose any information during the repair process. <br></ul>
+                <ul><b>Remove Accessories:</b> Remove any accessories such as cases, chargers, SIM cards, or memory cards from the device. <br></ul>
+
+                <ul><b><u>After You Begin:</u></b><br></ul>
+                
+                <ul><b>Introduction:</b> Our mobile app provides a seamless way for customers to initiate and track mail-in repairs for their devices. Whether you have a smartphone, tablet, or other electronic device, follow these step-by-step instructions to utilize our mail-in repair service via the mobile app:</ul>
+
+                <ul><b>Step 1: Download and Install the App</b></ul>
+
+                <ul><b>1.1.</b> Download and install our mobile app from your device's app store.</ul>
+
+                <ul><b>1.2.</b> Log in to the app using your existing account credentials or conveniently sign in with your Google or Apple account.</ul>
+
+                <ul><b>Step 2: Initiate the Repair Request</b></ul>
+
+                <ul><b>2.1.</b> From the home screen, tap the <span style="color:#5B45F5;">Repair Button</span> within the relevant category.</ul>
+
+                <ul><b>2.2.</b> Select the <span style="color:#5B45F5;">Brand and Model</span> of your device from the available options.</ul>
+
+                <ul><b>Step 3: Describe the Repair</b></ul>
+
+                <ul><b>3.1.</b> Users will be prompted to provide details about the type of repair needed and the current state of their devices. Answer these questions accurately to help our technicians understand the issue.</ul>
+
+                <ul><b>Step 4: Verify Device Information</b></ul>
+
+                <ul><b>4.1.</b> For verification purposes, users will need to provide the <a href="https://support.apple.com/en-us/HT204073" style="color: #5B45F5; text-decoration: underline;">IMEI Number</a> and <a href="https://support.apple.com/en-us/HT204073" style="color: #5B45F5; text-decoration: underline;">Serial Number</a> of their devices. This ensures a secure and accurate repair process.</ul>
+
+                <ul><b>Step 5: Choose Repair Method</b></ul>
+
+                <ul><b>5.1.</b> Users have the option to either "Ship In For Repair" to our ebin repair center or explore other available repair options.</ul>
+
+                <ul></ulid><b>Step 6: Ship In for Repair</b></ul>
+
+                <ul id = "BringRepair"><b>6.1.</b> If users choose to "Ship In For Repair," they should carefully package their device as instructed in the app and follow the shipping label generation process.</ul>
+
+                <ul><b>6.2.</b> Drop off the package at their nearest postal service or courier drop-off location, keeping track of the shipment.</ul>
+
+                <ul><b>Step 7: Explore Local Repair Shops</b></ul>
+
+                <ul><b>7.1</b> Users interested in local repair options will be prompted with a list of our ebin Certified* repair shops in their area.</ul>
+
+                <ul><b>Step 8: Book an Appointment</b></ul>
+
+                <ul><b>8.1.</b> After selecting a local repair shop, users can proceed with the booking process for their appointment.</ul>
+
+                <ul><b>Step 9: Confirm Reservation</b></ul>
+
+                <ul><b>9.1.</b> Users will receive confirmation of their reservation for the upcoming appointment at one of our ebin Certified* repair shops.</ul>
+
+                <ul><b>Conclusion:</b></ul>
+                <ul>Our mobile app simplifies the process of initiating and tracking mail-in repairs or finding a nearby ebin Certified* repair shop. Whether you prefer the convenience of mail-in repair or the expertise of local technicians, our app ensures a hassle-free experience. If users have any questions or need assistance during any part of the process, our customer support team is readily available through the app to provide help and guidance. We're dedicated to delivering a smooth and efficient repair experience for our customers.</ul>
+
+          </ul>
+        </div>
+    </div>
+
+  </div>
+  <div class="empty-space">
+  </div>
+
+
+            <!-- Footer Section -->
+           <!-- Footer Section -->
+           <div class="footer__container">
+            <div class="footer__links">
+              <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                  <h2 data-i18n="footer_about">About Us</h2>
+                  <a href="/index.html#home" data-i18n="footer_home">Home</a> <a href="/How_it_works.html" data-i18n="footer_howitworks">How it works</a>
+                  <a href="/privacy.html" data-i18n="footer_privacy">Privacy Policy</a> <a href="/TermOfService.html" data-i18n="footer_terms">Terms of Service</a> <a href="/Quality_Guidelines.html" data-i18n="footer_quality">Quality Guidelines</a>
+                </div>
+                <div class="footer__link--items">
+                  <h2 data-i18n="footer_service">Service</h2>
+                  <a href="/repair_appointment.html" data-i18n="footer_repair_service">Repair & Service (Beta)</a>
+                </div>
+                <div class="footer__link--items">
+                  <h2 data-i18n="footer_merchant">Merchant</h2>
+                  <a href="/partner_with_ebin.html" data-i18n="footer_partner">Partner with ebin&#176; (Coming Soon)</a> 
+                  <a href="/Pricing.html" data-i18n="footer_pricing">Pricing (Coming Soon)</a>
+                </div>
+                <div class="footer__link--items">
+                  <h2 data-i18n="footer_contact">Contact Us</h2>
+                  <a href="/Contact.html" data-i18n="footer_contact_link">Contact</a> <a href="/support.html" data-i18n="footer_support">Support</a>
+                  
+                </div>
+              </div>
+              <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                  <h2 data-i18n="footer_social">Social Media</h2>
+                  <a href="https://www.facebook.com/people/Ebin-One-Place-For-All-Electronics/100068000297913/" data-i18n="footer_facebook">Facebook</a><a href="https://www.instagram.com/ebin_usa/" data-i18n="footer_instagram">Instagram</a> <a href="https://linktr.ee/ebinusa" data-i18n="footer_linktree">Linktree</a>   
+                </div>
+                <div class="footer__link--items footer__link--items--download">
+                  <h2 data-i18n="footer_download_app">Download the App</h2>
+                  <div class="footer__download-badges">
+                    <a href="https://apps.apple.com/us/app/ebin/id1563293790" target="_blank"><img src="appstoreBadge.png" alt="Download on the App Store"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US" target="_blank"><img src="ebin - GooglePlay.png" alt="Get it on Google Play"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class="social__media">
+              <div class="social__media--wrap">
+                <div class="footer__logo">
+                  <a href="/" id="footer__logo">ebin&#176;</a>
+                </div>
+                <p class="website__rights">© ebin&#176; 2026. <span data-i18n="footer_rights">All rights reserved</span></p>
+                <div class="social__icons">
+                  <a href="https://www.facebook.com/people/Ebin-One-Place-For-All-Electronics/100068000297913/" class="social__icon--link" target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/ebin_usa/" class="social__icon--link"
+                  ><i class="fab fa-instagram"></i
+                ></a></a>
+              </div>
+            </section>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+          </div>
+          <script src="app.js"></script>
+    <script type="text/javascript">
+      (function(){
+        var btn = document.getElementById('hiwDownloadBtn');
+        var badge = document.getElementById('hiwDownloadBadge');
+        if (!btn) return;
+        var ua = navigator.userAgent || '';
+        var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /Android/.test(ua);
+        if (isIOS) {
+          btn.setAttribute('href', 'https://apps.apple.com/us/app/ebin/id1563293790');
+          if (badge) badge.setAttribute('src', 'appstoreBadge.png');
+        } else if (isAndroid) {
+          btn.setAttribute('href', 'https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US');
+          if (badge) badge.setAttribute('src', 'ebin - GooglePlay.png');
+        } else {
+          btn.setAttribute('href', 'https://www.ebinusa.com/qrcode');
+        }
+      })();
+      </script>
+</body>
+
+
+    
+</html>
+
+
