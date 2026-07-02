@@ -19,6 +19,17 @@
     <nav class="navbar">
       <div class="navbar__container">
         <a href="index.html" id="navbar__logo"><img src="ebin_HomePage_Logo.png"></a>
+        <div class="navbar__mobile-lang" id="navLangMobile">
+          <button class="navbar__lang-btn navbar__lang-btn--mobile" id="navLangBtnMobile" type="button" aria-label="Select language">
+            <i class="fas fa-globe"></i> <span id="navLangCodeMobile">EN</span>
+          </button>
+          <ul class="navbar__lang-dropdown navbar__lang-dropdown--mobile" id="navLangDropdownMobile">
+            <li><button type="button" data-lang="en">English</button></li>
+            <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+            <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+            <li><button type="button" data-lang="tl">Tagalog</button></li>
+          </ul>
+        </div>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -26,13 +37,13 @@
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="index.html#home" class="navbar__links" id="home-page" data-i18n="nav_home" data-i18n="footer_home">Home</a>
+            <a href="index.html#home" class="navbar__links" id="home-page" data-i18n="nav_home">Home</a>
           </li>
           <li class="navbar__item">
             <a href="index.html#about" class="navbar__links" id="about-page" data-i18n="nav_about">About</a>
           </li>
           <li class="navbar__item">
-            <a href="index.html#services" class="navbar__links" id="services-page" data-i18n="nav_support" data-i18n="footer_support">Support</a>
+            <a href="index.html#services" class="navbar__links" id="services-page" data-i18n="nav_support">Support</a>
           </li>
           <li class="navbar__item navbar__lang">
             <button class="navbar__lang-btn" id="navLangBtn" type="button" aria-label="Select language">
