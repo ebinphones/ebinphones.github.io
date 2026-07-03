@@ -1904,7 +1904,7 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
 .screen-compare{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 32px;
   max-width: 900px;
   margin: 40px auto 50px;
   padding: 0 6%;
@@ -1947,13 +1947,14 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   font-weight: 500;
   color: var(--muted);
   display: block;
+  margin-top: 3px;
   letter-spacing: 0.04em;
 }
 .screen-compare__row{
   display: flex;
   align-items: flex-start;
-  gap: 14px;
-  margin-bottom: 18px;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 .screen-compare__row:last-child{ margin-bottom: 0; }
 .screen-compare__icon{
@@ -1971,16 +1972,17 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
 .screen-compare__text{
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 .screen-compare__text strong{
   color: var(--ink);
   font-size: 15px;
-  margin-bottom: 2px;
+  line-height: 1.3;
 }
 .screen-compare__text span{
   color: var(--muted);
   font-size: 13px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 @media (max-width: 768px){
@@ -2217,6 +2219,10 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   /* Footer */
   .footer__links{ max-width: 1800px; padding: 0 60px 50px; }
   .social__media--wrap{ max-width: 1800px; padding: 24px 60px; }
+
+  /* Screen Quality Guidelines comparison */
+  .screen-compare{ max-width: 1400px; gap: 48px; }
+  .screen-compare__col{ padding: 40px 36px; }
 }
 
 @media screen and (min-width: 2600px){
@@ -2259,4 +2265,8 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   /* Footer */
   .footer__links{ max-width: 2400px; padding: 0 80px 50px; }
   .social__media--wrap{ max-width: 2400px; padding: 24px 80px; }
+
+  /* Screen Quality Guidelines comparison */
+  .screen-compare{ max-width: 1800px; gap: 60px; }
+  .screen-compare__col{ padding: 48px 44px; }
 }
