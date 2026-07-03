@@ -2163,74 +2163,99 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   .column, .column1{ padding: 28px; }
 }
 
+
 /* ================================================================
    Ultrawide / large monitor support (≥ 1800px)
    Expands all major containers so content doesn't appear squeezed
    on 2560px, 3440px, and larger displays.
    ================================================================ */
 @media screen and (min-width: 1800px){
+  /* Navbar */
   .navbar__container{
     max-width: 1800px;
     padding: 0 60px;
   }
 
-  .hero__container{
-    max-width: 900px;
-  }
+  /* Hero */
+  .hero__container{ max-width: 1000px; }
 
-  .main__container{
-    max-width: 1700px;
-  }
+  /* About section */
+  .main__container{ max-width: 1700px; }
+  .main__container > h1{ max-width: 1000px; }
 
-  .main__container > h1{
-    max-width: 960px;
-  }
+  /* Repair estimator */
+  .repair-estimator{ max-width: 960px; padding: 30px 4% 90px; }
+  .repair-estimator__intro{ max-width: 700px; }
+  .repair-estimator__panel{ padding: 48px; }
 
-  .repair-estimator{
-    max-width: 960px;
-    padding: 30px 4% 90px;
-  }
+  /* Highlights */
+  .services__wrapper{ max-width: 1600px; }
 
-  .repair-estimator__panel{
-    padding: 48px;
-  }
+  /* Download / slider section */
+  .main__container_download{ max-width: 1500px; }
 
-  .services__wrapper{
-    max-width: 1600px;
-  }
+  /* Privacy / ToS / generic pages */
+  .container{ max-width: 1100px; }
+  .howitworkscontainer{ max-width: 1100px; }
 
-  .footer__container{
-    max-width: 1800px;
-    padding: 0 60px 40px;
-  }
+  /* Terms pages */
+  .Terms_and_Conditions_of_Sell h1{ max-width: 1100px; }
+
+  /* Support page */
+  .support{ max-width: 1200px; }
+
+  /* Pricing pages */
+  .pricing-text, .pricing-text_bottom{ max-width: 1100px; }
+  .container_pricing_0, .container_pricing_1{ max-width: 1200px; }
+
+  /* Partner / merchant form */
+  .container_exclusive, .container_exclusive_partner{ max-width: 900px; }
+  .merchant-signup{ padding: 0 4%; }
+  .merchant-signup__card{ max-width: 800px; }
+
+  /* Footer */
+  .footer__links{ max-width: 1800px; padding: 0 60px 50px; }
+  .social__media--wrap{ max-width: 1800px; padding: 24px 60px; }
 }
 
 @media screen and (min-width: 2600px){
-  .navbar__container{
-    max-width: 2400px;
-  }
+  /* Navbar */
+  .navbar__container{ max-width: 2400px; }
 
-  .hero__container{
-    max-width: 1100px;
-  }
+  /* Hero */
+  .hero__container{ max-width: 1200px; }
 
-  .main__container{
-    max-width: 2200px;
-  }
+  /* About section */
+  .main__container{ max-width: 2200px; }
+  .main__container > h1{ max-width: 1200px; }
 
-  .main__container > h1{
-    max-width: 1200px;
-  }
+  /* Repair estimator */
+  .repair-estimator{ max-width: 1200px; }
+  .repair-estimator__intro{ max-width: 900px; }
 
-  .repair-estimator{
-    max-width: 1200px;
-  }
+  /* Highlights */
+  .services__wrapper{ max-width: 2000px; }
 
-  .services__wrapper{
-    max-width: 2000px;
-  }
+  /* Download section */
+  .main__container_download{ max-width: 1900px; }
 
-  .footer__container{
-    max-width: 2400px;
-  }
+  /* Privacy / ToS / generic pages */
+  .container{ max-width: 1400px; }
+  .howitworkscontainer{ max-width: 1400px; }
+  .Terms_and_Conditions_of_Sell h1{ max-width: 1400px; }
+
+  /* Support page */
+  .support{ max-width: 1600px; }
+
+  /* Pricing pages */
+  .pricing-text, .pricing-text_bottom{ max-width: 1400px; }
+  .container_pricing_0, .container_pricing_1{ max-width: 1600px; }
+
+  /* Partner / merchant form */
+  .container_exclusive, .container_exclusive_partner{ max-width: 1200px; }
+  .merchant-signup__card{ max-width: 1100px; }
+
+  /* Footer */
+  .footer__links{ max-width: 2400px; padding: 0 80px 50px; }
+  .social__media--wrap{ max-width: 2400px; padding: 24px 80px; }
 }
