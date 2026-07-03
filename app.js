@@ -91,4 +91,24 @@ if (slider) {
   });
 }
 
+// Navbar "Download" button (desktop nav item and mobile hamburger menu item)
+// should go straight to the App Store or Google Play based on the visitor's
+// device/OS instead of scrolling down to the #sign-up section.
+(function(){
+  var downloadBtn = document.getElementById('signup');
+  if (!downloadBtn) return;
+  var ua = navigator.userAgent || '';
+  // Treat any Apple device/platform (iPhone, iPad, or Mac desktop) as "Apple";
+  // everything else (Windows, Android, Linux, ChromeOS, etc.) gets Google Play.
+  var isApple = /iPad|iPhone|iPod|Macintosh/.test(ua) || navigator.platform === 'MacIntel';
+  downloadBtn.setAttribute(
+    'href',
+    isApple
+      ? 'https://apps.apple.com/us/app/ebin/id1563293790'
+      : 'https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US'
+  );
+  downloadBtn.setAttribute('target', '_blank');
+  downloadBtn.setAttribute('rel', 'noopener');
+})();
+
 
