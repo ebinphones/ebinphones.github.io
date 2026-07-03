@@ -1838,9 +1838,10 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   box-sizing: border-box;
   max-height: 0;
   padding: 0 20px;
-  transition: max-height .3s ease, padding .3s ease;
+  transition: max-height .4s ease, padding .3s ease;
 }
 .accordion.active + .panel{
+  max-height: 3000px;
   padding: 16px 20px 20px;
 }
 .accordion{
