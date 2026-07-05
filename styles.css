@@ -1026,6 +1026,42 @@ button:hover{ background: var(--violet-700); }
   border-color: var(--violet-600);
 }
 
+.estimator-tabs{
+  display: inline-flex;
+  gap: 4px;
+  background: var(--violet-100);
+  border-radius: var(--radius-pill);
+  padding: 4px;
+  margin-bottom: 28px;
+}
+.estimator-tabs__btn{
+  background: none;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  color: var(--violet-700);
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease;
+}
+.estimator-tabs__btn.is-active{
+  background: var(--surface);
+  color: var(--violet-700);
+  box-shadow: var(--shadow-sm);
+}
+.estimator-tabs__btn:not(.is-active):hover{ background: rgba(255,255,255,0.4); }
+
+.re-option--storage{ min-width: 64px; }
+.re-option--lock{ min-width: 100px; }
+.re-option--cond{ text-align: left; }
+
+.repair-estimator__field:last-of-type .re-option--cond{
+  white-space: normal;
+  line-height: 1.3;
+}
+
 .repair-estimator__learn-more{
   display: inline-block;
   margin-top: 14px;

@@ -158,12 +158,17 @@
     <div class="repair-estimator" id="repair-pricing">
       <div class="eyebrow eyebrow--center" style="justify-content:center;">
         <span class="signal"><span></span><span></span><span></span></span>
-        <span data-i18n="re_eyebrow">Repair Pricing</span>
+        <span data-i18n="re_eyebrow" id="re-eyebrow-text">Repair Pricing</span>
       </div>
-      <h1 data-i18n="re_heading">Get an instant repair estimate</h1>
-      <p class="repair-estimator__intro" data-i18n="re_intro">Select your device and the type of damage to see an estimated cost.</p>
+      <h1 data-i18n="re_heading" id="re-heading-text">Get an instant repair estimate</h1>
+      <p class="repair-estimator__intro" data-i18n="re_intro" id="re-intro-text">Select your device and the type of damage to see an estimated cost.</p>
 
-      <div class="repair-estimator__panel">
+      <div class="estimator-tabs" id="estimator-tabs">
+        <button type="button" class="estimator-tabs__btn is-active" id="tab-repair" data-i18n="est_tab_repair">Repair Estimate</button>
+        <button type="button" class="estimator-tabs__btn" id="tab-sell" data-i18n="est_tab_sell">Sell Estimate</button>
+      </div>
+
+      <div class="repair-estimator__panel" id="repair-panel">
         <div class="repair-estimator__field">
           <label for="re-device" data-i18n="re_device_label">Choose your device</label>
           <select id="re-device">
@@ -233,6 +238,77 @@
           <span class="re-result__label" id="re-result-label" data-i18n="re_prompt_select">Select a damage type above</span>
           <span class="re-result__price" id="re-price"></span>
           <a href="repair_appointment.html" class="learn_more_button" id="re-cta" style="display:none;" data-i18n="re_get_service">Get service</a>
+        </div>
+      </div>
+
+      <div class="repair-estimator__panel" id="sell-panel" style="display:none;">
+        <div class="repair-estimator__field">
+          <label for="se-device" data-i18n="se_device_label">Choose your device</label>
+          <select id="se-device">
+            <option value="iPhone 17 Pro Max">iPhone 17 Pro Max</option>
+            <option value="iPhone 17 Pro">iPhone 17 Pro</option>
+            <option value="iPhone 17 Air">iPhone 17 Air</option>
+            <option value="iPhone 17" selected>iPhone 17</option>
+            <option value="iPhone 17e">iPhone 17e</option>
+            <option value="iPhone 16e">iPhone 16e</option>
+            <option value="iPhone 16 Pro Max">iPhone 16 Pro Max</option>
+            <option value="iPhone 16 Pro">iPhone 16 Pro</option>
+            <option value="iPhone 16 Plus">iPhone 16 Plus</option>
+            <option value="iPhone 16">iPhone 16</option>
+            <option value="iPhone SE (2022)">iPhone SE (2022)</option>
+            <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+            <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+            <option value="iPhone 15 Plus">iPhone 15 Plus</option>
+            <option value="iPhone 15">iPhone 15</option>
+            <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+            <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+            <option value="iPhone 14 Plus">iPhone 14 Plus</option>
+            <option value="iPhone 14">iPhone 14</option>
+            <option value="iPhone 13 Pro Max">iPhone 13 Pro Max</option>
+            <option value="iPhone 13 Pro">iPhone 13 Pro</option>
+            <option value="iPhone 13 Mini">iPhone 13 Mini</option>
+            <option value="iPhone 13">iPhone 13</option>
+            <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
+            <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+            <option value="iPhone 12 Mini">iPhone 12 Mini</option>
+            <option value="iPhone 12">iPhone 12</option>
+            <option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+            <option value="iPhone 11 Pro">iPhone 11 Pro</option>
+            <option value="iPhone 11">iPhone 11</option>
+            <option value="iPhone SE(2020)">iPhone SE(2020)</option>
+            <option value="iPhone XR">iPhone XR</option>
+            <option value="iPhone XS Max">iPhone XS Max</option>
+            <option value="iPhone XS">iPhone XS</option>
+          </select>
+        </div>
+
+        <div class="repair-estimator__field">
+          <p class="repair-estimator__field-label" data-i18n="se_storage_label">Choose your storage</p>
+          <div class="repair-estimator__options" id="se-storage"></div>
+        </div>
+
+        <div class="repair-estimator__field">
+          <p class="repair-estimator__field-label" data-i18n="se_lock_label">Is your device locked or unlocked?</p>
+          <div class="repair-estimator__options" id="se-lock">
+            <button type="button" class="re-option re-option--lock is-active" data-lock="unlocked" data-i18n="se_unlocked">Unlocked</button>
+            <button type="button" class="re-option re-option--lock" data-lock="locked" data-i18n="se_locked">Locked</button>
+          </div>
+        </div>
+
+        <div class="repair-estimator__field">
+          <p class="repair-estimator__field-label" data-i18n="se_condition_label">Select your device's condition</p>
+          <div class="repair-estimator__options" id="se-condition">
+            <button type="button" class="re-option re-option--cond" data-cond="veryGood" data-i18n="se_cond_verygood">Very Good</button>
+            <button type="button" class="re-option re-option--cond" data-cond="good" data-i18n="se_cond_good">Good</button>
+            <button type="button" class="re-option re-option--cond" data-cond="fair" data-i18n="se_cond_fair">Fair</button>
+            <button type="button" class="re-option re-option--cond" data-cond="cracked" data-i18n="se_cond_cracked">Cracked Back/Screen (Otherwise Works)</button>
+          </div>
+        </div>
+
+        <div class="repair-estimator__result" id="se-result">
+          <span class="re-result__label" id="se-result-label" data-i18n="se_prompt_select">Select your device's condition above</span>
+          <span class="re-result__price" id="se-price"></span>
+          <a href="#" class="learn_more_button" id="se-cta" style="display:none;" data-i18n="se_get_offer">Get this offer</a>
         </div>
       </div>
     </div>
@@ -807,6 +883,45 @@
           "iPhone 16 Pro Max": 114.99
         };
 
+        // Sell estimate pricing: what ebin pays the customer for their device,
+        // based on storage size, lock status, and condition.
+        var SELL_PRICING = {
+          "iPhone XS":            { 64:{lVeryGood:33,lGood:23,lFair:13,lCracked:23,uVeryGood:43,uGood:33,uFair:23,uCracked:27}, 256:{lVeryGood:43,lGood:33,lFair:23,lCracked:27,uVeryGood:33,uGood:43,uFair:33,uCracked:33}, 512:{lVeryGood:53,lGood:43,lFair:33,lCracked:33,uVeryGood:23,uGood:33,uFair:43,uCracked:37} },
+          "iPhone XS Max":        { 64:{lVeryGood:93,lGood:83,lFair:73,lCracked:37,uVeryGood:103,uGood:93,uFair:87,uCracked:53}, 256:{lVeryGood:103,lGood:93,lFair:83,lCracked:43,uVeryGood:107,uGood:103,uFair:93,uCracked:63}, 512:{lVeryGood:107,lGood:103,lFair:93,lCracked:47,uVeryGood:113,uGood:107,uFair:103,uCracked:73} },
+          "iPhone XR":            { 64:{lVeryGood:43,lGood:33,lFair:27,lCracked:23,uVeryGood:47,uGood:43,uFair:37,uCracked:27}, 128:{lVeryGood:47,lGood:43,lFair:33,lCracked:27,uVeryGood:53,uGood:47,uFair:43,uCracked:33} },
+          "iPhone SE(2020)":      { 64:{lVeryGood:27,lGood:23,lFair:17,lCracked:17,uVeryGood:37,uGood:33,uFair:27,uCracked:23}, 128:{lVeryGood:33,lGood:27,lFair:23,lCracked:23,uVeryGood:43,uGood:37,uFair:33,uCracked:27}, 256:{lVeryGood:37,lGood:33,lFair:27,lCracked:27,uVeryGood:47,uGood:43,uFair:37,uCracked:33} },
+          "iPhone 11":            { 64:{lVeryGood:73,lGood:67,lFair:63,lCracked:33,uVeryGood:83,uGood:77,uFair:73,uCracked:37}, 128:{lVeryGood:77,lGood:73,lFair:67,lCracked:37,uVeryGood:87,uGood:83,uFair:77,uCracked:43}, 256:{lVeryGood:83,lGood:77,lFair:73,lCracked:43,uVeryGood:93,uGood:87,uFair:83,uCracked:47} },
+          "iPhone 11 Pro":        { 64:{lVeryGood:107,lGood:103,lFair:93,lCracked:43,uVeryGood:117,uGood:113,uFair:107,uCracked:53}, 256:{lVeryGood:113,lGood:107,lFair:103,lCracked:47,uVeryGood:123,uGood:117,uFair:113,uCracked:63}, 512:{lVeryGood:113,lGood:113,lFair:107,lCracked:53,uVeryGood:133,uGood:123,uFair:117,uCracked:67} },
+          "iPhone 11 Pro Max":    { 64:{lVeryGood:123,lGood:113,lFair:103,lCracked:53,uVeryGood:133,uGood:123,uFair:113,uCracked:73}, 256:{lVeryGood:133,lGood:123,lFair:113,lCracked:63,uVeryGood:143,uGood:133,uFair:123,uCracked:83}, 512:{lVeryGood:143,lGood:133,lFair:123,lCracked:73,uVeryGood:153,uGood:143,uFair:133,uCracked:93} },
+          "iPhone 12 Mini":       { 64:{lVeryGood:67,lGood:57,lFair:53,lCracked:37,uVeryGood:97,uGood:87,uFair:83,uCracked:53}, 128:{lVeryGood:73,lGood:67,lFair:57,lCracked:43,uVeryGood:103,uGood:97,uFair:87,uCracked:57}, 256:{lVeryGood:83,lGood:73,lFair:67,lCracked:53,uVeryGood:113,uGood:103,uFair:97,uCracked:63} },
+          "iPhone 12":            { 64:{lVeryGood:103,lGood:97,lFair:93,lCracked:33,uVeryGood:107,uGood:103,uFair:97,uCracked:37}, 128:{lVeryGood:107,lGood:103,lFair:97,lCracked:37,uVeryGood:113,uGood:107,uFair:103,uCracked:43}, 256:{lVeryGood:113,lGood:197,lFair:103,lCracked:43,uVeryGood:117,uGood:113,uFair:197,uCracked:47} },
+          "iPhone 12 Pro":        { 128:{lVeryGood:133,lGood:123,lFair:113,lCracked:103,uVeryGood:153,uGood:143,uFair:133,uCracked:113}, 256:{lVeryGood:143,lGood:133,lFair:123,lCracked:113,uVeryGood:163,uGood:153,uFair:143,uCracked:123}, 512:{lVeryGood:153,lGood:143,lFair:133,lCracked:123,uVeryGood:173,uGood:163,uFair:153,uCracked:133} },
+          "iPhone 12 Pro Max":    { 128:{lVeryGood:177,lGood:173,lFair:163,lCracked:103,uVeryGood:193,uGood:187,uFair:177,uCracked:123}, 256:{lVeryGood:187,lGood:177,lFair:173,lCracked:113,uVeryGood:203,uGood:193,uFair:187,uCracked:127}, 512:{lVeryGood:193,lGood:187,lFair:177,lCracked:123,uVeryGood:207,uGood:203,uFair:193,uCracked:133} },
+          "iPhone 13 Mini":       { 128:{lVeryGood:153,lGood:147,lFair:143,lCracked:87,uVeryGood:153,uGood:147,uFair:143,uCracked:107}, 256:{lVeryGood:157,lGood:153,lFair:147,lCracked:93,uVeryGood:157,uGood:153,uFair:147,uCracked:113}, 512:{lVeryGood:167,lGood:157,lFair:153,lCracked:103,uVeryGood:167,uGood:157,uFair:153,uCracked:123} },
+          "iPhone 13":            { 128:{lVeryGood:157,lGood:143,lFair:137,lCracked:107,uVeryGood:173,uGood:163,uFair:153,uCracked:117}, 256:{lVeryGood:167,lGood:157,lFair:143,lCracked:113,uVeryGood:183,uGood:173,uFair:163,uCracked:127}, 512:{lVeryGood:173,lGood:167,lFair:157,lCracked:123,uVeryGood:193,uGood:183,uFair:173,uCracked:133} },
+          "iPhone 13 Pro":        { 128:{lVeryGood:213,lGood:193,lFair:187,lCracked:173,uVeryGood:243,uGood:233,uFair:227,uCracked:203}, 256:{lVeryGood:217,lGood:213,lFair:193,lCracked:183,uVeryGood:253,uGood:243,uFair:233,uCracked:213}, 512:{lVeryGood:223,lGood:217,lFair:213,lCracked:193,uVeryGood:263,uGood:253,uFair:243,uCracked:223}, 1000:{lVeryGood:247,lGood:223,lFair:217,lCracked:203,uVeryGood:273,uGood:263,uFair:253,uCracked:233} },
+          "iPhone 13 Pro Max":    { 128:{lVeryGood:243,lGood:233,lFair:223,lCracked:187,uVeryGood:273,uGood:263,uFair:253,uCracked:227}, 256:{lVeryGood:253,lGood:243,lFair:233,lCracked:193,uVeryGood:283,uGood:273,uFair:263,uCracked:233}, 512:{lVeryGood:263,lGood:253,lFair:243,lCracked:213,uVeryGood:293,uGood:283,uFair:273,uCracked:243}, 1000:{lVeryGood:273,lGood:263,lFair:253,lCracked:217,uVeryGood:303,uGood:293,uFair:283,uCracked:253} },
+          "iPhone 14":            { 128:{lVeryGood:193,lGood:183,lFair:173,lCracked:113,uVeryGood:233,uGood:223,uFair:213,uCracked:133}, 256:{lVeryGood:203,lGood:193,lFair:183,lCracked:123,uVeryGood:243,uGood:233,uFair:223,uCracked:143}, 512:{lVeryGood:207,lGood:203,lFair:193,lCracked:133,uVeryGood:253,uGood:243,uFair:233,uCracked:153} },
+          "iPhone 14 Plus":       { 128:{lVeryGood:243,lGood:233,lFair:223,lCracked:133,uVeryGood:273,uGood:263,uFair:253,uCracked:143}, 256:{lVeryGood:253,lGood:243,lFair:233,lCracked:143,uVeryGood:283,uGood:273,uFair:263,uCracked:153}, 512:{lVeryGood:263,lGood:253,lFair:243,lCracked:153,uVeryGood:287,uGood:283,uFair:273,uCracked:163} },
+          "iPhone 14 Pro":        { 128:{lVeryGood:233,lGood:223,lFair:213,lCracked:143,uVeryGood:263,uGood:253,uFair:243,uCracked:153}, 256:{lVeryGood:243,lGood:233,lFair:223,lCracked:153,uVeryGood:273,uGood:263,uFair:253,uCracked:163}, 512:{lVeryGood:253,lGood:243,lFair:233,lCracked:163,uVeryGood:283,uGood:273,uFair:263,uCracked:173}, 1000:{lVeryGood:263,lGood:253,lFair:243,lCracked:173,uVeryGood:287,uGood:283,uFair:273,uCracked:183} },
+          "iPhone 14 Pro Max":    { 128:{lVeryGood:303,lGood:293,lFair:283,lCracked:213,uVeryGood:333,uGood:323,uFair:313,uCracked:243}, 256:{lVeryGood:313,lGood:303,lFair:293,lCracked:223,uVeryGood:337,uGood:333,uFair:323,uCracked:253}, 512:{lVeryGood:323,lGood:313,lFair:303,lCracked:233,uVeryGood:343,uGood:337,uFair:333,uCracked:283}, 1000:{lVeryGood:333,lGood:323,lFair:313,lCracked:243,uVeryGood:347,uGood:343,uFair:337,uCracked:303} },
+          "iPhone 15":            { 128:{lVeryGood:233,lGood:223,lFair:213,lCracked:143,uVeryGood:263,uGood:253,uFair:243,uCracked:173}, 256:{lVeryGood:243,lGood:233,lFair:223,lCracked:153,uVeryGood:273,uGood:263,uFair:253,uCracked:183}, 512:{lVeryGood:253,lGood:243,lFair:233,lCracked:163,uVeryGood:283,uGood:273,uFair:263,uCracked:193} },
+          "iPhone 15 Plus":       { 128:{lVeryGood:313,lGood:303,lFair:293,lCracked:203,uVeryGood:333,uGood:323,uFair:313,uCracked:223}, 256:{lVeryGood:323,lGood:313,lFair:303,lCracked:213,uVeryGood:343,uGood:333,uFair:323,uCracked:233}, 512:{lVeryGood:333,lGood:323,lFair:313,lCracked:223,uVeryGood:353,uGood:343,uFair:333,uCracked:243} },
+          "iPhone 15 Pro":        { 128:{lVeryGood:313,lGood:303,lFair:293,lCracked:203,uVeryGood:333,uGood:323,uFair:313,uCracked:223}, 256:{lVeryGood:323,lGood:313,lFair:303,lCracked:207,uVeryGood:343,uGood:333,uFair:323,uCracked:233}, 512:{lVeryGood:333,lGood:323,lFair:313,lCracked:213,uVeryGood:353,uGood:343,uFair:333,uCracked:243}, 1000:{lVeryGood:343,lGood:333,lFair:323,lCracked:223,uVeryGood:363,uGood:353,uFair:343,uCracked:253} },
+          "iPhone 15 Pro Max":    { 256:{lVeryGood:403,lGood:393,lFair:383,lCracked:303,uVeryGood:433,uGood:413,uFair:403,uCracked:337}, 512:{lVeryGood:413,lGood:403,lFair:393,lCracked:313,uVeryGood:443,uGood:433,uFair:413,uCracked:347}, 1000:{lVeryGood:433,lGood:413,lFair:403,lCracked:317,uVeryGood:453,uGood:443,uFair:433,uCracked:357} },
+          "iPhone SE (2022)":     { 64:{lVeryGood:53,lGood:43,lFair:33,lCracked:17,uVeryGood:63,uGood:57,uFair:53,uCracked:23}, 128:{lVeryGood:57,lGood:53,lFair:43,lCracked:23,uVeryGood:67,uGood:63,uFair:57,uCracked:27}, 256:{lVeryGood:63,lGood:57,lFair:53,lCracked:27,uVeryGood:73,uGood:67,uFair:63,uCracked:33} },
+          "iPhone 16":            { 128:{lVeryGood:263,lGood:253,lFair:243,lCracked:153,uVeryGood:373,uGood:343,uFair:333,uCracked:213}, 256:{lVeryGood:273,lGood:263,lFair:253,lCracked:173,uVeryGood:383,uGood:373,uFair:343,uCracked:243}, 512:{lVeryGood:373,lGood:313,lFair:263,lCracked:213,uVeryGood:403,uGood:383,uFair:373,uCracked:273} },
+          "iPhone 16 Plus":       { 128:{lVeryGood:343,lGood:333,lFair:323,lCracked:193,uVeryGood:363,uGood:353,uFair:343,uCracked:233}, 256:{lVeryGood:353,lGood:343,lFair:333,lCracked:203,uVeryGood:373,uGood:363,uFair:353,uCracked:263}, 512:{lVeryGood:363,lGood:353,lFair:343,lCracked:223,uVeryGood:383,uGood:373,uFair:363,uCracked:303} },
+          "iPhone 16 Pro":        { 128:{lVeryGood:443,lGood:433,lFair:413,lCracked:307,uVeryGood:493,uGood:443,uFair:433,uCracked:357}, 256:{lVeryGood:493,lGood:443,lFair:433,lCracked:357,uVeryGood:543,uGood:493,uFair:443,uCracked:403}, 512:{lVeryGood:543,lGood:493,lFair:443,lCracked:407,uVeryGood:573,uGood:543,uFair:493,uCracked:433}, 1000:{lVeryGood:573,lGood:543,lFair:493,lCracked:437,uVeryGood:593,uGood:573,uFair:543,uCracked:453} },
+          "iPhone 16 Pro Max":    { 256:{lVeryGood:553,lGood:513,lFair:453,lCracked:283,uVeryGood:653,uGood:633,uFair:553,uCracked:333}, 512:{lVeryGood:603,lGood:553,lFair:493,lCracked:303,uVeryGood:703,uGood:653,uFair:593,uCracked:353}, 1000:{lVeryGood:613,lGood:603,lFair:553,lCracked:323,uVeryGood:713,uGood:703,uFair:653,uCracked:383} },
+          "iPhone 16e":           { 128:{lVeryGood:207,lGood:203,lFair:193,lCracked:123,uVeryGood:213,uGood:207,uFair:203,uCracked:143}, 256:{lVeryGood:233,lGood:207,lFair:203,lCracked:133,uVeryGood:237,uGood:213,uFair:207,uCracked:153}, 512:{lVeryGood:273,lGood:233,lFair:207,lCracked:143,uVeryGood:287,uGood:237,uFair:213,uCracked:163} },
+          "iPhone 17e":           { 256:{lVeryGood:303,lGood:293,lFair:283,lCracked:243,uVeryGood:313,uGood:303,uFair:293,uCracked:253}, 512:{lVeryGood:313,lGood:303,lFair:293,lCracked:253,uVeryGood:323,uGood:313,uFair:303,uCracked:193} },
+          "iPhone 17":            { 256:{lVeryGood:453,lGood:443,lFair:433,lCracked:313,uVeryGood:533,uGood:453,uFair:443,uCracked:393}, 512:{lVeryGood:533,lGood:453,lFair:443,lCracked:393,uVeryGood:613,uGood:533,uFair:453,uCracked:373} },
+          "iPhone 17 Air":        { 256:{lVeryGood:483,lGood:473,lFair:463,lCracked:null,uVeryGood:537,uGood:483,uFair:473,uCracked:null}, 512:{lVeryGood:537,lGood:483,lFair:473,lCracked:null,uVeryGood:583,uGood:537,uFair:483,uCracked:null}, 1000:{lVeryGood:583,lGood:537,lFair:483,lCracked:null,uVeryGood:653,uGood:583,uFair:537,uCracked:null} },
+          "iPhone 17 Pro":        { 256:{lVeryGood:613,lGood:603,lFair:593,lCracked:433,uVeryGood:673,uGood:613,uFair:603,uCracked:493}, 512:{lVeryGood:673,lGood:613,lFair:603,lCracked:493,uVeryGood:763,uGood:673,uFair:613,uCracked:583}, 1000:{lVeryGood:763,lGood:673,lFair:613,lCracked:583,uVeryGood:823,uGood:763,uFair:673,uCracked:643} },
+          "iPhone 17 Pro Max":    { 256:{lVeryGood:683,lGood:663,lFair:653,lCracked:503,uVeryGood:763,uGood:683,uFair:663,uCracked:583}, 512:{lVeryGood:763,lGood:683,lFair:663,lCracked:583,uVeryGood:867,uGood:763,uFair:683,uCracked:693}, 1000:{lVeryGood:867,lGood:763,lFair:683,lCracked:683,uVeryGood:973,uGood:867,uFair:763,uCracked:793}, 2000:{lVeryGood:973,lGood:867,lFair:763,lCracked:793,uVeryGood:1003,uGood:973,uFair:867,uCracked:823} }
+        };
+
         var deviceSelect = document.getElementById('re-device');
         var optionButtons = document.querySelectorAll('#re-options .re-option');
         var tierField = document.getElementById('re-tier-field');
@@ -956,8 +1071,171 @@
           update();
         });
 
+        // ---- Sell Estimate logic ----
+        var seDevice = document.getElementById('se-device');
+        var seStorageWrap = document.getElementById('se-storage');
+        var seLockButtons = document.querySelectorAll('#se-lock .re-option--lock');
+        var seCondButtons = document.querySelectorAll('#se-condition .re-option--cond');
+        var seResultLabel = document.getElementById('se-result-label');
+        var sePriceEl = document.getElementById('se-price');
+        var seCta = document.getElementById('se-cta');
+
+        var selectedStorage = null;
+        var selectedLock = 'unlocked';
+        var selectedCond = null;
+
+        if (seCta) {
+          var seUa = navigator.userAgent || '';
+          var seIsApple = /iPad|iPhone|iPod|Macintosh/.test(seUa) || navigator.platform === 'MacIntel';
+          seCta.setAttribute('href', seIsApple
+            ? 'https://apps.apple.com/us/app/ebin/id1563293790'
+            : 'https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US');
+          seCta.setAttribute('target', '_blank');
+        }
+
+        function condLabel(cond){
+          if (cond === 'veryGood') return t('se_cond_verygood');
+          if (cond === 'good') return t('se_cond_good');
+          if (cond === 'fair') return t('se_cond_fair');
+          return t('se_cond_cracked');
+        }
+
+        function renderStorageOptions(){
+          var device = seDevice.value;
+          var entry = SELL_PRICING[device];
+          seStorageWrap.innerHTML = '';
+          if (!entry) return;
+          var sizes = Object.keys(entry).map(Number).sort(function(a,b){ return a - b; });
+          sizes.forEach(function(size, idx){
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 're-option re-option--storage';
+            btn.setAttribute('data-storage', size);
+            btn.textContent = size >= 1000 ? (size / 1000) + 'TB' : size + 'GB';
+            if (idx === 0) {
+              btn.classList.add('is-active');
+            }
+            btn.addEventListener('click', function(){
+              seStorageWrap.querySelectorAll('.re-option--storage').forEach(function(b){ b.classList.remove('is-active'); });
+              btn.classList.add('is-active');
+              selectedStorage = size;
+              updateSell();
+            });
+            seStorageWrap.appendChild(btn);
+          });
+          selectedStorage = sizes[0];
+        }
+
+        function updateSell(){
+          var device = seDevice.value;
+          var entry = SELL_PRICING[device];
+          if (!entry || selectedStorage == null) {
+            seResultLabel.textContent = t('se_prompt_select');
+            sePriceEl.textContent = '';
+            seCta.style.display = 'none';
+            return;
+          }
+          var sizeData = entry[selectedStorage];
+          if (!sizeData) {
+            seResultLabel.textContent = t('se_prompt_select');
+            sePriceEl.textContent = '';
+            seCta.style.display = 'none';
+            return;
+          }
+          if (!selectedCond) {
+            seResultLabel.textContent = t('se_prompt_select');
+            sePriceEl.textContent = '';
+            seCta.style.display = 'none';
+            return;
+          }
+          var prefix = selectedLock === 'locked' ? 'l' : 'u';
+          var key = prefix + selectedCond.charAt(0).toUpperCase() + selectedCond.slice(1);
+          var price = sizeData[key];
+          if (price == null) {
+            seResultLabel.textContent = t('se_not_offered');
+            sePriceEl.textContent = '';
+            seCta.style.display = 'none';
+            return;
+          }
+          var storageLabel = selectedStorage >= 1000 ? (selectedStorage / 1000) + 'TB' : selectedStorage + 'GB';
+          var lockLabel = selectedLock === 'locked' ? t('se_locked') : t('se_unlocked');
+          seResultLabel.textContent = device + ', ' + storageLabel + ', ' + lockLabel + ', ' + condLabel(selectedCond);
+          sePriceEl.textContent = fmt(price);
+          seCta.style.display = 'inline-flex';
+        }
+
+        if (seDevice) {
+          renderStorageOptions();
+
+          seDevice.addEventListener('change', function(){
+            selectedCond = null;
+            seCondButtons.forEach(function(b){ b.classList.remove('is-active'); });
+            renderStorageOptions();
+            updateSell();
+          });
+
+          seLockButtons.forEach(function(btn){
+            btn.addEventListener('click', function(){
+              seLockButtons.forEach(function(b){ b.classList.remove('is-active'); });
+              btn.classList.add('is-active');
+              selectedLock = btn.getAttribute('data-lock');
+              updateSell();
+            });
+          });
+
+          seCondButtons.forEach(function(btn){
+            btn.addEventListener('click', function(){
+              seCondButtons.forEach(function(b){ b.classList.remove('is-active'); });
+              btn.classList.add('is-active');
+              selectedCond = btn.getAttribute('data-cond');
+              updateSell();
+            });
+          });
+
+          updateSell();
+        }
+
+        // ---- Tab switching between Repair Estimate and Sell Estimate ----
+        var tabRepair = document.getElementById('tab-repair');
+        var tabSell = document.getElementById('tab-sell');
+        var repairPanel = document.getElementById('repair-panel');
+        var sellPanel = document.getElementById('sell-panel');
+        var eyebrowText = document.getElementById('re-eyebrow-text');
+        var headingText = document.getElementById('re-heading-text');
+        var introText = document.getElementById('re-intro-text');
+
+        function setActiveTab(tab){
+          if (tab === 'sell') {
+            tabSell.classList.add('is-active');
+            tabRepair.classList.remove('is-active');
+            sellPanel.style.display = 'block';
+            repairPanel.style.display = 'none';
+            eyebrowText.setAttribute('data-i18n', 'se_eyebrow');
+            headingText.setAttribute('data-i18n', 'se_heading');
+            introText.setAttribute('data-i18n', 'se_intro');
+          } else {
+            tabRepair.classList.add('is-active');
+            tabSell.classList.remove('is-active');
+            repairPanel.style.display = 'block';
+            sellPanel.style.display = 'none';
+            eyebrowText.setAttribute('data-i18n', 're_eyebrow');
+            headingText.setAttribute('data-i18n', 're_heading');
+            introText.setAttribute('data-i18n', 're_intro');
+          }
+          eyebrowText.textContent = t(eyebrowText.getAttribute('data-i18n'));
+          headingText.textContent = t(headingText.getAttribute('data-i18n'));
+          introText.textContent = t(introText.getAttribute('data-i18n'));
+        }
+
+        if (tabRepair && tabSell) {
+          tabRepair.addEventListener('click', function(){ setActiveTab('repair'); });
+          tabSell.addEventListener('click', function(){ setActiveTab('sell'); });
+        }
+
         document.addEventListener('ebinLangChanged', function(){
           update();
+          updateSell();
+          setActiveTab(tabSell && tabSell.classList.contains('is-active') ? 'sell' : 'repair');
         });
       })();
       </script>
