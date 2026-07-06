@@ -8,7 +8,7 @@ window.EBIN_TRANSLATIONS = {
   en: {
     nav_home: "Home",
     nav_about: "About",
-    nav_support: "Support",
+    nav_support: "Highlights",
     nav_download: "Download",
 
     hero_eyebrow: "One place for all electronics",
@@ -468,7 +468,7 @@ window.EBIN_TRANSLATIONS = {
   es: {
     nav_home: "Inicio",
     nav_about: "Acerca de",
-    nav_support: "Soporte",
+    nav_support: "Destacados",
     nav_download: "Descargar",
 
     hero_eyebrow: "Todo para tus dispositivos electr\u00f3nicos",
@@ -928,7 +928,7 @@ window.EBIN_TRANSLATIONS = {
   vi: {
     nav_home: "Trang ch\u1ee7",
     nav_about: "Gi\u1edbi thi\u1ec7u",
-    nav_support: "H\u1ed7 tr\u1ee3",
+    nav_support: "N\u1ed5i b\u1eadt",
     nav_download: "T\u1ea3i xu\u1ed1ng",
 
     hero_eyebrow: "N\u01a1i duy nh\u1ea5t cho m\u1ecdi thi\u1ebft b\u1ecb \u0111i\u1ec7n t\u1eed",
@@ -1388,7 +1388,7 @@ window.EBIN_TRANSLATIONS = {
   tl: {
     nav_home: "Home",
     nav_about: "Tungkol",
-    nav_support: "Suporta",
+    nav_support: "Mga Highlight",
     nav_download: "I-download",
 
     hero_eyebrow: "Isang lugar para sa lahat ng electronics",
