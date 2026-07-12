@@ -2072,11 +2072,12 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   overflow: hidden;
   box-sizing: border-box;
   max-height: 0;
-  padding: 16px 20px 20px;
+  padding: 0 20px;
   transition: max-height .35s ease;
 }
 .accordion.active + .panel{
   max-height: 3000px; /* fallback only; JS sets a precise inline value for a smooth animation */
+  padding: 16px 20px 20px;
 }
 .accordion{
   width: 100%;
