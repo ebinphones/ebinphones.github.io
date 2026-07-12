@@ -200,6 +200,7 @@ window.EBIN_TRANSLATIONS = {
     pricing_consider_desc: "You want more repair jobs walking through your door without any upfront cost or long-term commitment.",
 
     partner_title: "ebin\u00b0 Merchant",
+    partner_eyebrow: "ebin\u00b0 Merchant Network",
     partner_subtitle: "Become a ebin\u00b0 Authorized Service Provider",
     partner_desc: "As a ebin\u00b0 Authorized Service Provider, you have an opportunity to be part of our network. This feature is still under development.",
     partner_coming_soon: "Coming Soon",
@@ -677,6 +678,7 @@ window.EBIN_TRANSLATIONS = {
     pricing_consider_desc: "Quieres más trabajos de reparación en tu tienda sin costo inicial ni compromiso a largo plazo.",
 
     partner_title: "ebin\u00b0 Comerciante",
+    partner_eyebrow: "Red de Comercios ebin\u00b0",
     partner_subtitle: "Conv\u00e9rtete en Proveedor de Servicios Autorizado de ebin\u00b0",
     partner_desc: "Como Proveedor de Servicios Autorizado de ebin\u00b0, tienes la oportunidad de ser parte de nuestra red. Esta funci\u00f3n a\u00fan est\u00e1 en desarrollo.",
     partner_coming_soon: "Pr\u00f3ximamente",
@@ -1154,6 +1156,7 @@ window.EBIN_TRANSLATIONS = {
     pricing_consider_desc: "B\u1ea1n mu\u1ed1n c\u00f3 th\u00eam \u0111\u01a1n s\u1eeda ch\u1eefa m\u00e0 kh\u00f4ng t\u1ed1n chi ph\u00ed ban \u0111\u1ea7u hay cam k\u1ebft d\u00e0i h\u1ea1n.",
 
     partner_title: "ebin\u00b0 \u0110\u1ed1i t\u00e1c",
+    partner_eyebrow: "M\u1ea1ng l\u01b0\u1edBi \u0110\u1ed1i t\u00e1c ebin\u00b0",
     partner_subtitle: "Tr\u1edf th\u00e0nh Nh\u00e0 cung c\u1ea5p D\u1ecbch v\u1ee5 \u0110\u01b0\u1ee3c \u1ee6y quy\u1ec1n c\u1ee7a ebin\u00b0",
     partner_desc: "L\u00e0 Nh\u00e0 cung c\u1ea5p D\u1ecbch v\u1ee5 \u0110\u01b0\u1ee3c \u1ee6y quy\u1ec1n, b\u1ea1n c\u00f3 c\u01a1 h\u1ed9i tham gia m\u1ea1ng l\u01b0\u1edBi c\u1ee7a ch\u00fang t\u00f4i. T\u00ednh n\u0103ng n\u00e0y v\u1eabn \u0111ang ph\u00e1t tri\u1ec3n.",
     partner_coming_soon: "S\u1eafp ra m\u1eaft",
@@ -1631,6 +1634,7 @@ window.EBIN_TRANSLATIONS = {
     pricing_consider_desc: "Gusto mong dumami ang mga trabahong pag-aayos sa iyong shop nang walang paunang gastos o pangmatagalang commitment.",
 
     partner_title: "ebin\u00b0 Merchant",
+    partner_eyebrow: "Network ng mga Merchant ng ebin\u00b0",
     partner_subtitle: "Maging isang Authorized Service Provider ng ebin\u00b0",
     partner_desc: "Bilang isang Authorized Service Provider ng ebin\u00b0, mayroon kang pagkakataon na maging bahagi ng aming network. Ang feature na ito ay nasa pag-unlad pa.",
     partner_coming_soon: "Malapit na",

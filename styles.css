@@ -1770,12 +1770,13 @@ button:hover{ background: var(--violet-700); }
 }
 
 .pricing-footnote{
-  max-width: 560px;
+  max-width: 640px;
   margin: 36px auto 90px;
-  padding: 0 6%;
+  padding: 0 24px;
   text-align: center;
   color: var(--muted);
   font-size: 13px;
+  line-height: 1.6;
 }
 
 @media (max-width: 480px){
