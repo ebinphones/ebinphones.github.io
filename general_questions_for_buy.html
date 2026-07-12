@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>ebin&#176; | Sell and Repair Used Electronics</title>
-    <link rel = "shortcut icon" type = "image/png" href="ebin - Logo (Redesign) 4000*4000.png"
+    <link rel="shortcut icon" type="image/png" href="ebin_HomePage_Logo.png" />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
@@ -90,10 +91,22 @@
   <script>
   var acc = document.getElementsByClassName("accordion");
   var i;
-  
+
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      var isOpen = this.classList.contains("active");
+
+      if (isOpen) {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        requestAnimationFrame(function() {
+          panel.style.maxHeight = "0px";
+        });
+        this.classList.remove("active");
+      } else {
+        this.classList.add("active");
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
     });
   }
   </script>
