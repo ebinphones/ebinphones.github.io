@@ -189,6 +189,15 @@ window.EBIN_TRANSLATIONS = {
 
     pricing_title: "Pricing",
     pricing_subtitle: "Transparent pricing for all our services.",
+    pricing_eyebrow: "ebin\u00b0 Merchant Pricing",
+    pricing_hero_title: "Reach new customers and only pay when jobs come in.",
+    pricing_hero_sub: "No contract. No fixed cost. Cancel any time.",
+    pricing_badge: "Best Value",
+    pricing_whatyouget: "What you get",
+    pricing_commission_label: "Commission",
+    pricing_getstarted: "Get started",
+    pricing_consider_label: "Consider this plan if:",
+    pricing_consider_desc: "You want more repair jobs walking through your door without any upfront cost or long-term commitment.",
 
     partner_title: "ebin\u00b0 Merchant",
     partner_subtitle: "Become a ebin\u00b0 Authorized Service Provider",
@@ -657,6 +666,15 @@ window.EBIN_TRANSLATIONS = {
 
     pricing_title: "Precios",
     pricing_subtitle: "Precios transparentes para todos nuestros servicios.",
+    pricing_eyebrow: "Precios para Comercios ebin\u00b0",
+    pricing_hero_title: "Llega a nuevos clientes y paga solo cuando lleguen trabajos.",
+    pricing_hero_sub: "Sin contrato. Sin costo fijo. Cancela cuando quieras.",
+    pricing_badge: "Mejor Valor",
+    pricing_whatyouget: "Lo que obtienes",
+    pricing_commission_label: "Comisi\u00f3n",
+    pricing_getstarted: "Comenzar",
+    pricing_consider_label: "Considera este plan si:",
+    pricing_consider_desc: "Quieres más trabajos de reparación en tu tienda sin costo inicial ni compromiso a largo plazo.",
 
     partner_title: "ebin\u00b0 Comerciante",
     partner_subtitle: "Conv\u00e9rtete en Proveedor de Servicios Autorizado de ebin\u00b0",
@@ -1125,6 +1143,15 @@ window.EBIN_TRANSLATIONS = {
 
     pricing_title: "B\u1ea3ng gi\u00e1",
     pricing_subtitle: "Gi\u00e1 minh b\u1ea1ch cho t\u1ea5t c\u1ea3 c\u00e1c d\u1ecbch v\u1ee5.",
+    pricing_eyebrow: "B\u1ea3ng gi\u00e1 d\u00e0nh cho \u0111\u1ed1i t\u00e1c ebin\u00b0",
+    pricing_hero_title: "Ti\u1ebfp c\u1eadn kh\u00e1ch h\u00e0ng m\u1edBi v\u00e0 ch\u1ec9 tr\u1ea3 ti\u1ec1n khi c\u00f3 \u0111\u01a1n h\u00e0ng.",
+    pricing_hero_sub: "Kh\u00f4ng h\u1ee3p \u0111\u1ed3ng. Kh\u00f4ng chi ph\u00ed c\u1ed1 \u0111\u1ecbnh. H\u1ee7y b\u1ea5t c\u1ee9 l\u00fac n\u00e0o.",
+    pricing_badge: "Gi\u00e1 tr\u1ecb t\u1ed1t nh\u1ea5t",
+    pricing_whatyouget: "B\u1ea1n nh\u1eadn \u0111\u01b0\u1ee3c g\u00ec",
+    pricing_commission_label: "Hoa h\u1ed3ng",
+    pricing_getstarted: "B\u1eaft \u0111\u1ea7u",
+    pricing_consider_label: "Ch\u1ecdn g\u00f3i n\u00e0y n\u1ebfu:",
+    pricing_consider_desc: "B\u1ea1n mu\u1ed1n c\u00f3 th\u00eam \u0111\u01a1n s\u1eeda ch\u1eefa m\u00e0 kh\u00f4ng t\u1ed1n chi ph\u00ed ban \u0111\u1ea7u hay cam k\u1ebft d\u00e0i h\u1ea1n.",
 
     partner_title: "ebin\u00b0 \u0110\u1ed1i t\u00e1c",
     partner_subtitle: "Tr\u1edf th\u00e0nh Nh\u00e0 cung c\u1ea5p D\u1ecbch v\u1ee5 \u0110\u01b0\u1ee3c \u1ee6y quy\u1ec1n c\u1ee7a ebin\u00b0",
@@ -1593,6 +1620,15 @@ window.EBIN_TRANSLATIONS = {
 
     pricing_title: "Mga Presyo",
     pricing_subtitle: "Transparent na presyo para sa lahat ng aming serbisyo.",
+    pricing_eyebrow: "Presyo para sa mga Merchant ng ebin\u00b0",
+    pricing_hero_title: "Umabot sa mga bagong customer at magbayad lang kapag may trabahong dumarating.",
+    pricing_hero_sub: "Walang kontrata. Walang fixed cost. Kanselahin anumang oras.",
+    pricing_badge: "Pinakamahusay na Halaga",
+    pricing_whatyouget: "Ang makukuha mo",
+    pricing_commission_label: "Komisyon",
+    pricing_getstarted: "Magsimula",
+    pricing_consider_label: "Piliin ang plan na ito kung:",
+    pricing_consider_desc: "Gusto mong dumami ang mga trabahong pag-aayos sa iyong shop nang walang paunang gastos o pangmatagalang commitment.",
 
     partner_title: "ebin\u00b0 Merchant",
     partner_subtitle: "Maging isang Authorized Service Provider ng ebin\u00b0",
