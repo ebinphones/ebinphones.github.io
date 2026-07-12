@@ -1623,9 +1623,9 @@ button:hover{ background: var(--violet-700); }
 }
 
 .plan-wrap{
-  max-width: 460px;
+  max-width: 580px;
   margin: 44px auto 0;
-  padding: 0 6%;
+  padding: 0 24px;
 }
 .plan-card{
   position: relative;
@@ -1633,7 +1633,7 @@ button:hover{ background: var(--violet-700); }
   border: 2px solid var(--violet-500);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
-  padding: 36px 32px 32px;
+  padding: 44px 48px 40px;
 }
 .plan-card__badge{
   position: absolute;
@@ -1779,6 +1779,7 @@ button:hover{ background: var(--violet-700); }
 }
 
 @media (max-width: 480px){
+  .plan-wrap{ padding: 0 20px; }
   .plan-card{ padding: 30px 22px 26px; }
   .pricing-hero{ padding-top: 50px; }
 }
