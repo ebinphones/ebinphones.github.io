@@ -1627,6 +1627,9 @@ button:hover{ background: var(--violet-700); }
   margin: 44px auto 0;
   padding: 0 24px;
 }
+.plan-wrap--spaced{
+  margin-bottom: 90px;
+}
 .plan-card{
   position: relative;
   background: var(--surface);
