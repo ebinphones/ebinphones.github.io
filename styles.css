@@ -58,7 +58,7 @@
    ================================================================ */
 *{ box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
 
-html{ background: var(--bg); scroll-padding-top: 90px; }
+html{ background: var(--bg); scroll-padding-top: 90px; height: 100%; }
 
 body{
   font-family: var(--font-body);
@@ -66,6 +66,9 @@ body{
   color: var(--ink);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img{ max-width: 100%; display: block; }
@@ -1928,6 +1931,7 @@ input:focus, textarea:focus, select:focus{ border-color: var(--violet-500); outl
   background: var(--grad-hero);
   color: var(--violet-100);
   padding-top: 70px;
+  margin-top: auto;
 }
 
 .footer__links{
