@@ -1824,6 +1824,56 @@ button:hover{ background: var(--violet-700); }
   line-height: 1.6;
 }
 
+.pricing-examples{
+  max-width: 580px;
+  margin: 44px auto 0;
+  padding: 0 24px;
+}
+.pricing-examples__title{
+  font-size: 1.2rem;
+  color: var(--ink);
+  text-align: center;
+  margin: 0 0 20px;
+}
+.pricing-examples__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.pricing-examples__card{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+}
+.pricing-examples__tier{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--violet-700);
+  margin: 0 0 10px;
+}
+.pricing-examples__row{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  margin: 0 0 4px;
+}
+.pricing-examples__row span:last-child{
+  color: var(--ink);
+  font-weight: 600;
+}
+.pricing-examples__row--keep span:last-child{
+  color: var(--violet-700);
+}
+
+@media (max-width: 560px){
+  .pricing-examples__grid{ grid-template-columns: 1fr; }
+}
+
 @media (max-width: 480px){
   .plan-wrap{ padding: 0 20px; }
   .plan-card{ padding: 30px 22px 26px; }
