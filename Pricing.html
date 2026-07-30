@@ -80,7 +80,7 @@
 
         <p class="plan-card__label" data-i18n="pricing_whatyouget">What you get</p>
         <ul>
-          <li data-i18n="rshop_li_commission">15% commission on the total repair cost, parts and labor included</li>
+          <li data-i18n="rshop_li_commission_tiered">Tiered commission of 15%&ndash;40%, based on your bi-weekly profit</li>
           <li data-i18n="rshop_li_nofees">No flat fees, no monthly minimums, you only pay when a job is completed</li>
           <li data-i18n="rshop_li_returnscreen">Send the customer's old screen back to ebin after the repair, we cover the shipping</li>
           <li data-i18n="rshop_li3">Optimize marketing expenditures</li>
@@ -88,11 +88,34 @@
         </ul>
 
         <div class="plan-card__price">
-          <div class="plan-card__price-row">
-            <span data-i18n="pricing_commission_label">Commission</span>
-            <span>15%</span>
-          </div>
-          <p class="plan-card__price-note" data-i18n="rshop_commission_desc">Per repair, only when ebin sends the customer</p>
+          <p class="plan-card__intro" data-i18n="pricing_commission_table_title">Commission Structure</p>
+          <table class="plan-card__commission-table">
+            <thead>
+              <tr>
+                <th data-i18n="rshop_tier_header_range">Bi-weekly Profit Range</th>
+                <th data-i18n="rshop_tier_header_rate">Commission Rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="rshop_tier1_range">$0 &ndash; $500</td>
+                <td>15%</td>
+              </tr>
+              <tr>
+                <td data-i18n="rshop_tier2_range">$500.01 &ndash; $1,500</td>
+                <td>25%</td>
+              </tr>
+              <tr>
+                <td data-i18n="rshop_tier3_range">$1,500.01 &ndash; $2,500</td>
+                <td>35%</td>
+              </tr>
+              <tr>
+                <td data-i18n="rshop_tier4_range">$2,500.01 and above</td>
+                <td>40%</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="plan-card__price-note" data-i18n="rshop_commission_note_tiered">Commissions are calculated based on your profit from each two-week pay period. Payments are issued bi-weekly via direct deposit, reflecting the commission tier earned within that specific payout cycle.</p>
         </div>
 
         <a href="partner_with_ebin.html" class="plan-card__cta" data-i18n="pricing_getstarted">Get started</a>
@@ -105,7 +128,7 @@
     </div>
 
     <div class="pricing-footnote">
-      <p data-i18n="rshop_disclaimer_new">*The 15% commission is calculated on the full repair invoice, including both parts and labor. For example, a $100 repair results in a $15 commission owed to ebin.</p>
+      <p data-i18n="rshop_disclaimer_tiered">*Every two weeks, ebin totals your repair shop's pure profit and applies the commission rate for the tier that profit falls into: 15% for up to $500, 25% for $500.01&ndash;$1,500, 35% for $1,500.01&ndash;$2,500, and 40% for over $2,500. The commission is deducted bi-weekly, and the remaining amount is paid to your shop by direct deposit.</p>
     </div>
 
     <!-- Footer Section -->
