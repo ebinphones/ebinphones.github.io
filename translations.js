@@ -260,6 +260,7 @@ window.EBIN_TRANSLATIONS = {
     rshop_li_cancel: "Cancel anytime",
     rshop_commission_desc: "Per repair, only when ebin sends the customer",
     rshop_disclaimer_new: "*The 15% commission is calculated on the full repair invoice, including both parts and labor. For example, a $100 repair results in a $15 commission owed to ebin.",
+<<<<<<< HEAD
     pricing_commission_table_title: "Commission Structure",
     rshop_li_commission_tiered: "Tiered commission of 15%\u201340%, based on your bi-weekly profit",
     rshop_tier_header_range: "Bi-weekly Profit Range",
@@ -277,6 +278,8 @@ window.EBIN_TRANSLATIONS = {
     pricing_ex2_tier: "Profit of $1,200 ($500.01\u2013$1,500 tier)",
     pricing_ex3_tier: "Profit of $2,000 ($1,500.01\u2013$2,500 tier)",
     pricing_ex4_tier: "Profit of $3,000 ($2,500.01+ tier)",
+=======
+>>>>>>> parent of 494c15f (Major Pricing Change)
     rshop_certified_desc_new: "Let ebin° bring customers to your shop! You only pay when we send you a job, 15% of the total repair cost, parts and labor included.",
     est_tab_repair: "Repair Estimate",
     est_tab_sell: "Sell Estimate",
@@ -755,6 +758,7 @@ window.EBIN_TRANSLATIONS = {
     rshop_li_cancel: "Cancela en cualquier momento",
     rshop_commission_desc: "Por reparación, solo cuando ebin envía al cliente",
     rshop_disclaimer_new: "*La comisión del 15% se calcula sobre la factura completa de la reparación, incluyendo piezas y mano de obra. Por ejemplo, una reparación de $100 genera una comisión de $15 para ebin.",
+<<<<<<< HEAD
     pricing_commission_table_title: "Estructura de comisiones",
     rshop_li_commission_tiered: "Comisión escalonada del 15% al 40%, según tu ganancia quincenal",
     rshop_tier_header_range: "Rango de ganancia quincenal",
@@ -772,6 +776,8 @@ window.EBIN_TRANSLATIONS = {
     pricing_ex2_tier: "Ganancia de $1,200 (nivel $500.01\u2013$1,500)",
     pricing_ex3_tier: "Ganancia de $2,000 (nivel $1,500.01\u2013$2,500)",
     pricing_ex4_tier: "Ganancia de $3,000 (nivel $2,500.01+)",
+=======
+>>>>>>> parent of 494c15f (Major Pricing Change)
     rshop_certified_desc_new: "¡Deja que ebin° lleve clientes a tu tienda! Solo pagas cuando te enviamos un trabajo: 15% del costo total de la reparación, piezas y mano de obra incluidas.",
     est_tab_repair: "Estimado de Reparación",
     est_tab_sell: "Estimado de Venta",
@@ -1250,6 +1256,7 @@ window.EBIN_TRANSLATIONS = {
     rshop_li_cancel: "Hủy bỏ bất cứ lúc nào",
     rshop_commission_desc: "Mỗi lần sửa chữa, chỉ khi ebin gửi khách hàng đến",
     rshop_disclaimer_new: "*Hoa hồng 15% được tính trên toàn bộ hóa đơn sửa chữa, bao gồm cả linh kiện và công thợ. Ví dụ, một lần sửa chữa $100 sẽ tạo ra khoản hoa hồng $15 cho ebin.",
+<<<<<<< HEAD
     pricing_commission_table_title: "Cơ cấu hoa hồng",
     rshop_li_commission_tiered: "Hoa hồng theo bậc từ 15% đến 40%, dựa trên lợi nhuận hai tuần của bạn",
     rshop_tier_header_range: "Phạm vi lợi nhuận hai tuần",
@@ -1267,6 +1274,8 @@ window.EBIN_TRANSLATIONS = {
     pricing_ex2_tier: "Lợi nhuận $1,200 (bậc $500.01\u2013$1,500)",
     pricing_ex3_tier: "Lợi nhuận $2,000 (bậc $1,500.01\u2013$2,500)",
     pricing_ex4_tier: "Lợi nhuận $3,000 (bậc $2,500.01+)",
+=======
+>>>>>>> parent of 494c15f (Major Pricing Change)
     rshop_certified_desc_new: "Hãy để ebin° mang khách hàng đến cửa hàng của bạn! Bạn chỉ trả tiền khi chúng tôi gửi công việc, 15% tổng chi phí sửa chữa, bao gồm linh kiện và công thợ.",
     est_tab_repair: "Ước tính Sửa chữa",
     est_tab_sell: "Ước tính Bán",
@@ -1745,6 +1754,7 @@ window.EBIN_TRANSLATIONS = {
     rshop_li_cancel: "Kanselahin anumang oras",
     rshop_commission_desc: "Kada pag-aayos, kapag lang nagpadala ng customer ang ebin",
     rshop_disclaimer_new: "*Ang 15% na komisyon ay kinakalkula batay sa buong invoice ng pag-aayos, kasama ang parts at labor. Halimbawa, ang $100 na pag-aayos ay magreresulta sa $15 na komisyon para sa ebin.",
+<<<<<<< HEAD
     pricing_commission_table_title: "Istruktura ng Komisyon",
     rshop_li_commission_tiered: "Baitang na komisyon na 15%\u201340%, base sa iyong bi-weekly na profit",
     rshop_tier_header_range: "Saklaw ng Bi-weekly na Profit",
@@ -1762,6 +1772,8 @@ window.EBIN_TRANSLATIONS = {
     pricing_ex2_tier: "Profit na $1,200 (antas $500.01\u2013$1,500)",
     pricing_ex3_tier: "Profit na $2,000 (antas $1,500.01\u2013$2,500)",
     pricing_ex4_tier: "Profit na $3,000 (antas $2,500.01+)",
+=======
+>>>>>>> parent of 494c15f (Major Pricing Change)
     rshop_certified_desc_new: "Hayaang dalhin ng ebin° ang mga customer sa iyong shop! Magbabayad ka lang kapag nagpadala kami ng trabaho, 15% ng kabuuang gastos ng pag-aayos, kasama ang parts at labor.",
     est_tab_repair: "Tantiya sa Pag-aayos",
     est_tab_sell: "Tantiya sa Pagbenta",
