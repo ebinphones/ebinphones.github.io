@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-itunes-app" content="app-id=1563293790">
+    <meta name="google-play-app" content="app-id=com.ebinphones.ebin">
+    <title>ebin&#176; | One Place for All Electronics</title>
+    <link rel="icon" type="image/png" href="favicon-512.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon-180.png" />
+    <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css"/>
+    <script src="translations.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#top" id="navbar__logo"><img src = "ebin_HomePage_Logo.png" ></a>
+        <div class="navbar__mobile-lang" id="navLangMobile">
+          <button class="navbar__lang-btn navbar__lang-btn--mobile" id="navLangBtnMobile" type="button" aria-label="Select language">
+            <i class="fas fa-globe"></i> <span id="navLangCodeMobile">EN</span>
+          </button>
+          <ul class="navbar__lang-dropdown navbar__lang-dropdown--mobile" id="navLangDropdownMobile">
+            <li><button type="button" data-lang="en">English</button></li>
+            <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+            <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+            <li><button type="button" data-lang="tl">Tagalog</button></li>
+          </ul>
+        </div>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> 
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#top" class="navbar__links" id="home-page" data-i18n="nav_home">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page" data-i18n="nav_about">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page" data-i18n="nav_support"
+              >Highlights</a
+            >
+          </li>
+          <li class="navbar__item navbar__lang">
+            <button class="navbar__lang-btn" id="navLangBtn" type="button" aria-label="Select language">
+              <i class="fas fa-globe"></i> <span id="navLangCode">EN</span>
+            </button>
+            <ul class="navbar__lang-dropdown" id="navLangDropdown">
+              <li><button type="button" data-lang="en">English</button></li>
+              <li><button type="button" data-lang="es">Espa&ntilde;ol</button></li>
+              <li><button type="button" data-lang="vi">Ti&#7873;ng Vi&#7879;t</button></li>
+              <li><button type="button" data-lang="tl">Tagalog</button></li>
+            </ul>
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup" data-i18n="nav_download">Download</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <div class="eyebrow eyebrow--light">
+          <span class="signal"><span></span><span></span><span></span></span>
+          <span data-i18n="hero_eyebrow">One place for all electronics</span>
+        </div>
+        <h1 class="hero__heading"><span data-i18n="hero_heading_pre">Repair or </span><span class="hero__heading-highlight" data-i18n="hero_heading_highlight">sell</span><span data-i18n="hero_heading_post"> your device, fast and easy</span></h1>
+        <p class="hero__description" data-i18n="hero_description">Get started in seconds. No guesswork, no haggling, no stress, just a clear path to a fixed or sold device.</p>
+
+        <div class="hero__mobile-mockup">
+          <img src="iPhone15Home.png" alt="ebin app home screen">
+        </div>
+        <div class="hero__actions">
+          <a href="#sign-up" class="learn_more_button" id="getAppBtn" data-i18n="hero_cta_primary">Get the app</a>
+          <a href="/How_it_works.html" class="button" data-i18n="hero_cta_secondary">See how it works</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-num">4.8 &#9733;</div>
+            <div class="hero__stat-label" data-i18n="hero_stat_rating_label">App rating</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num">24&ndash;48 hr</div>
+            <div class="hero__stat-label" data-i18n="hero_stat_repair_label">Typical repair time</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num">$0</div>
+            <div class="hero__stat-label" data-i18n="hero_stat_shipping_label">Sell shipping cost</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home_iphone_mockup">
+        <img id="Phone_Mockup" src="iPhone15Home.png" alt="ebin app home screen">
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main__about" id="about">
+      <div class="main__container">
+        <div style="text-align:center;">
+          <div class="eyebrow eyebrow--center" style="justify-content:center;">
+            <span class="signal"><span></span><span></span><span></span></span>
+            <span data-i18n="about_eyebrow">What ebin does</span>
+          </div>
+        </div>
+        <h1 data-i18n="about_heading">A better way to repair or sell your device</h1>
+
+        <div class="main__content">
+          <div class="repair-stack">
+            <div class="column">
+              <h2><i class="fas fa-store" style="margin-right:10px;"></i><span data-i18n="bring_in_title">Bring In for Repair</span></h2>
+
+              <h3><strong data-i18n="bring_in_b1_title">Local certified shops:</strong> <span data-i18n="bring_in_b1_text">ebin connects you with trusted local repair shops, making it easy to bring in your device for fast, reliable service whenever you need it.</span></h3>
+              <h3><strong data-i18n="bring_in_b2_title">All the common repairs:</strong> <span data-i18n="bring_in_b2_text">ebin covers screen replacement, battery replacement, back glass replacement, and more, most repairs are done same day, with others taking just a bit longer.</span></h3>
+              <h3><strong data-i18n="bring_in_b3_title">Skilled technicians:</strong> <span data-i18n="bring_in_b3_text">Your device is handled by experienced technicians who use proper tools and proven repair methods for safe, high-quality results.</span></h3>
+              <h3><strong data-i18n="bring_in_b4_title">Reliable updates:</strong> <span data-i18n="bring_in_b4_text">Partner shops provide clear updates and smooth communication from drop-off to pick-up.</span></h3>
+              <h3><strong data-i18n="bring_in_b5_title">Customer protection:</strong> <span data-i18n="bring_in_b5_text">If an issue ever occurs, ebin is here to support you, partner shops are committed to reworks or refunds when appropriate.</span></h3>
+            </div>
+
+            <div class="column">
+              <h2><i class="fas fa-shipping-fast" style="margin-right:10px;"></i><span data-i18n="ship_in_title">Ship In for Repair</span></h2>
+
+              <h3><strong data-i18n="ship_in_b1_title">All the common repairs:</strong> <span data-i18n="ship_in_b1_text">Repair times vary depending on the service needed, but the entire process, from shipping your device to receiving it back, can take 7 days or longer, including shipping and repair time.</span></h3>
+              <h3><strong data-i18n="ship_in_b2_title">Ship-in service:</strong> <span data-i18n="ship_in_b2_text">Ship your device to our facility and our technicians will diagnose, repair, and return it with care.</span></h3>
+              <h3><strong data-i18n="ship_in_b3_title">Free shipping:</strong> <span data-i18n="ship_in_b3_text">When you place a ship in for repair order, ebin provides a free shipping label.</span></h3>
+              <h3><strong data-i18n="ship_in_b4_title">Reliable updates:</strong> <span data-i18n="ship_in_b4_text">You can see every update of the repair on the app.</span></h3>
+            </div>
+          </div>
+
+          <div class="column1">
+            <h2><i class="fas fa-tag" style="margin-right:10px;"></i><span data-i18n="sell_title">Sell</span></h2>
+
+            <h3><strong data-i18n="sell_b1_title">Convenient selling:</strong> <span data-i18n="sell_b1_text">Sell your phone or device easily through our online platform, no store visits or meetups, just a simple process from home.</span></h3>
+            <h3><strong data-i18n="sell_b2_title">Instant offer:</strong> <span data-i18n="sell_b2_text">Receive a fast, accurate offer in seconds based on your device's condition and market value, no negotiating.</span></h3>
+            <h3><strong data-i18n="sell_b3_title">Free shipping:</strong> <span data-i18n="sell_b3_text">When you place a sell order, ebin provides a free shipping label.</span></h3>
+            <h3><strong data-i18n="sell_b4_title">No meetups:</strong> <span data-i18n="sell_b4_text">Avoid unsafe or stressful in-person exchanges, your entire selling experience is handled online.</span></h3>
+            <h3><strong data-i18n="sell_b5_title">Fast payout:</strong> <span data-i18n="sell_b5_text">Once your device is delivered, inspected, and verified, payment is released quickly via Zelle or Venmo.</span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repair Cost Estimator -->
+    <div class="repair-estimator" id="repair-pricing">
+      <div class="eyebrow eyebrow--center" style="justify-content:center;">
+        <span class="signal"><span></span><span></span><span></span></span>
+        <span data-i18n="re_eyebrow" id="re-eyebrow-text">Repair Pricing</span>
+      </div>
+      <h1 data-i18n="re_heading" id="re-heading-text">Get an instant repair estimate</h1>
+      <p class="repair-estimator__intro" data-i18n="re_intro" id="re-intro-text">Select your device and the type of damage to see an estimated cost.</p>
+
+      <div class="estimator-tabs" id="estimator-tabs">
+        <button type="button" class="estimator-tabs__btn is-active" id="tab-repair" data-i18n="est_tab_repair">Repair Estimate</button>
+        <button type="button" class="estimator-tabs__btn" id="tab-sell" data-i18n="est_tab_sell">Sell Estimate</button>
+      </div>
+
+      <div class="repair-estimator__panel" id="repair-panel">
+        <div class="repair-estimator__field">
+          <label for="re-device" data-i18n="re_device_label">Choose your device</label>
+          <select id="re-device">
+            <option value="iPhone 17 Pro Max">iPhone 17 Pro Max</option>
+            <option value="iPhone 17 Pro">iPhone 17 Pro</option>
+            <option value="iPhone 17 Air">iPhone 17 Air</option>
+            <option value="iPhone 17" selected>iPhone 17</option>
+            <option value="iPhone 17e">iPhone 17e</option>
+            <option value="iPhone 16e">iPhone 16e</option>
+            <option value="iPhone 16 Pro Max">iPhone 16 Pro Max</option>
+            <option value="iPhone 16 Pro">iPhone 16 Pro</option>
+            <option value="iPhone 16 Plus">iPhone 16 Plus</option>
+            <option value="iPhone 16">iPhone 16</option>
+            <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+            <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+            <option value="iPhone 15 Plus">iPhone 15 Plus</option>
+            <option value="iPhone 15">iPhone 15</option>
+            <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+            <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+            <option value="iPhone 14 Plus">iPhone 14 Plus</option>
+            <option value="iPhone 14">iPhone 14</option>
+            <option value="iPhone SE 2022 (3rd Gen)">iPhone SE 2022 (3rd Gen)</option>
+            <option value="iPhone SE 2020 (2nd Gen)">iPhone SE 2020 (2nd Gen)</option>
+            <option value="iPhone 13 Pro Max">iPhone 13 Pro Max</option>
+            <option value="iPhone 13 Pro">iPhone 13 Pro</option>
+            <option value="iPhone 13 Mini">iPhone 13 Mini</option>
+            <option value="iPhone 13">iPhone 13</option>
+            <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
+            <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+            <option value="iPhone 12 Mini">iPhone 12 Mini</option>
+            <option value="iPhone 12">iPhone 12</option>
+            <option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+            <option value="iPhone 11 Pro">iPhone 11 Pro</option>
+            <option value="iPhone 11">iPhone 11</option>
+            <option value="iPhone XR">iPhone XR</option>
+            <option value="iPhone XS Max">iPhone XS Max</option>
+            <option value="iPhone XS">iPhone XS</option>
+            <option value="iPhone X">iPhone X</option>
+            <option value="iPhone 8 Plus">iPhone 8 Plus</option>
+            <option value="iPhone 8">iPhone 8</option>
+            <option value="iPhone 7 Plus">iPhone 7 Plus</option>
+            <option value="iPhone 7">iPhone 7</option>
+          </select>
+        </div>
+
+        <div class="repair-estimator__field">
+          <p class="repair-estimator__field-label" data-i18n="re_damage_label">Select damage type</p>
+          <div class="repair-estimator__options" id="re-options">
+            <button type="button" class="re-option" data-type="Battery service" data-i18n="re_battery">Battery service</button>
+            <button type="button" class="re-option" data-type="Back glass damage" data-i18n="re_backglass">Back glass damage</button>
+            <button type="button" class="re-option" data-type="Rear camera damage" data-i18n="re_camera">Rear camera damage</button>
+            <button type="button" class="re-option" data-type="Screen damage" data-i18n="re_screen">Screen damage</button>
+            <button type="button" class="re-option" data-type="Charging port damage" data-i18n="re_chargingport">Charging port damage</button>
+          </div>
+        </div>
+
+        <div class="repair-estimator__field" id="re-tier-field" style="display:none;">
+          <p class="repair-estimator__field-label" data-i18n="re_quality_label">Select screen quality</p>
+          <div class="repair-estimator__options" id="re-tier">
+            <button type="button" class="re-option re-option--tier" data-tier="affordable" data-i18n="re_affordable">Affordable (LCD)</button>
+            <button type="button" class="re-option re-option--tier" data-tier="premium" data-i18n="re_premium">Premium (OLED)</button>
+          </div>
+          <a href="Quality_Guidelines.html" class="repair-estimator__learn-more" data-i18n="re_learnmore">Not sure which to pick? Learn more about screen quality options</a>
+        </div>
+
+        <div class="repair-estimator__result" id="re-result">
+          <span class="re-result__label" id="re-result-label" data-i18n="re_prompt_select">Select a damage type above</span>
+          <span class="re-result__price" id="re-price"></span>
+          <a href="repair_appointment.html" class="learn_more_button" id="re-cta" style="display:none;" data-i18n="re_get_service">Get service</a>
+        </div>
+      </div>
+
+      <div class="repair-estimator__panel" id="sell-panel" style="display:none;">
+        <div class="repair-estimator__field">
+          <label for="se-device" data-i18n="se_device_label">Choose your device</label>
+          <select id="se-device">
+            <option value="iPhone 17 Pro Max">iPhone 17 Pro Max</option>
+            <option value="iPhone 17 Pro">iPhone 17 Pro</option>
+            <option value="iPhone 17 Air">iPhone 17 Air</option>
+            <option value="iPhone 17" selected>iPhone 17</option>
+            <option value="iPhone 17e">iPhone 17e</option>
+            <option value="iPhone 16e">iPhone 16e</option>
+            <option value="iPhone 16 Pro Max">iPhone 16 Pro Max</option>
+            <option value="iPhone 16 Pro">iPhone 16 Pro</option>
+            <option value="iPhone 16 Plus">iPhone 16 Plus</option>
+            <option value="iPhone 16">iPhone 16</option>
+            <option value="iPhone SE (2022)">iPhone SE (2022)</option>
+            <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+            <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+            <option value="iPhone 15 Plus">iPhone 15 Plus</option>
+            <option value="iPhone 15">iPhone 15</option>
+            <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+            <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+            <option value="iPhone 14 Plus">iPhone 14 Plus</option>
+            <option value="iPhone 14">iPhone 14</option>
+            <option value="iPhone 13 Pro Max">iPhone 13 Pro Max</option>
+            <option value="iPhone 13 Pro">iPhone 13 Pro</option>
+            <option value="iPhone 13 Mini">iPhone 13 Mini</option>
+            <option value="iPhone 13">iPhone 13</option>
+            <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
+            <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+            <option value="iPhone 12 Mini">iPhone 12 Mini</option>
+            <option value="iPhone 12">iPhone 12</option>
+            <option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+            <option value="iPhone 11 Pro">iPhone 11 Pro</option>
+            <option value="iPhone 11">iPhone 11</option>
+            <option value="iPhone SE(2020)">iPhone SE(2020)</option>
+            <option value="iPhone XR">iPhone XR</option>
+            <option value="iPhone XS Max">iPhone XS Max</option>
+            <option value="iPhone XS">iPhone XS</option>
+          </select>
+        </div>
+
+        <div class="repair-estimator__field">
+          <p class="repair-estimator__field-label" data-i18n="se_storage_label">Choose your storage</p>
+          <div class="repair-estimator__options" id="se-storage"></div>
+        </div>
+
+        <div class="repair-estimator__field">
+          <p class="repair-estimator__field-label" data-i18n="se_lock_label">Is your device locked or unlocked?</p>
+          <div class="repair-estimator__options" id="se-lock">
+            <button type="button" class="re-option re-option--lock is-active" data-lock="unlocked" data-i18n="se_unlocked">Unlocked</button>
+            <button type="button" class="re-option re-option--lock" data-lock="locked" data-i18n="se_locked">Locked</button>
+          </div>
+        </div>
+
+        <div class="repair-estimator__field">
+          <p class="repair-estimator__field-label" data-i18n="se_condition_label">Select your device's condition</p>
+          <div class="repair-estimator__options" id="se-condition">
+            <button type="button" class="re-option re-option--cond" data-cond="veryGood" data-i18n="se_cond_verygood">Very Good</button>
+            <button type="button" class="re-option re-option--cond" data-cond="good" data-i18n="se_cond_good">Good</button>
+            <button type="button" class="re-option re-option--cond" data-cond="fair" data-i18n="se_cond_fair">Fair</button>
+            <button type="button" class="re-option re-option--cond" data-cond="cracked" data-i18n="se_cond_cracked">Cracked Back/Screen (Otherwise Works)</button>
+          </div>
+        </div>
+
+        <div class="repair-estimator__result" id="se-result">
+          <span class="re-result__label" id="se-result-label" data-i18n="se_prompt_select">Select your device's condition above</span>
+          <span class="re-result__price" id="se-price"></span>
+          <a href="#" class="learn_more_button" id="se-cta" style="display:none;" data-i18n="se_get_offer">Get this offer</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <div class="eyebrow eyebrow--center" style="justify-content:center;">
+        <span class="signal"><span></span><span></span><span></span></span>
+        <span data-i18n="highlights_eyebrow">Highlights</span>
+      </div>
+      <h1 data-i18n="highlights_heading">Built for trust, speed, and convenience</h1>
+      <div class="services__wrapper">
+        <div class="services__card1"><i class="fas fa-bolt"></i><span data-i18n="highlight_1">Fast turnaround</span></div>
+        <div class="services__card2"><i class="fas fa-shield-alt"></i><span data-i18n="highlight_2">Customer protection</span></div>
+        <div class="services__card3"><i class="fas fa-user-check"></i><span data-i18n="highlight_3">Certified technicians</span></div>
+        <div class="services__card4"><i class="fas fa-comments"></i><span data-i18n="highlight_4">Responsive support</span></div>
+      </div>
+    </div>
+
+    <div class="powered" id="Powered By">
+      <h1 data-i18n="powered_by">Powered by</h1>
+    </div>
+    <div class="flex-container">
+      <div class="flex-item">
+          <div class="item-box">
+              <img src="Setmore-Logo.png" alt="Image 1">
+          </div>
+      </div>
+      <div class="flex-item">
+          <div class="item-box">
+              <img src="Square,_Inc._logo.svg.png" alt="Image 2">
+          </div>
+      </div>
+      <div class="flex-item">
+          <div class="item-box">
+              <img src="Google_Cloud_logo.svg.png" alt="Image 3">
+          </div>
+      </div>
+      <div class="flex-item">
+          <div class="item-box">
+              <img src="Screenshot.png" alt="Image 4">
+          </div>
+      </div>
+      <div class="flex-item">
+        <div class="item-box">
+            <img src="Venmo-Logo.png" alt="Image 4">
+        </div>
+    </div>
+    <div class="flex-item">
+      <div class="item-box">
+          <img src="Zelle_(payment_service)-Logo.wine.png" alt="Image 4">
+      </div>
+  </div>
+  </div>
+
+    <nav class="banner" id="bannerinfo">
+      <h1 data-i18n="cable_banner_heading">Get a pack of two USB-C charging cables starting at just $4.00*</h1>
+      <h2 data-i18n="cable_banner_sub">High-quality, durable accessories you can trust, brought to you by ebin at unbeatable prices.</h2>
+    </nav>
+
+    <!-- Download Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container_download">
+        <div class="eyebrow eyebrow--center" style="justify-content:center; padding: 0 6%;">
+          <span class="signal"><span></span><span></span><span></span></span>
+          <span data-i18n="download_eyebrow">Get the app</span>
+        </div>
+        <h1 style="text-align:center; margin-bottom:40px; padding: 0 6%;" data-i18n="download_heading">A closer look at ebin</h1>
+
+        <!-- Desktop / laptop only: image slider -->
+        <div class="slider-wrap">
+          <div class="slider">
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slides">
+              <div class="slide first">
+                <a href="https://apps.apple.com/us/app/ebin/id1563293790" target="_blank" rel="noopener" class="slide__link">
+                  <img src="ebin - Image Slider Website 0.png" alt="">
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://apps.apple.com/us/app/ebin/id1563293790" target="_blank" rel="noopener" class="slide__link">
+                  <img src="ebin - Website Image 3.png" alt="">
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://apps.apple.com/us/app/ebin/id1563293790" target="_blank" rel="noopener" class="slide__link">
+                  <img src="ebin - Website Image 1.png" alt="">
+                </a>
+              </div>
+              <div class="slide">
+                <a href="https://apps.apple.com/us/app/ebin/id1563293790" target="_blank" rel="noopener" class="slide__link">
+                  <img src="ebin - Website Image 2.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile only: swipeable card carousel -->
+        <div class="MobileDownload" id="Mobile_Only">
+          <div class="mobile-card-carousel" id="mobileCardCarousel">
+            <div class="mobile-card-spacer"></div>
+            <a href="https://www.ebinusa.com/qrcode" target="_blank" class="mobile-card-slide">
+              <img src="ebin - Card 0 (Updated).png" alt="Sell any iPhone instantly">
+            </a>
+            <a href="https://www.ebinusa.com/qrcode" target="_blank" class="mobile-card-slide">
+              <img src="ebin - Card 1 (Updated).png" alt="USB-C cable 2 pack">
+            </a>
+            <a href="https://www.ebinusa.com/qrcode" target="_blank" class="mobile-card-slide">
+              <img src="ebin - Card 2 (Updated).png" alt="Free shipping on cables">
+            </a>
+            <a href="https://www.ebinusa.com/qrcode" target="_blank" class="mobile-card-slide">
+              <img src="ebin - Card 3 (Updated).png" alt="Free shipping, secure tracking, instant cash">
+            </a>
+            <div class="mobile-card-spacer"></div>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2 data-i18n="footer_about">About Us</h2>
+            <a href="/index.html#home" data-i18n="footer_home">Home</a> <a href="/How_it_works.html" data-i18n="footer_howitworks">How it works</a>
+            <a href="/privacy.html" data-i18n="footer_privacy">Privacy Policy</a> <a href="/TermOfService.html" data-i18n="footer_terms">Terms of Service</a> <a href="/Quality_Guidelines.html" data-i18n="footer_quality">Quality Guidelines</a>
+          </div>
+          <div class="footer__link--items">
+            <h2 data-i18n="footer_service">Service</h2>
+            <a href="/repair_appointment.html" data-i18n="footer_repair_service">Repair & Service (Beta)</a>
+          </div>
+          <div class="footer__link--items">
+            <h2 data-i18n="footer_merchant">Merchant</h2>
+            <a href="/partner_with_ebin.html" data-i18n="footer_partner">Partner with ebin&#176; (Coming Soon)</a> 
+            <a href="/Pricing.html" data-i18n="footer_pricing">Pricing (Coming Soon)</a>
+          </div>
+          <div class="footer__link--items">
+            <h2 data-i18n="footer_contact">Contact Us</h2>
+            <a href="/Contact.html" data-i18n="footer_contact_link">Contact</a> <a href="/support.html" data-i18n="footer_support">Support</a>
+            
+          </div>
+          
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2 data-i18n="footer_social">Social Media</h2>
+            <a href="https://www.facebook.com/people/Ebin-One-Place-For-All-Electronics/100068000297913/" data-i18n="footer_facebook">Facebook</a><a href="https://www.instagram.com/ebin_usa/" data-i18n="footer_instagram">Instagram</a> <a href="https://linktr.ee/ebinusa" data-i18n="footer_linktree">Linktree</a> 
+          </div>
+                <div class="footer__link--items footer__link--items--download">
+                  <h2 data-i18n="footer_download_app">Download the App</h2>
+                  <div class="footer__download-badges">
+                    <a href="https://apps.apple.com/us/app/ebin/id1563293790" target="_blank"><img src="appstoreBadge.png" alt="Download on the App Store"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US" target="_blank"><img src="ebin - GooglePlay.png" alt="Get it on Google Play"></a>
+                  </div>
+                </div>
+        </div>
+      </div>
+            <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">ebin&#176;</a>
+          </div>
+          <p class="website__rights">© ebin&#176; 2026. <span data-i18n="footer_rights">All rights reserved</span></p>
+          <div class="social__icons">
+            <a href="https://www.facebook.com/people/Ebin-One-Place-For-All-Electronics/100068000297913/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/ebin_usa/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          
+          </div>
+        </div>
+      </section>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    </div>
+    <script src="app.js"></script>
+    <script type="text/javascript">
+      (function(){
+        var btn = document.getElementById('getAppBtn');
+        if (!btn) return;
+        var ua = navigator.userAgent || '';
+        // Treat any Apple device/platform (iPhone, iPad, or Mac desktop) as "Apple";
+        // everything else (Windows, Android, Linux, ChromeOS, etc.) gets Google Play.
+        var isApple = /iPad|iPhone|iPod|Macintosh/.test(ua) || navigator.platform === 'MacIntel';
+        if (isApple) {
+          btn.setAttribute('href', 'https://apps.apple.com/us/app/ebin/id1563293790');
+        } else {
+          btn.setAttribute('href', 'https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US');
+        }
+      })();
+      </script>
+    <script type="text/javascript">
+      (function(){
+        var slider = document.querySelector('.slider');
+        if (!slider) return;
+
+        function currentSlide(){
+          for (var i = 1; i <= 4; i++) {
+            var el = document.getElementById('radio' + i);
+            if (el && el.checked) return i;
+          }
+          return 1;
+        }
+        function goToSlide(i){
+          if (i > 4) i = 1;
+          if (i < 1) i = 4;
+          var el = document.getElementById('radio' + i);
+          if (el) el.checked = true;
+        }
+
+        // Autoplay (reads current state each tick, so it never fights with swipes).
+        // Pauses whenever the person interacts (dot click or manual drag/swipe),
+        // then automatically resumes a few seconds after they stop interacting.
+        var AUTOPLAY_DELAY = 5000;
+        var RESUME_AFTER = 6000;
+        var autoplayTimer = null;
+        var resumeTimer = null;
+
+        function startAutoplay(){
+          stopAutoplay();
+          autoplayTimer = setInterval(function(){
+            goToSlide(currentSlide() + 1);
+          }, AUTOPLAY_DELAY);
+        }
+        function stopAutoplay(){
+          if (autoplayTimer) { clearInterval(autoplayTimer); autoplayTimer = null; }
+        }
+        function pauseAndScheduleResume(){
+          stopAutoplay();
+          clearTimeout(resumeTimer);
+          resumeTimer = setTimeout(startAutoplay, RESUME_AFTER);
+        }
+
+        startAutoplay();
+
+        // Dot navigation pauses autoplay too
+        var dots = slider.querySelectorAll('.navigation-manual label');
+        dots.forEach(function(dot){
+          dot.addEventListener('click', pauseAndScheduleResume);
+        });
+
+        // Drag-to-swipe (mouse + touch)
+        var startX = 0, isDragging = false, wasDragged = false;
+
+        function dragStart(x){
+          isDragging = true;
+          wasDragged = false;
+          startX = x;
+          slider.classList.add('is-dragging');
+        }
+        function dragMove(x){
+          if (!isDragging) return;
+          if (Math.abs(x - startX) > 8) wasDragged = true;
+        }
+        function dragEnd(x){
+          if (!isDragging) return;
+          isDragging = false;
+          slider.classList.remove('is-dragging');
+          var deltaX = x - startX;
+          if (deltaX < -40) {
+            pauseAndScheduleResume();
+            goToSlide(currentSlide() + 1);
+          } else if (deltaX > 40) {
+            pauseAndScheduleResume();
+            goToSlide(currentSlide() - 1);
+          }
+        }
+
+        // Don't let a swipe gesture also trigger the slide's link navigation
+        slider.addEventListener('click', function(e){
+          if (wasDragged) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        }, true);
+
+        slider.addEventListener('mousedown', function(e){ dragStart(e.clientX); e.preventDefault(); });
+        window.addEventListener('mousemove', function(e){ dragMove(e.clientX); });
+        window.addEventListener('mouseup', function(e){ dragEnd(e.clientX); });
+
+        slider.addEventListener('touchstart', function(e){ dragStart(e.touches[0].clientX); }, { passive: true });
+        slider.addEventListener('touchmove', function(e){ dragMove(e.touches[0].clientX); }, { passive: true });
+        slider.addEventListener('touchend', function(e){ dragEnd(e.changedTouches[0].clientX); });
+      })();
+      </script>
+    <script type="text/javascript">
+      (function(){
+        var boxes = document.querySelectorAll('.item-box');
+        if (!boxes.length || !('IntersectionObserver' in window)) return;
+
+        var observer = new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){
+            entry.target.classList.toggle('in-view', entry.isIntersecting);
+          });
+        }, { threshold: 0.1 });
+
+        boxes.forEach(function(box){ observer.observe(box); });
+      })();
+      </script>
+    <script type="text/javascript">
+      (function(){
+        var carousel = document.getElementById('mobileCardCarousel');
+        if (!carousel) return;
+        var realCards = Array.from(carousel.querySelectorAll('.mobile-card-slide'));
+        if (!realCards.length) return;
+
+        // Route taps to the right store based on platform.
+        var ua = navigator.userAgent || '';
+        var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /Android/.test(ua);
+        var storeUrl = null;
+        if (isIOS) {
+          storeUrl = 'https://apps.apple.com/us/app/ebin/id1563293790';
+        } else if (isAndroid) {
+          storeUrl = 'https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US';
+        }
+        if (storeUrl) {
+          realCards.forEach(function(card){ card.setAttribute('href', storeUrl); });
+        }
+
+        // Build a page indicator (one segment per slide), hidden until the
+        // person touches/drags the carousel, then it fades back out.
+        var indicator = document.createElement('div');
+        indicator.className = 'mobile-carousel-indicator';
+        indicator.id = 'mobileCarouselIndicator';
+        realCards.forEach(function(){
+          var seg = document.createElement('span');
+          seg.className = 'mobile-carousel-indicator__seg';
+          indicator.appendChild(seg);
+        });
+        carousel.insertAdjacentElement('afterend', indicator);
+        var segs = Array.from(indicator.querySelectorAll('.mobile-carousel-indicator__seg'));
+
+        function closestIndexNow(){
+          var carouselRect = carousel.getBoundingClientRect();
+          var containerCenter = carouselRect.left + carouselRect.width / 2;
+          var closestIndex = 0, closestDist = Infinity;
+          realCards.forEach(function(slide, i){
+            var r = slide.getBoundingClientRect();
+            var c = r.left + r.width / 2;
+            var d = Math.abs(c - containerCenter);
+            if (d < closestDist){ closestDist = d; closestIndex = i; }
+          });
+          return closestIndex;
+        }
+
+        function updateIndicator(){
+          var idx = closestIndexNow();
+          segs.forEach(function(seg, i){ seg.classList.toggle('active', i === idx); });
+        }
+
+        updateIndicator();
+
+        function centerOn(el){
+          var carouselRect = carousel.getBoundingClientRect();
+          var elRect = el.getBoundingClientRect();
+          var elCenter = (elRect.left - carouselRect.left) + elRect.width / 2;
+          var containerCenter = carouselRect.width / 2;
+          var prevBehavior = carousel.style.scrollBehavior;
+          carousel.style.scrollBehavior = 'auto';
+          carousel.scrollLeft += (elCenter - containerCenter);
+          requestAnimationFrame(function(){ carousel.style.scrollBehavior = prevBehavior; });
+        }
+        function init(){ centerOn(realCards[0]); updateIndicator(); }
+        window.addEventListener('load', init);
+        setTimeout(init, 50);
+
+        carousel.addEventListener('scroll', function(){
+          updateIndicator();
+        }, { passive: true });
+      })();
+      </script>
+    <script type="text/javascript">
+      (function(){
+        // Real screen + battery pricing. Devices with two screen quality
+        // options list both a "premium" (OLED/Soft) and "affordable" (LCD/LED)
+        // price; devices with only one option use "single". Back glass, rear
+        // camera, screen+back glass, and other-damage pricing isn't finalized
+        // yet, so those show a "coming soon" note for every device for now.
+        var SCREEN_PRICING = {
+          "iPhone 17 Pro Max":  { premium: 229.99, affordable: 134.99 },
+          "iPhone 17 Pro":      { premium: 199.99, affordable: 114.99 },
+          "iPhone 17 Air":      { premium: 314.99, affordable: null },
+          "iPhone 17":          { premium: 229.99, affordable: 99.99 },
+          "iPhone 17e":         { premium: 134.99, affordable: 99.99 },
+          "iPhone 16e":         { premium: 134.99, affordable: 99.99 },
+          "iPhone 16 Pro Max":  { premium: 229.99, affordable: 134.99 },
+          "iPhone 16 Pro":      { premium: 199.99, affordable: 114.99 },
+          "iPhone 16 Plus":     { premium: 154.99, affordable: 114.99 },
+          "iPhone 16":          { premium: 134.99, affordable: 99.99 },
+          "iPhone 15 Pro Max":  { premium: 154.99, affordable: 134.99 },
+          "iPhone 15 Pro":      { premium: 134.99, affordable: 114.99 },
+          "iPhone 15 Plus":     { premium: 154.99, affordable: 114.99 },
+          "iPhone 15":          { premium: 134.99, affordable: 99.99 },
+          "iPhone 14 Pro Max":  { premium: 154.99, affordable: 134.99 },
+          "iPhone 14 Pro":      { premium: 134.99, affordable: 114.99 },
+          "iPhone 14 Plus":     { premium: 154.99, affordable: 114.99 },
+          "iPhone 14":          { premium: 134.99, affordable: 99.99 },
+          "iPhone SE 2022 (3rd Gen)": { single: 74.99 },
+          "iPhone SE 2020 (2nd Gen)": { single: 74.99 },
+          "iPhone 13 Pro Max":  { premium: 154.99, affordable: 114.99 },
+          "iPhone 13 Pro":      { premium: 134.99, affordable: 114.99 },
+          "iPhone 13 Mini":     { premium: null,   affordable: 94.99 },
+          "iPhone 13":          { premium: 134.99, affordable: 94.99 },
+          "iPhone 12 Pro Max":  { premium: 144.99, affordable: 114.99 },
+          "iPhone 12 Pro":      { premium: 134.99, affordable: 94.99 },
+          "iPhone 12 Mini":     { premium: null,   affordable: 94.99 },
+          "iPhone 12":          { premium: 134.99, affordable: 94.99 },
+          "iPhone 11 Pro Max":  { premium: 144.99, affordable: 104.99 },
+          "iPhone 11 Pro":      { premium: 134.99, affordable: 94.99 },
+          "iPhone 11":          { single: 94.99 },
+          "iPhone XR":          { single: 94.99 },
+          "iPhone XS Max":      { premium: 144.99, affordable: 114.99 },
+          "iPhone XS":          { premium: 134.99, affordable: 94.99 },
+          "iPhone X":           { premium: 134.99, affordable: 94.99 },
+          "iPhone 8 Plus":      { single: 79.99 },
+          "iPhone 8":           { single: 74.99 },
+          "iPhone 7 Plus":      { single: 79.99 },
+          "iPhone 7":           { single: 74.99 }
+        };
+
+        var BATTERY_PRICING = {
+          "iPhone 17 Pro Max":        84.99,
+          "iPhone 17 Pro":            84.99,
+          "iPhone 17 Air":            84.99,
+          "iPhone 17":                84.99,
+          "iPhone 17e":               84.99,
+          "iPhone 16e":               84.99,
+          "iPhone 16 Pro Max":        84.99,
+          "iPhone 16 Pro":            84.99,
+          "iPhone 16 Plus":           84.99,
+          "iPhone 16":                84.99,
+          "iPhone 15 Pro Max":        84.99,
+          "iPhone 15 Pro":            84.99,
+          "iPhone 15 Plus":           84.99,
+          "iPhone 15":                84.99,
+          "iPhone 14 Pro Max":        84.99,
+          "iPhone 14 Pro":            84.99,
+          "iPhone 14 Plus":           84.99,
+          "iPhone 14":                84.99,
+          "iPhone SE 2022 (3rd Gen)": 54.99,
+          "iPhone SE 2020 (2nd Gen)": 54.99,
+          "iPhone 13 Pro Max":        74.99,
+          "iPhone 13 Pro":            74.99,
+          "iPhone 13 Mini":           74.99,
+          "iPhone 13":                74.99,
+          "iPhone 12 Pro Max":        74.99,
+          "iPhone 12 Pro":            74.99,
+          "iPhone 12 Mini":           74.99,
+          "iPhone 12":                74.99,
+          "iPhone 11 Pro Max":        74.99,
+          "iPhone 11 Pro":            74.99,
+          "iPhone 11":                74.99,
+          "iPhone XR":                74.99,
+          "iPhone XS Max":            74.99,
+          "iPhone XS":                74.99,
+          "iPhone X":                 74.99,
+          "iPhone 8 Plus":            74.99,
+          "iPhone 8":                 54.99,
+          "iPhone 7 Plus":            74.99,
+          "iPhone 7":                 54.99
+        };
+
+        var REAR_CAMERA_PRICING = {
+          "iPhone 17 Pro Max":        159.99,
+          "iPhone 17 Pro":            159.99,
+          "iPhone 17 Air":            null,
+          "iPhone 17":                119.99,
+          "iPhone 17e":               119.99,
+          "iPhone 16e":               119.99,
+          "iPhone 16 Pro Max":        119.99,
+          "iPhone 16 Pro":            119.99,
+          "iPhone 16 Plus":           109.99,
+          "iPhone 16":                109.99,
+          "iPhone 15 Pro Max":        119.99,
+          "iPhone 15 Pro":            119.99,
+          "iPhone 15 Plus":           109.99,
+          "iPhone 15":                109.99,
+          "iPhone 14 Pro Max":        114.99,
+          "iPhone 14 Pro":            114.99,
+          "iPhone 14 Plus":           109.99,
+          "iPhone 14":                109.99,
+          "iPhone SE 2022 (3rd Gen)": 54.99,
+          "iPhone SE 2020 (2nd Gen)": 54.99,
+          "iPhone 13 Pro Max":        104.99,
+          "iPhone 13 Pro":            104.99,
+          "iPhone 13 Mini":           84.99,
+          "iPhone 13":                84.99,
+          "iPhone 12 Pro Max":        104.99,
+          "iPhone 12 Pro":            104.99,
+          "iPhone 12 Mini":           84.99,
+          "iPhone 12":                84.99,
+          "iPhone 11 Pro Max":        84.99,
+          "iPhone 11 Pro":            84.99,
+          "iPhone 11":                84.99,
+          "iPhone XR":                74.99,
+          "iPhone XS Max":            74.99,
+          "iPhone XS":                74.99,
+          "iPhone X":                 74.99,
+          "iPhone 8 Plus":            74.99,
+          "iPhone 8":                 54.99,
+          "iPhone 7 Plus":            74.99,
+          "iPhone 7":                 54.99
+        };
+
+        var CHARGING_PORT_PRICING = {
+          "iPhone 17 Pro Max":        null,
+          "iPhone 17 Pro":            109.99,
+          "iPhone 17 Air":            109.99,
+          "iPhone 17":                99.99,
+          "iPhone 17e":               99.99,
+          "iPhone 16e":               99.99,
+          "iPhone 16 Pro Max":        109.99,
+          "iPhone 16 Pro":            99.99,
+          "iPhone 16 Plus":           109.99,
+          "iPhone 16":                99.99,
+          "iPhone 15 Pro Max":        109.99,
+          "iPhone 15 Pro":            99.99,
+          "iPhone 15 Plus":           109.99,
+          "iPhone 15":                99.99,
+          "iPhone 14 Pro Max":        109.99,
+          "iPhone 14 Pro":            99.99,
+          "iPhone 14 Plus":           109.99,
+          "iPhone 14":                99.99,
+          "iPhone SE 2022 (3rd Gen)": 69.99,
+          "iPhone SE 2020 (2nd Gen)": 69.99,
+          "iPhone 13 Pro Max":        109.99,
+          "iPhone 13 Pro":            99.99,
+          "iPhone 13 Mini":           99.99,
+          "iPhone 13":                99.99,
+          "iPhone 12 Pro Max":        109.99,
+          "iPhone 12 Pro":            99.99,
+          "iPhone 12 Mini":           99.99,
+          "iPhone 12":                99.99,
+          "iPhone 11 Pro Max":        109.99,
+          "iPhone 11 Pro":            99.99,
+          "iPhone 11":                99.99,
+          "iPhone XR":                99.99,
+          "iPhone XS Max":            99.99,
+          "iPhone XS":                89.99,
+          "iPhone X":                 89.99,
+          "iPhone 8 Plus":            79.99,
+          "iPhone 8":                 69.99,
+          "iPhone 7 Plus":            79.99,
+          "iPhone 7":                 69.99
+        };
+
+        var BACK_GLASS_PRICING = {
+          "iPhone 14": 104.99,
+          "iPhone 14 Plus": 114.99,
+          "iPhone 15": 104.99,
+          "iPhone 15 Plus": 114.99,
+          "iPhone 15 Pro": 104.99,
+          "iPhone 15 Pro Max": 114.99,
+          "iPhone 16": 104.99,
+          "iPhone 16 Plus": 114.99,
+          "iPhone 16 Pro": 104.99,
+          "iPhone 16 Pro Max": 114.99
+        };
+
+        // Sell estimate pricing: what ebin pays the customer for their device,
+        // based on storage size, lock status, and condition.
+        var SELL_PRICING = {
+          "iPhone XS":            { 64:{lVeryGood:33,lGood:23,lFair:13,lCracked:23,uVeryGood:43,uGood:33,uFair:23,uCracked:27}, 256:{lVeryGood:43,lGood:33,lFair:23,lCracked:27,uVeryGood:33,uGood:43,uFair:33,uCracked:33}, 512:{lVeryGood:53,lGood:43,lFair:33,lCracked:33,uVeryGood:23,uGood:33,uFair:43,uCracked:37} },
+          "iPhone XS Max":        { 64:{lVeryGood:93,lGood:83,lFair:73,lCracked:37,uVeryGood:103,uGood:93,uFair:87,uCracked:53}, 256:{lVeryGood:103,lGood:93,lFair:83,lCracked:43,uVeryGood:107,uGood:103,uFair:93,uCracked:63}, 512:{lVeryGood:107,lGood:103,lFair:93,lCracked:47,uVeryGood:113,uGood:107,uFair:103,uCracked:73} },
+          "iPhone XR":            { 64:{lVeryGood:43,lGood:33,lFair:27,lCracked:23,uVeryGood:47,uGood:43,uFair:37,uCracked:27}, 128:{lVeryGood:47,lGood:43,lFair:33,lCracked:27,uVeryGood:53,uGood:47,uFair:43,uCracked:33} },
+          "iPhone SE(2020)":      { 64:{lVeryGood:27,lGood:23,lFair:17,lCracked:17,uVeryGood:37,uGood:33,uFair:27,uCracked:23}, 128:{lVeryGood:33,lGood:27,lFair:23,lCracked:23,uVeryGood:43,uGood:37,uFair:33,uCracked:27}, 256:{lVeryGood:37,lGood:33,lFair:27,lCracked:27,uVeryGood:47,uGood:43,uFair:37,uCracked:33} },
+          "iPhone 11":            { 64:{lVeryGood:73,lGood:67,lFair:63,lCracked:33,uVeryGood:83,uGood:77,uFair:73,uCracked:37}, 128:{lVeryGood:77,lGood:73,lFair:67,lCracked:37,uVeryGood:87,uGood:83,uFair:77,uCracked:43}, 256:{lVeryGood:83,lGood:77,lFair:73,lCracked:43,uVeryGood:93,uGood:87,uFair:83,uCracked:47} },
+          "iPhone 11 Pro":        { 64:{lVeryGood:107,lGood:103,lFair:93,lCracked:43,uVeryGood:117,uGood:113,uFair:107,uCracked:53}, 256:{lVeryGood:113,lGood:107,lFair:103,lCracked:47,uVeryGood:123,uGood:117,uFair:113,uCracked:63}, 512:{lVeryGood:113,lGood:113,lFair:107,lCracked:53,uVeryGood:133,uGood:123,uFair:117,uCracked:67} },
+          "iPhone 11 Pro Max":    { 64:{lVeryGood:123,lGood:113,lFair:103,lCracked:53,uVeryGood:133,uGood:123,uFair:113,uCracked:73}, 256:{lVeryGood:133,lGood:123,lFair:113,lCracked:63,uVeryGood:143,uGood:133,uFair:123,uCracked:83}, 512:{lVeryGood:143,lGood:133,lFair:123,lCracked:73,uVeryGood:153,uGood:143,uFair:133,uCracked:93} },
+          "iPhone 12 Mini":       { 64:{lVeryGood:67,lGood:57,lFair:53,lCracked:37,uVeryGood:97,uGood:87,uFair:83,uCracked:53}, 128:{lVeryGood:73,lGood:67,lFair:57,lCracked:43,uVeryGood:103,uGood:97,uFair:87,uCracked:57}, 256:{lVeryGood:83,lGood:73,lFair:67,lCracked:53,uVeryGood:113,uGood:103,uFair:97,uCracked:63} },
+          "iPhone 12":            { 64:{lVeryGood:103,lGood:97,lFair:93,lCracked:33,uVeryGood:107,uGood:103,uFair:97,uCracked:37}, 128:{lVeryGood:107,lGood:103,lFair:97,lCracked:37,uVeryGood:113,uGood:107,uFair:103,uCracked:43}, 256:{lVeryGood:113,lGood:197,lFair:103,lCracked:43,uVeryGood:117,uGood:113,uFair:197,uCracked:47} },
+          "iPhone 12 Pro":        { 128:{lVeryGood:133,lGood:123,lFair:113,lCracked:103,uVeryGood:153,uGood:143,uFair:133,uCracked:113}, 256:{lVeryGood:143,lGood:133,lFair:123,lCracked:113,uVeryGood:163,uGood:153,uFair:143,uCracked:123}, 512:{lVeryGood:153,lGood:143,lFair:133,lCracked:123,uVeryGood:173,uGood:163,uFair:153,uCracked:133} },
+          "iPhone 12 Pro Max":    { 128:{lVeryGood:177,lGood:173,lFair:163,lCracked:103,uVeryGood:193,uGood:187,uFair:177,uCracked:123}, 256:{lVeryGood:187,lGood:177,lFair:173,lCracked:113,uVeryGood:203,uGood:193,uFair:187,uCracked:127}, 512:{lVeryGood:193,lGood:187,lFair:177,lCracked:123,uVeryGood:207,uGood:203,uFair:193,uCracked:133} },
+          "iPhone 13 Mini":       { 128:{lVeryGood:153,lGood:147,lFair:143,lCracked:87,uVeryGood:153,uGood:147,uFair:143,uCracked:107}, 256:{lVeryGood:157,lGood:153,lFair:147,lCracked:93,uVeryGood:157,uGood:153,uFair:147,uCracked:113}, 512:{lVeryGood:167,lGood:157,lFair:153,lCracked:103,uVeryGood:167,uGood:157,uFair:153,uCracked:123} },
+          "iPhone 13":            { 128:{lVeryGood:157,lGood:143,lFair:137,lCracked:107,uVeryGood:173,uGood:163,uFair:153,uCracked:117}, 256:{lVeryGood:167,lGood:157,lFair:143,lCracked:113,uVeryGood:183,uGood:173,uFair:163,uCracked:127}, 512:{lVeryGood:173,lGood:167,lFair:157,lCracked:123,uVeryGood:193,uGood:183,uFair:173,uCracked:133} },
+          "iPhone 13 Pro":        { 128:{lVeryGood:213,lGood:193,lFair:187,lCracked:173,uVeryGood:243,uGood:233,uFair:227,uCracked:203}, 256:{lVeryGood:217,lGood:213,lFair:193,lCracked:183,uVeryGood:253,uGood:243,uFair:233,uCracked:213}, 512:{lVeryGood:223,lGood:217,lFair:213,lCracked:193,uVeryGood:263,uGood:253,uFair:243,uCracked:223}, 1000:{lVeryGood:247,lGood:223,lFair:217,lCracked:203,uVeryGood:273,uGood:263,uFair:253,uCracked:233} },
+          "iPhone 13 Pro Max":    { 128:{lVeryGood:243,lGood:233,lFair:223,lCracked:187,uVeryGood:273,uGood:263,uFair:253,uCracked:227}, 256:{lVeryGood:253,lGood:243,lFair:233,lCracked:193,uVeryGood:283,uGood:273,uFair:263,uCracked:233}, 512:{lVeryGood:263,lGood:253,lFair:243,lCracked:213,uVeryGood:293,uGood:283,uFair:273,uCracked:243}, 1000:{lVeryGood:273,lGood:263,lFair:253,lCracked:217,uVeryGood:303,uGood:293,uFair:283,uCracked:253} },
+          "iPhone 14":            { 128:{lVeryGood:193,lGood:183,lFair:173,lCracked:113,uVeryGood:233,uGood:223,uFair:213,uCracked:133}, 256:{lVeryGood:203,lGood:193,lFair:183,lCracked:123,uVeryGood:243,uGood:233,uFair:223,uCracked:143}, 512:{lVeryGood:207,lGood:203,lFair:193,lCracked:133,uVeryGood:253,uGood:243,uFair:233,uCracked:153} },
+          "iPhone 14 Plus":       { 128:{lVeryGood:243,lGood:233,lFair:223,lCracked:133,uVeryGood:273,uGood:263,uFair:253,uCracked:143}, 256:{lVeryGood:253,lGood:243,lFair:233,lCracked:143,uVeryGood:283,uGood:273,uFair:263,uCracked:153}, 512:{lVeryGood:263,lGood:253,lFair:243,lCracked:153,uVeryGood:287,uGood:283,uFair:273,uCracked:163} },
+          "iPhone 14 Pro":        { 128:{lVeryGood:233,lGood:223,lFair:213,lCracked:143,uVeryGood:263,uGood:253,uFair:243,uCracked:153}, 256:{lVeryGood:243,lGood:233,lFair:223,lCracked:153,uVeryGood:273,uGood:263,uFair:253,uCracked:163}, 512:{lVeryGood:253,lGood:243,lFair:233,lCracked:163,uVeryGood:283,uGood:273,uFair:263,uCracked:173}, 1000:{lVeryGood:263,lGood:253,lFair:243,lCracked:173,uVeryGood:287,uGood:283,uFair:273,uCracked:183} },
+          "iPhone 14 Pro Max":    { 128:{lVeryGood:303,lGood:293,lFair:283,lCracked:213,uVeryGood:333,uGood:323,uFair:313,uCracked:243}, 256:{lVeryGood:313,lGood:303,lFair:293,lCracked:223,uVeryGood:337,uGood:333,uFair:323,uCracked:253}, 512:{lVeryGood:323,lGood:313,lFair:303,lCracked:233,uVeryGood:343,uGood:337,uFair:333,uCracked:283}, 1000:{lVeryGood:333,lGood:323,lFair:313,lCracked:243,uVeryGood:347,uGood:343,uFair:337,uCracked:303} },
+          "iPhone 15":            { 128:{lVeryGood:233,lGood:223,lFair:213,lCracked:143,uVeryGood:263,uGood:253,uFair:243,uCracked:173}, 256:{lVeryGood:243,lGood:233,lFair:223,lCracked:153,uVeryGood:273,uGood:263,uFair:253,uCracked:183}, 512:{lVeryGood:253,lGood:243,lFair:233,lCracked:163,uVeryGood:283,uGood:273,uFair:263,uCracked:193} },
+          "iPhone 15 Plus":       { 128:{lVeryGood:313,lGood:303,lFair:293,lCracked:203,uVeryGood:333,uGood:323,uFair:313,uCracked:223}, 256:{lVeryGood:323,lGood:313,lFair:303,lCracked:213,uVeryGood:343,uGood:333,uFair:323,uCracked:233}, 512:{lVeryGood:333,lGood:323,lFair:313,lCracked:223,uVeryGood:353,uGood:343,uFair:333,uCracked:243} },
+          "iPhone 15 Pro":        { 128:{lVeryGood:313,lGood:303,lFair:293,lCracked:203,uVeryGood:333,uGood:323,uFair:313,uCracked:223}, 256:{lVeryGood:323,lGood:313,lFair:303,lCracked:207,uVeryGood:343,uGood:333,uFair:323,uCracked:233}, 512:{lVeryGood:333,lGood:323,lFair:313,lCracked:213,uVeryGood:353,uGood:343,uFair:333,uCracked:243}, 1000:{lVeryGood:343,lGood:333,lFair:323,lCracked:223,uVeryGood:363,uGood:353,uFair:343,uCracked:253} },
+          "iPhone 15 Pro Max":    { 256:{lVeryGood:403,lGood:393,lFair:383,lCracked:303,uVeryGood:433,uGood:413,uFair:403,uCracked:337}, 512:{lVeryGood:413,lGood:403,lFair:393,lCracked:313,uVeryGood:443,uGood:433,uFair:413,uCracked:347}, 1000:{lVeryGood:433,lGood:413,lFair:403,lCracked:317,uVeryGood:453,uGood:443,uFair:433,uCracked:357} },
+          "iPhone SE (2022)":     { 64:{lVeryGood:53,lGood:43,lFair:33,lCracked:17,uVeryGood:63,uGood:57,uFair:53,uCracked:23}, 128:{lVeryGood:57,lGood:53,lFair:43,lCracked:23,uVeryGood:67,uGood:63,uFair:57,uCracked:27}, 256:{lVeryGood:63,lGood:57,lFair:53,lCracked:27,uVeryGood:73,uGood:67,uFair:63,uCracked:33} },
+          "iPhone 16":            { 128:{lVeryGood:263,lGood:253,lFair:243,lCracked:153,uVeryGood:373,uGood:343,uFair:333,uCracked:213}, 256:{lVeryGood:273,lGood:263,lFair:253,lCracked:173,uVeryGood:383,uGood:373,uFair:343,uCracked:243}, 512:{lVeryGood:373,lGood:313,lFair:263,lCracked:213,uVeryGood:403,uGood:383,uFair:373,uCracked:273} },
+          "iPhone 16 Plus":       { 128:{lVeryGood:343,lGood:333,lFair:323,lCracked:193,uVeryGood:363,uGood:353,uFair:343,uCracked:233}, 256:{lVeryGood:353,lGood:343,lFair:333,lCracked:203,uVeryGood:373,uGood:363,uFair:353,uCracked:263}, 512:{lVeryGood:363,lGood:353,lFair:343,lCracked:223,uVeryGood:383,uGood:373,uFair:363,uCracked:303} },
+          "iPhone 16 Pro":        { 128:{lVeryGood:443,lGood:433,lFair:413,lCracked:307,uVeryGood:493,uGood:443,uFair:433,uCracked:357}, 256:{lVeryGood:493,lGood:443,lFair:433,lCracked:357,uVeryGood:543,uGood:493,uFair:443,uCracked:403}, 512:{lVeryGood:543,lGood:493,lFair:443,lCracked:407,uVeryGood:573,uGood:543,uFair:493,uCracked:433}, 1000:{lVeryGood:573,lGood:543,lFair:493,lCracked:437,uVeryGood:593,uGood:573,uFair:543,uCracked:453} },
+          "iPhone 16 Pro Max":    { 256:{lVeryGood:553,lGood:513,lFair:453,lCracked:283,uVeryGood:653,uGood:633,uFair:553,uCracked:333}, 512:{lVeryGood:603,lGood:553,lFair:493,lCracked:303,uVeryGood:703,uGood:653,uFair:593,uCracked:353}, 1000:{lVeryGood:613,lGood:603,lFair:553,lCracked:323,uVeryGood:713,uGood:703,uFair:653,uCracked:383} },
+          "iPhone 16e":           { 128:{lVeryGood:207,lGood:203,lFair:193,lCracked:123,uVeryGood:213,uGood:207,uFair:203,uCracked:143}, 256:{lVeryGood:233,lGood:207,lFair:203,lCracked:133,uVeryGood:237,uGood:213,uFair:207,uCracked:153}, 512:{lVeryGood:273,lGood:233,lFair:207,lCracked:143,uVeryGood:287,uGood:237,uFair:213,uCracked:163} },
+          "iPhone 17e":           { 256:{lVeryGood:303,lGood:293,lFair:283,lCracked:243,uVeryGood:313,uGood:303,uFair:293,uCracked:253}, 512:{lVeryGood:313,lGood:303,lFair:293,lCracked:253,uVeryGood:323,uGood:313,uFair:303,uCracked:193} },
+          "iPhone 17":            { 256:{lVeryGood:453,lGood:443,lFair:433,lCracked:313,uVeryGood:533,uGood:453,uFair:443,uCracked:393}, 512:{lVeryGood:533,lGood:453,lFair:443,lCracked:393,uVeryGood:613,uGood:533,uFair:453,uCracked:373} },
+          "iPhone 17 Air":        { 256:{lVeryGood:483,lGood:473,lFair:463,lCracked:null,uVeryGood:537,uGood:483,uFair:473,uCracked:null}, 512:{lVeryGood:537,lGood:483,lFair:473,lCracked:null,uVeryGood:583,uGood:537,uFair:483,uCracked:null}, 1000:{lVeryGood:583,lGood:537,lFair:483,lCracked:null,uVeryGood:653,uGood:583,uFair:537,uCracked:null} },
+          "iPhone 17 Pro":        { 256:{lVeryGood:613,lGood:603,lFair:593,lCracked:433,uVeryGood:673,uGood:613,uFair:603,uCracked:493}, 512:{lVeryGood:673,lGood:613,lFair:603,lCracked:493,uVeryGood:763,uGood:673,uFair:613,uCracked:583}, 1000:{lVeryGood:763,lGood:673,lFair:613,lCracked:583,uVeryGood:823,uGood:763,uFair:673,uCracked:643} },
+          "iPhone 17 Pro Max":    { 256:{lVeryGood:683,lGood:663,lFair:653,lCracked:503,uVeryGood:763,uGood:683,uFair:663,uCracked:583}, 512:{lVeryGood:763,lGood:683,lFair:663,lCracked:583,uVeryGood:867,uGood:763,uFair:683,uCracked:693}, 1000:{lVeryGood:867,lGood:763,lFair:683,lCracked:683,uVeryGood:973,uGood:867,uFair:763,uCracked:793}, 2000:{lVeryGood:973,lGood:867,lFair:763,lCracked:793,uVeryGood:1003,uGood:973,uFair:867,uCracked:823} }
+        };
+
+        var deviceSelect = document.getElementById('re-device');
+        var optionButtons = document.querySelectorAll('#re-options .re-option');
+        var tierField = document.getElementById('re-tier-field');
+        var tierButtons = document.querySelectorAll('#re-tier .re-option--tier');
+        var resultLabel = document.getElementById('re-result-label');
+        var priceEl = document.getElementById('re-price');
+        var cta = document.getElementById('re-cta');
+        if (!deviceSelect || !optionButtons.length) return;
+
+        // Route "Get service" to the right store based on platform (same
+        // convention used elsewhere on the site): Apple devices (incl. Mac)
+        // go to the App Store, everything else goes to Google Play.
+        if (cta) {
+          var ua = navigator.userAgent || '';
+          var isApple = /iPad|iPhone|iPod|Macintosh/.test(ua) || navigator.platform === 'MacIntel';
+          cta.setAttribute('href', isApple
+            ? 'https://apps.apple.com/us/app/ebin/id1563293790'
+            : 'https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US');
+          cta.setAttribute('target', '_blank');
+        }
+
+        var selectedType = null;
+        var selectedTier = null;
+
+        function currentLang(){
+          try { return localStorage.getItem('ebinLang') || 'en'; } catch(e){ return 'en'; }
+        }
+        function t(key){
+          var lang = currentLang();
+          var dict = (window.EBIN_TRANSLATIONS && window.EBIN_TRANSLATIONS[lang]) || {};
+          var fallback = (window.EBIN_TRANSLATIONS && window.EBIN_TRANSLATIONS.en) || {};
+          return dict[key] != null ? dict[key] : (fallback[key] != null ? fallback[key] : key);
+        }
+
+        function fmt(n){
+          return '$' + (n % 1 === 0 ? n : n.toFixed(2));
+        }
+        function showPrice(label, price){
+          resultLabel.textContent = label;
+          priceEl.textContent = fmt(price);
+          cta.style.display = 'inline-flex';
+        }
+        function showComingSoon(){
+          resultLabel.textContent = t('re_not_offered');
+          priceEl.textContent = '';
+          cta.style.display = 'none';
+        }
+        function showPrompt(msg){
+          resultLabel.textContent = msg;
+          priceEl.textContent = '';
+          cta.style.display = 'none';
+        }
+
+        function update(){
+          var device = deviceSelect.value;
+
+          if (!selectedType) {
+            tierField.style.display = 'none';
+            return;
+          }
+
+          if (selectedType === 'Screen damage') {
+            var entry = SCREEN_PRICING[device];
+            if (!entry) {
+              tierField.style.display = 'none';
+              showComingSoon();
+              return;
+            }
+            if (entry.single != null) {
+              tierField.style.display = 'none';
+              showPrice(t('re_screen') + ', ' + device, entry.single);
+              return;
+            }
+            // This device has tiered pricing, show the tier picker.
+            tierField.style.display = 'block';
+            if (!selectedTier) {
+              showPrompt(t('re_choose_quality'));
+              return;
+            }
+            var price = entry[selectedTier];
+            if (price == null) {
+              showComingSoon();
+              return;
+            }
+            var tierName = selectedTier === 'premium' ? t('re_premium') : t('re_affordable');
+            showPrice(t('re_screen') + ', ' + tierName + ', ' + device, price);
+            return;
+          }
+
+          tierField.style.display = 'none';
+
+          if (selectedType === 'Battery service') {
+            var bprice = BATTERY_PRICING[device];
+            if (bprice == null) { showComingSoon(); return; }
+            showPrice(t('re_battery') + ', ' + device, bprice);
+            return;
+          }
+
+          if (selectedType === 'Rear camera damage') {
+            var rprice = REAR_CAMERA_PRICING[device];
+            if (rprice == null) { showComingSoon(); return; }
+            showPrice(t('re_camera') + ', ' + device, rprice);
+            return;
+          }
+
+          if (selectedType === 'Charging port damage') {
+            var cprice = CHARGING_PORT_PRICING[device];
+            if (cprice == null) { showComingSoon(); return; }
+            showPrice(t('re_chargingport') + ', ' + device, cprice);
+            return;
+          }
+
+          if (selectedType === 'Back glass damage') {
+            var gprice = BACK_GLASS_PRICING[device];
+            if (gprice == null) { showComingSoon(); return; }
+            showPrice(t('re_backglass') + ', ' + device, gprice);
+            return;
+          }
+
+          // Safety fallback (shouldn't be reached, every option above returns).
+          showComingSoon();
+        }
+
+        optionButtons.forEach(function(btn){
+          btn.addEventListener('click', function(){
+            optionButtons.forEach(function(b){ b.classList.remove('is-active'); });
+            btn.classList.add('is-active');
+            selectedType = btn.getAttribute('data-type');
+            selectedTier = null;
+            tierButtons.forEach(function(b){ b.classList.remove('is-active'); });
+            update();
+          });
+        });
+
+        tierButtons.forEach(function(btn){
+          btn.addEventListener('click', function(){
+            tierButtons.forEach(function(b){ b.classList.remove('is-active'); });
+            btn.classList.add('is-active');
+            selectedTier = btn.getAttribute('data-tier');
+            update();
+          });
+        });
+
+        deviceSelect.addEventListener('change', function(){
+          selectedTier = null;
+          tierButtons.forEach(function(b){ b.classList.remove('is-active'); });
+          update();
+        });
+
+        // ---- Sell Estimate logic ----
+        var seDevice = document.getElementById('se-device');
+        var seStorageWrap = document.getElementById('se-storage');
+        var seLockButtons = document.querySelectorAll('#se-lock .re-option--lock');
+        var seCondButtons = document.querySelectorAll('#se-condition .re-option--cond');
+        var seResultLabel = document.getElementById('se-result-label');
+        var sePriceEl = document.getElementById('se-price');
+        var seCta = document.getElementById('se-cta');
+
+        var selectedStorage = null;
+        var selectedLock = 'unlocked';
+        var selectedCond = null;
+
+        if (seCta) {
+          var seUa = navigator.userAgent || '';
+          var seIsApple = /iPad|iPhone|iPod|Macintosh/.test(seUa) || navigator.platform === 'MacIntel';
+          seCta.setAttribute('href', seIsApple
+            ? 'https://apps.apple.com/us/app/ebin/id1563293790'
+            : 'https://play.google.com/store/apps/details?id=com.ebinphones.ebin&hl=en_US');
+          seCta.setAttribute('target', '_blank');
+        }
+
+        function condLabel(cond){
+          if (cond === 'veryGood') return t('se_cond_verygood');
+          if (cond === 'good') return t('se_cond_good');
+          if (cond === 'fair') return t('se_cond_fair');
+          return t('se_cond_cracked');
+        }
+
+        function renderStorageOptions(){
+          var device = seDevice.value;
+          var entry = SELL_PRICING[device];
+          seStorageWrap.innerHTML = '';
+          if (!entry) return;
+          var sizes = Object.keys(entry).map(Number).sort(function(a,b){ return a - b; });
+          sizes.forEach(function(size, idx){
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 're-option re-option--storage';
+            btn.setAttribute('data-storage', size);
+            btn.textContent = size >= 1000 ? (size / 1000) + 'TB' : size + 'GB';
+            if (idx === 0) {
+              btn.classList.add('is-active');
+            }
+            btn.addEventListener('click', function(){
+              seStorageWrap.querySelectorAll('.re-option--storage').forEach(function(b){ b.classList.remove('is-active'); });
+              btn.classList.add('is-active');
+              selectedStorage = size;
+              updateSell();
+            });
+            seStorageWrap.appendChild(btn);
+          });
+          selectedStorage = sizes[0];
+        }
+
+        function updateSell(){
+          var device = seDevice.value;
+          var entry = SELL_PRICING[device];
+          if (!entry || selectedStorage == null) {
+            seResultLabel.textContent = t('se_prompt_select');
+            sePriceEl.textContent = '';
+            seCta.style.display = 'none';
+            return;
+          }
+          var sizeData = entry[selectedStorage];
+          if (!sizeData) {
+            seResultLabel.textContent = t('se_prompt_select');
+            sePriceEl.textContent = '';
+            seCta.style.display = 'none';
+            return;
+          }
+          if (!selectedCond) {
+            seResultLabel.textContent = t('se_prompt_select');
+            sePriceEl.textContent = '';
+            seCta.style.display = 'none';
+            return;
+          }
+          var prefix = selectedLock === 'locked' ? 'l' : 'u';
+          var key = prefix + selectedCond.charAt(0).toUpperCase() + selectedCond.slice(1);
+          var price = sizeData[key];
+          if (price == null) {
+            seResultLabel.textContent = t('se_not_offered');
+            sePriceEl.textContent = '';
+            seCta.style.display = 'none';
+            return;
+          }
+          var storageLabel = selectedStorage >= 1000 ? (selectedStorage / 1000) + 'TB' : selectedStorage + 'GB';
+          var lockLabel = selectedLock === 'locked' ? t('se_locked') : t('se_unlocked');
+          seResultLabel.textContent = device + ', ' + storageLabel + ', ' + lockLabel + ', ' + condLabel(selectedCond);
+          sePriceEl.textContent = fmt(price);
+          seCta.style.display = 'inline-flex';
+        }
+
+        if (seDevice) {
+          renderStorageOptions();
+
+          seDevice.addEventListener('change', function(){
+            selectedCond = null;
+            seCondButtons.forEach(function(b){ b.classList.remove('is-active'); });
+            renderStorageOptions();
+            updateSell();
+          });
+
+          seLockButtons.forEach(function(btn){
+            btn.addEventListener('click', function(){
+              seLockButtons.forEach(function(b){ b.classList.remove('is-active'); });
+              btn.classList.add('is-active');
+              selectedLock = btn.getAttribute('data-lock');
+              updateSell();
+            });
+          });
+
+          seCondButtons.forEach(function(btn){
+            btn.addEventListener('click', function(){
+              seCondButtons.forEach(function(b){ b.classList.remove('is-active'); });
+              btn.classList.add('is-active');
+              selectedCond = btn.getAttribute('data-cond');
+              updateSell();
+            });
+          });
+
+          updateSell();
+        }
+
+        // ---- Tab switching between Repair Estimate and Sell Estimate ----
+        var tabRepair = document.getElementById('tab-repair');
+        var tabSell = document.getElementById('tab-sell');
+        var repairPanel = document.getElementById('repair-panel');
+        var sellPanel = document.getElementById('sell-panel');
+        var eyebrowText = document.getElementById('re-eyebrow-text');
+        var headingText = document.getElementById('re-heading-text');
+        var introText = document.getElementById('re-intro-text');
+
+        function setActiveTab(tab){
+          if (tab === 'sell') {
+            tabSell.classList.add('is-active');
+            tabRepair.classList.remove('is-active');
+            sellPanel.style.display = 'block';
+            repairPanel.style.display = 'none';
+            eyebrowText.setAttribute('data-i18n', 'se_eyebrow');
+            headingText.setAttribute('data-i18n', 'se_heading');
+            introText.setAttribute('data-i18n', 'se_intro');
+          } else {
+            tabRepair.classList.add('is-active');
+            tabSell.classList.remove('is-active');
+            repairPanel.style.display = 'block';
+            sellPanel.style.display = 'none';
+            eyebrowText.setAttribute('data-i18n', 're_eyebrow');
+            headingText.setAttribute('data-i18n', 're_heading');
+            introText.setAttribute('data-i18n', 're_intro');
+          }
+          eyebrowText.textContent = t(eyebrowText.getAttribute('data-i18n'));
+          headingText.textContent = t(headingText.getAttribute('data-i18n'));
+          introText.textContent = t(introText.getAttribute('data-i18n'));
+        }
+
+        if (tabRepair && tabSell) {
+          tabRepair.addEventListener('click', function(){ setActiveTab('repair'); });
+          tabSell.addEventListener('click', function(){ setActiveTab('sell'); });
+        }
+
+        document.addEventListener('ebinLangChanged', function(){
+          update();
+          updateSell();
+          setActiveTab(tabSell && tabSell.classList.contains('is-active') ? 'sell' : 'repair');
+        });
+      })();
+      </script>
+  </body>
+</html>
