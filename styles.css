@@ -1974,6 +1974,13 @@ button:hover{ background: var(--violet-700); }
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
+.merchant-signup__honeypot{
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
 
 @media (max-width: 480px){
   .merchant-signup__card{ padding: 32px 20px; }

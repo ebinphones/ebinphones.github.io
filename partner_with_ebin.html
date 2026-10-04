@@ -21,23 +21,29 @@
     <script>
       function submitBusinessContactForm(event) {
         var form = document.getElementById("businesscontactform");
-        var requiredFields = document.querySelectorAll(
-          '#businesscontactform [required], [form="businesscontactform"][required]'
-        );
+        var fields = ["name", "address", "email", "phone"];
+        var requiredFields = fields.map(function(name) {
+          return form.elements[name];
+        });
+        var honeypot = form.elements.website;
 
         requiredFields.forEach(function(field) {
+          field.value = field.value.trim();
           field.setCustomValidity("");
-          if (!field.value || !field.value.trim()) {
+          if (!field.value) {
             field.setCustomValidity("This field is required.");
           }
         });
 
-        if (!form.checkValidity()) {
+        if (honeypot.value || !form.checkValidity()) {
           event.preventDefault();
-          form.reportValidity();
+          if (!honeypot.value) {
+            form.reportValidity();
+          }
           return false;
         }
 
+        form.querySelector('button[type="submit"]').disabled = true;
         var x = document.getElementById("hideonsubmit");
         x.style.display = "none";
         document.getElementById("formheader").innerHTML = "Thank you for your submission! We will contact you soon!";
@@ -106,19 +112,20 @@
         <h2 id="formheader" data-i18n="partner_form_title">Drive more customers with ebin&#176;</h2>
         <div id="hideonsubmit">
           <p class="plan-card__tagline" data-i18n="partner_form_desc">Partner with ebin&#176; to enhance your business. Enter your email to join the waiting list for future updates and become part of the ebin&#176; network.</p>
-          <form id="businesscontactform" action="https://hello-world-1-yjvz4puiba-uc.a.run.app/contactbusinessemail" method="get" target="dummyframe" onsubmit="return submitBusinessContactForm(event)">
+          <form id="businesscontactform" action="https://hello-world-1-yjvz4puiba-uc.a.run.app/contactbusinessemail" method="get" target="dummyframe" novalidate onsubmit="return submitBusinessContactForm(event)">
             <div class="merchant-signup__field">
-              <input type="text" form="businesscontactform" name="name" placeholder="Business Name" data-i18n-placeholder="partner_biz_name" required>
+              <input type="text" form="businesscontactform" name="name" placeholder="Business Name" data-i18n-placeholder="partner_biz_name" autocomplete="organization" minlength="2" required>
             </div>
             <div class="merchant-signup__field">
-              <input type="text" form="businesscontactform" name="address" placeholder="Business Address" data-i18n-placeholder="partner_biz_address" required>
+              <input type="text" form="businesscontactform" name="address" placeholder="Business Address" data-i18n-placeholder="partner_biz_address" autocomplete="street-address" minlength="5" required>
             </div>
             <div class="merchant-signup__field">
-              <input type="email" form="businesscontactform" name="email" placeholder="Email Address" data-i18n-placeholder="partner_email" required>
+              <input type="email" form="businesscontactform" name="email" placeholder="Email Address" data-i18n-placeholder="partner_email" autocomplete="email" required>
             </div>
             <div class="merchant-signup__field">
-              <input type="tel" form="businesscontactform" name="phone" placeholder="Business Phone" data-i18n-placeholder="partner_phone" required>
+              <input type="tel" form="businesscontactform" name="phone" placeholder="Business Phone" data-i18n-placeholder="partner_phone" autocomplete="tel" pattern="[0-9+(). -]{7,}" title="Enter a valid phone number." required>
             </div>
+            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="merchant-signup__honeypot">
             <button form="businesscontactform" type="submit" class="merchant-signup__submit" data-i18n="partner_submit">Sign up</button>
           </form>
         </div>
